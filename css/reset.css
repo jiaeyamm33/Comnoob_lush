@@ -1,0 +1,67 @@
+@charset "Utf-8";
+
+/* https://cssdeck.com/blog/scripts/html5-doctor-css-reset-stylesheet/ */
+/* css 초기화 */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video
+{  margin:0;  padding:0;  border:0;  outline:0;  font-size:100%;  vertical-align:baseline;  background:transparent;}
+
+body {
+  line-height:1;                                         /* 줄 간격 100% */
+ }
+
+  /* html5 추가 태그로서 구형 브라우저에서 인식이 안되는 것을 블럭요소로 인식되도록 함 */
+ article,aside,details,figcaption,figure,
+ footer,header,hgroup,menu,nav,section { 
+  display:block;
+ }
+
+ ul, ol, li {  list-style:none; }
+
+ blockquote, q {  quotes:none; }
+
+ blockquote:before, blockquote:after, q:before, q:after {  content:'';  content:none; }     /* 인용문 앞, 뒤쪽에 빈공간을 만듬 */
+
+ a {  margin:0;  padding:0;  font-size:100%;  vertical-align:baseline;  background:transparent; } /* change colours to suit your needs */
+
+ ins {  background-color:#ff9;  color:#000;  text-decoration:none; }     /* change colours to suit your needs    추가내용에 밑줄 없애고 배경 노란색 */
+
+ mark {  background-color:#ff9;  color:#000;   font-style:italic;  font-weight:bold; }  /* 배경 색 연하게, 이태릭체, 볼드체 */
+
+ del {
+  text-decoration: line-through;
+ }
+ abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+ }
+ table {
+  border-collapse:collapse;
+  border-spacing:0;
+ }
+ /* change border colour to suit your needs */
+ hr {
+  display:block;
+  height:1px;
+  border:0; 
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+ }
+ input, select {
+  vertical-align:middle;
+ }
+
+
+
+
+
+
+ /* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+

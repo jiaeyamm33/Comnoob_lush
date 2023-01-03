@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lush korea</title>
+
+  <!-- css 리셋 -->
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+
+
+
+  <style>
+
+    /* gnb 배경 체크박스 */
+    #gnb_toggle {
+
+    }
+
+
+
+
+
+
+    /* 헤더영역 서식 시작 */
+    header{
+      /* background-color : #ff0; */
+    }
+    header > article {
+      width : 1260px;       /* 콘텐츠 영역 확정 X */
+      margin : 0 auto;
+      /* background-color : #ccc; */
+      height : 60px;
+    }
+    h1 {
+      font-size : 40px;
+      padding-top : 10px;
+    }
+    header > article, header > article > ul{
+      display : flex;
+    }
+    header > article {
+      justify-content : space-between;
+    }
+    header > article > ul{
+      line-height : 50px;
+      margin-top : 10px;
+    }
+
+    header > article > ul >li{
+      margin-left : 50px;
+      font-size : 24px;
+    }
+    header > article > ul > li > label {
+      padding : 8px;      /* 선택영역 확장 */
+    }
+    header > article > div {
+      width : 40px; height : 40px;
+      background-color : #333;
+      margin-top : 10px;
+    }
+    #gnb_bg { /* gnb 백그라운드 */
+      background-color : #ccc;
+      width : 100%; height : 660px;
+      display : none;
+      position : absolute;
+      top : 0;left : 0;
+      transition : .5s;
+    }
+
+    .gnb_mnu:hover ~  #gnb_bg,
+    .gnb_mnu:hover ~ .gnb_mnu > li > label
+    {
+      display : block;
+      z-index : -1;
+      margin : 0;
+    }
+    
+    #gnb_bg:hover {
+      display : block;
+      z-index : -1;
+      margin : 0;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <article>
+      <h1 class="logo">LUSH</h1>
+      <ul class="gnb_mnu">
+        <li><label for="gnb_toggle" >제품</label></li>
+        <li><label for="gnb_toggle" >매장안내</label></li>
+        <li><label for="gnb_toggle" >매거진</label></li>
+        <li><label for="gnb_toggle" >러쉬소개</label></li>
+        <li><label for="gnb_toggle" >이벤트</label></li>
+      </ul>
+      <div>아</div>
+      <div>이</div>
+      <div>콘</div>
+      <div>들</div>
+      <div id="gnb_bg"> </div>
+    </article>
+  </header>
+
+  <main>
+    <article>
+      <h2>
+
+      </h2>
+    </article>
+    <section>
+      <h2>
+
+      </h2>
+    </section>
+
+  </main>
+
+  <footer>
+
+  </footer>
+  
+</body>
+</html>

@@ -5,3 +5,11 @@
 * {
     font-family: 'Noto Sans KR', sans-serif;
 }
+@font-face {
+    font-family: 'LushKR Handwritten OTF';
+    src:url('../fonts/LUSHKR_Medium.otf');
+} 
+@font-face {
+    font-family: 'Lush';
+    src:url('../fonts/Lush.ttf');
+} 

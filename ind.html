@@ -81,7 +81,6 @@
     .sub {
       display : none;
       z-index : 0;
-      margin-left : 0;
     }
     
     /*                   오버서식들 시작                 */
@@ -124,7 +123,7 @@
 
     }
     main section[id=product] article {
-      height : 950px;
+      height : 800px;
       border-bottom : 2px solid #000;
       box-sizing : border-box;
       background-color : rgb(148, 148, 39);
@@ -189,45 +188,6 @@
       background-color : #f0f;
     }
 
-
-    #pro_2 {
-      position : relative;
-    }
-
-
-    #pro_2 > #best_txt_box{
-      position : absolute;
-      top : 50px;
-      left : 50px;
-      height : 66px;
-    }
-    #pro_2 > #best_txt_box > h3 {
-      font-size : 30px;
-      padding-bottom : 20px;
-    }
-
-    #best_product_box {
-      width : 1270px;
-      height : 700px;
-      margin : 0 auto;
-      background-color : #333;
-      position : absolute;
-      top : 110px;
-      left : 50%;
-      transform : translateX(-50%);
-      display : flex;
-      justify-content : space-around;
-      align-items : center;
-    }
-
-
-    #best_product_box > div {
-      height : 700px;
-      width : 700px;
-      background-color : #fff;
-    }
-
-    
 
 
     /*          메인영역 끝           */
@@ -309,34 +269,24 @@
       </article>
       <article id="pro_2">
         <h2>bestbest</h2>
-        <div id="best_txt_box">
-          <h3 class="best_txt"> BEST </h3>
-          <p id="best_h2" class="best_txt"> 지금 가장 인기있는 제품을 만나보세요 </p>
+        <div>
+          <p id="best_head" class="best_txt">BEST</p>
+          <p id="best_h2" class="best_txt">지금 가장 인기있는 제품을 만나보세요</p>
         </div>
-        <div id="best_product_box">
-          <div id="best_big_img"> </div>
-          <div id="best_small_box">
-            <ul>
-              <li><div class="best_small_img_"></div></li>
-              <li><div class="best_small_img_"></div></li>
-              <li><div class="best_small_img_"></div></li>
-              <li><div class="best_small_img_"></div></li>
-            </ul>
-          </div>
+        <div>
+
         </div>
-      
       </article>
     </section>                 <!--   best&new  끝  -->
     <section id="campaign">     <!--   캠페인 시작    -->
-
       <article>
         <h2>cam_1</h2>
+  
       </article>
-
       <article>
         <h2>cam_2</h2>
-      </article>
 
+      </article>
     </section>                <!--   캠페인 끝    -->
 
     <div id="bottom_box">  <!-- 이 친구 div article 뭐로 할까요?? -->

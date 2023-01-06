@@ -9,6 +9,8 @@ fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, 
 footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video
 {  margin:0;  padding:0;  border:0;  outline:0;  font-size:100%;  vertical-align:baseline;  background:transparent;}
 
+* {box-sizing:border-box;}
+
 body {
   line-height:1;                                         /* 줄 간격 100% */
  }
@@ -54,7 +56,6 @@ body {
  input, select {
   vertical-align:middle;
  }
-
 
 
 

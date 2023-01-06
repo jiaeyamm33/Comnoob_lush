@@ -20,6 +20,7 @@ article{
     margin:0px auto;
     text-align: center;
 }
+.article_1{padding:120px 0px;}
 .title{
     font-size:96px;
     font-family:'LushKR Handwritten OTF';
@@ -28,6 +29,23 @@ article{
     font-size:32px;
     padding-top:15px;
 }
+.s_top{
+    padding-top:50px;
+}
 .sub_title{
     font-size:32px;
+    margin-bottom:20px;
+}
+.desc{
+    font-size:16px;
+}
+.article_2{padding-bottom:120px;}
+.article_3{padding-bottom:120px;}
+.article_4{padding-bottom:120px;}
+.article_5{margin-bottom:28px;}
+
+#intro_btn{
+    width:312px;height:64px;
+    background:#222;
+    color:#fff;
 }

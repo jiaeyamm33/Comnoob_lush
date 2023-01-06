@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>러쉬코리아</title>
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/common.css" type="tetx/css">
+    <link rel="stylesheet" href="./css/member.css" type="text/css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <article>
+        <h2>회원가입</h2>
+        <form action="server.php" method="post" name="sign_up" class="input_block">
+            <input type="text" placeholder="아이디">
+            <input type="password" name="password" id="password" placeholder="비밀번호" class="input_block">
+            <input type="password" name="paassword" id="password_check" placeholder="비밀번호 확인" class="input_block">
+            <input type="text" name="name" id="name" placeholder="이름" class="input_block">
+            <input type="text" name="niknam" id="nik_name" placeholder="닉네임" class="input_block">
+            <select name="tel">
+                <option value="010">010</option>
+                <option value="010">011</option>
+                <option value="010">017</option>
+                <option value="010">018</option>
+                <option value="010">019</option>
+                <option value="010">02</option>
+            </select>
+            <input type="text" name="telnumber" class="tel_num2" placeholder="휴대전화번호">
+            <p><input type="text" name="certification_number" placeholder="인증번호">
+            <input type="button" value="인증번호 확인" name="certification_number"></p>
+            <input type="text" placeholder="이메일" name="email"> @
+            <input type="text" name="email">
+            <hr>
+            <p><input type="checkbox" name="" id="" class="check_box">정보/이벤트 메일 수신에 동의합니다.</p>
+            <p>
+            <input type="checkbox" name="" id="" class="check_box">정보/이벤트 문자 수신에 동의합니다.
+            </p>
+            <button>회원가입</button>
+
+        </form>
+    </article>
+    </main>
+    <footer></footer>
+</body>
+</html>

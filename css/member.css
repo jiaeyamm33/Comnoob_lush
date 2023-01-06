@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+main {
+    width: 1920px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+article {
+    width: 1260px;
+    margin: 0px auto;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    width: 345px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+input[name="email"] {
+    width: 155px;
+}
+
+.input_block {
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 15px;
+}
+
+select { 
+    height: 40px;
+    width: 90px;
+    transform: translate(3px,-7.5px);
+    text-align: center;
+}
+
+.tel_num2 {
+    width: 255px;
+    transform: translateX(-3px);
+}
+
+.check_box {
+    width: 25px;
+    height: 25px;   
+    border-radius: 7px;
+}

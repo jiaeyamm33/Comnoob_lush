@@ -22,6 +22,8 @@ input {
     width: 345px;
     height: 40px;
     margin-bottom: 15px;
+    border: 1px solid #222;
+    color: #949494;
 }
 
 input[name="email"] {
@@ -50,4 +52,44 @@ select {
     width: 25px;
     height: 25px;   
     border-radius: 7px;
+    margin-bottom: 3px;
+}
+
+.certification_number {
+    width: 195px;
+    transform: translateX(-7px);
+}
+
+.certification_check {
+    width: 130px;
+    transform: translateX(7px);
+    background-color: #fff;
+    border: 1px solid #222;
+}
+
+.email_at {
+    display: inline-block;
+    transform: translateY(-7px);
+}
+
+.email_id {
+    transform: translateX(-5px);
+}
+
+.email_add {
+    transform: translateX(5px);
+}
+
+.sms {
+    height: 25px;
+    line-height: 25px;
+}
+
+button {
+    width: 345px;
+    height: 50px;
+    color: #fff;
+    background-color: #222;
+    margin-top: 20px;
+    font-size: 20px;
 }

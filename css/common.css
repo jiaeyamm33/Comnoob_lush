@@ -19,7 +19,7 @@ footer{
     background:#222;
     margin-top:160px;
     color:#fff;
-    width: 1920px;
+    width: 100%;
 }
 
 a {
@@ -65,9 +65,15 @@ a {
 }
 .subscribe{
     grid-area: subscribe;
+    width: 630px;
+}
+
+.subscribe p {
+    font-size: 12px;
 }
 .sns{
     grid-area: sns;
+    width: 630px;
 }
 .f_lnb{
     grid-area: lnb;
@@ -88,9 +94,6 @@ a {
     width: 390px;
 }
 
-.sns {
-    margin: 0px auto;
-}
 .sns > img:first-child {
     width: 40px;
     height: 40px;

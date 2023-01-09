@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 main {
-    width: 1920px;
+    width:100%;
 }
 
 h2 {
@@ -141,4 +141,64 @@ button {
     font-size: 20px;
 }
 
+}
+
+/* 로그인 폼 */
+.login_wrap{
+    width:100%;
+    padding-top:128px;
+    margin:0px auto;
+    text-align: center;
+}
+.title{
+    font-size:32px;
+}
+.login_tab{
+    width:100%;
+    margin:0 auto;
+    text-align: center;
+}
+.login_tab > ul{
+    width:200px;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    margin:50px auto;
+}
+input[type=radio]{
+    display:none;    
+}
+.login_box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+input[type=text]{
+    background: #fff;
+    color: #222;
+    font-size: 1em;
+    width:324px;
+    border: 1px solid #949494;
+    height: 48px;
+    line-height: 46px;
+    text-indent:10px;
+}
+input[type=password]{
+    background: #fff;
+    color: #222;
+    font-size: 1em;
+    width:324px;
+    border: 1px solid #949494;
+    height: 48px;
+    line-height: 46px;
+    text-indent:10px;
+}
+.remember_wrap{
+    width:324px;
+    margin:0px auto;
+}
+input[type=checkbox]{
+    width: 25px;
+    height: 25px;
 }

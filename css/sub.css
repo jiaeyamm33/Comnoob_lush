@@ -20,8 +20,9 @@
     justify-content:center;
     flex-direction: column;
 }
-.section img{width:100%;}
+.section article img{width:100%;display:block;}
 article{
+    width:1260px;
     margin:0px auto;
     text-align: center;
 }
@@ -60,10 +61,11 @@ article{
     width:312px;height:64px;
     background:#222;
     color:#fff;
-    margin-bottom:50px;
+    margin:0px auto;
 }
 
 @media screen and (max-width:1024px) and (min-width:767px){
+    article{width:100%;}
     .title_sub, .sub_title{
         font-size:32px;
     }
@@ -72,6 +74,7 @@ article{
     }
 }
 @media screen and (max-width:766px) and (min-width:376px){
+    article{width:100%;}
     .title{font-size:64px;}
     .title_sub, .sub_title{
         font-size:24px;
@@ -81,6 +84,7 @@ article{
     }
 }
 @media screen and (max-width:375px){
+    article{width:100%;}
     .title{font-size:32px;}
     .title_sub, .sub_title{
         font-size:18px;

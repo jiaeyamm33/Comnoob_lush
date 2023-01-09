@@ -14,13 +14,13 @@
     <main>
         <article>
         <h2>회원가입</h2>
-        <form action="server.php" method="post" name="sign_up" class="input_block">
+        <form action="server.php" method="post" name="sign_up" class="input_block com_input">
             <input type="text" placeholder=" 아이디">
             <input type="password" name="password" id="password" placeholder=" 비밀번호" class="input_block">
             <input type="password" name="paassword" id="password_check" placeholder=" 비밀번호 확인" class="input_block">
             <input type="text" name="name" id="name" placeholder=" 이름" class="input_block">
             <input type="text" name="niknam" id="nik_name" placeholder=" 닉네임" class="input_block">
-            <select name="tel">
+            <select name="tel" class="tell">
                 <option value="010">010</option>
                 <option value="010">011</option>
                 <option value="010">017</option>
@@ -29,7 +29,7 @@
                 <option value="010">02</option>
             </select>
             <input type="text" name="telnumber" class="tel_num2" placeholder=" 휴대전화번호">
-            <p><input type="text" name="certification_number" placeholder=" 인증번호" class="certification_number">
+            <p><input type="text" name="certification_number" placeholder="인증번호" class="certification_number">
             <input type="button" value="인증번호 확인" name="certification_number" class="certification_check"></p>
             <input type="text" placeholder=" 이메일" name="email" class="email_id"> <span class="email_at">@</span>
             <input type="text" name="email" class="email_add">

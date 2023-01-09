@@ -7,6 +7,7 @@ main {
 h2 {
     text-align: center;
     margin-bottom: 128px;
+    font-size: 32px;
 }
 
 article {
@@ -22,9 +23,14 @@ input {
     width: 345px;
     height: 40px;
     margin-bottom: 15px;
-    border: 1px solid #222;
+    border: 1px solid #949494;
     color: #949494;
     text-indent:10px;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #949494;
 }
 
 input[name="email"] {
@@ -42,6 +48,7 @@ select {
     width: 90px;
     transform: translate(3px,-7.5px);
     text-align: center;
+    color: #949494;
 }
 
 .tel_num2 {
@@ -65,7 +72,7 @@ select {
     width: 130px;
     transform: translateX(7px);
     background-color: #fff;
-    border: 1px solid #222;
+    text-indent: 0px;
 }
 
 .email_at {
@@ -84,6 +91,7 @@ select {
 .sms {
     height: 25px;
     line-height: 25px;
+    color: #222;
 }
 
 button {
@@ -93,6 +101,7 @@ button {
     background-color: #222;
     margin-top: 20px;
     font-size: 20px;
+    text-indent: 0px;
 }
 
 @media screen and (max-width:1024px) and (min-width:767px){
@@ -106,25 +115,20 @@ article {
 }
 
 
-input {
-    width: 328px;
-    height: 48px;
-}
-
 input[name="email"] {
     width: 151px;
 }
 
 
 select { 
-    height: 48px;
-    width: 80px;
+    height: 40px;
+    width: 92px;
 }
 
 
 
 .certification_number {
-    width: 190px;
+    width: 203px;
 }
 
 .certification_check {
@@ -132,15 +136,59 @@ select {
 
 }
 
+input[name="email"] {
+    width: 157px;
+}
+
+
 
 button {
-    width: 328px;
-    height: 64px;
+    width: 345px;
+    height: 50px;
     color: #fff;
     background-color: #222;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 20px;}
+
+
 }
+
+@media screen and (max-width:766px) and (min-width:1px){
+
+    main {
+        width: 100%;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+article {
+    width: 100%;
+}
+
+input[name="email"] {
+    width: 151px;
+}
+
+select { 
+    height: 40px;
+    width: 92px;
+}
+
+.certification_number {
+    transform: translateX(-7px);
+}
+
+.certification_check {
+    width: 135px;
+
+}
+
+input[name="email"] {
+    width: 157px;
+}
+
 
 }
 
@@ -177,7 +225,6 @@ input[type=radio]{
 input[type=text]{
     background: #fff;
     color: #222;
-    font-size: 1em;
     line-height: 46px;
     text-indent:10px;
 }

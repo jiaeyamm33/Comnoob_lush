@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>러쉬코리아</title>
     <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/common.css" type="text/css">
     <link rel="stylesheet" href="./css/member.css" type="text/css">
 </head>
 <body>
@@ -14,11 +15,11 @@
         <article>
         <h2>회원가입</h2>
         <form action="server.php" method="post" name="sign_up" class="input_block">
-            <input type="text" placeholder="아이디">
-            <input type="password" name="password" id="password" placeholder="비밀번호" class="input_block">
-            <input type="password" name="paassword" id="password_check" placeholder="비밀번호 확인" class="input_block">
-            <input type="text" name="name" id="name" placeholder="이름" class="input_block">
-            <input type="text" name="niknam" id="nik_name" placeholder="닉네임" class="input_block">
+            <input type="text" placeholder=" 아이디">
+            <input type="password" name="password" id="password" placeholder=" 비밀번호" class="input_block">
+            <input type="password" name="paassword" id="password_check" placeholder=" 비밀번호 확인" class="input_block">
+            <input type="text" name="name" id="name" placeholder=" 이름" class="input_block">
+            <input type="text" name="niknam" id="nik_name" placeholder=" 닉네임" class="input_block">
             <select name="tel">
                 <option value="010">010</option>
                 <option value="010">011</option>
@@ -27,21 +28,89 @@
                 <option value="010">019</option>
                 <option value="010">02</option>
             </select>
-            <input type="text" name="telnumber" class="tel_num2" placeholder="휴대전화번호">
-            <p><input type="text" name="certification_number" id="certifi_num" placeholder="인증번호">
-            <input type="button" value="인증번호 확인"></p>
-            <input type="text" placeholder="이메일"> @
-            <input type="text" name="emailback" id="email_back">
+            <input type="text" name="telnumber" class="tel_num2" placeholder=" 휴대전화번호">
+            <p><input type="text" name="certification_number" placeholder=" 인증번호" class="certification_number">
+            <input type="button" value="인증번호 확인" name="certification_number" class="certification_check"></p>
+            <input type="text" placeholder=" 이메일" name="email" class="email_id"> <span class="email_at">@</span>
+            <input type="text" name="email" class="email_add">
             <hr>
-            <p><input type="checkbox" name="" id="" class="check_box">정보/이벤트 메일 수신에 동의합니다.</p>
-            <p>
-            <input type="checkbox" name="" id="" class="check_box">정보/이벤트 문자 수신에 동의합니다.
-            </p>
+            <div class="sms"><input type="checkbox" name="" id="" class="check_box">정보/이벤트 메일 수신에 동의합니다.</div>
+            <div class="sms">
+            <input type="checkbox" name="" id="" class="check_box">정보/이벤트 문자 수신에 동의합니다.</div>
             <button>회원가입</button>
 
         </form>
     </article>
     </main>
-    <footer></footer>
+    <!-- 푸터 영역 
+
+    <footer>
+    회색 라벨 자리 
+        <div class="ethical">
+        <ul>
+            <li><a href="#none;" title="가치소비1"><img src="./images/common/ethical1.png" alt="가치소비1"></a></li>
+            <li><a href="#none;" title="가치소비2"><img src="./images/common/ethical2.png" alt="가치소비2"></a></li>
+            <li><a href="#none;" title="가치소비3"><img src="./images/common/ethical3.png" alt="가치소비3"></a></li>
+            <li><a href="#none;" title="가치소비4"><img src="./images/common/ethical4.png" alt="가치소비4"></a></li>
+            <li><a href="#none;" title="가치소비5"><img src="./images/common/ethical5.png" alt="가치소비5"></a></li>
+            <li><a href="#none;" title="가치소비6"><img src="./images/common/ethical6.png" alt="가치소비6"></a></li>
+        </ul>
+        </div>
+        푸터 영역 
+        <div class="f_wrap">
+        <div class="subscribe">
+            <input type="text" id="sub_email" placeholder=" 이메일을 입력하세요">
+            <label for="sub_email"></label>
+            <input type="button" value="구독" class="subs_btn">
+            <p>매주 월요일 오후, 구독자님을 위한 제품과 브랜드 이야기를 전해 드립니다.<br>
+                구독은 언제든지 해지하실 수 있습니다.
+            <a href="#none;" title="미리보기" ><span class="preview">미리보기</span></a>
+            </p>
+        </div>
+        <div class="sns">
+            <ul>
+            <li><img src="./images/common/ico_twitter.png" alt="트위터"><a href=""></a></li>
+            <li><img src="./images/common/ico_kakao.svg" alt="카카오"><a href=""></a></li>
+            <li><img src="./images/common/ico_naver.svg" alt="네이버"><a href=""></a></li>
+            <li><img src="./images/common/ico_youtube.svg" alt="유튜브"><a href=""></a></li>
+            </ul>
+        </div>
+        <div class="f_lnb">
+            <ul>
+                <li><a href="#none" title="러쉬소개">러쉬소개</a></li>
+                <li><a href="#none" title="개인정보처리방침">개인정보처리방침</a></li>
+                <li><a href="#none" title="FAQ">FAQ</a></li>
+                <li><a href="#none" title="커뮤니티">커뮤니티</a></li>
+                <li><a href="#none" title="영상정보관리지침">영상정보관리지침</a></li>
+                <li><a href="#none" title="1:1문의">1:1문의</a></li>
+                <li><a href="#none" title="채용안내">채용안내</a></li>
+                <li><a href="#none" title="이용약관">이용약관</a></li>
+            </ul>
+        </div>
+        <div class="f_lnfo_l">
+        <dl class="cs_service">
+            <dt>고객센터</dt>
+            <dd>0000-0000</dd>
+            <dd>chanhyuck@jeon.co.kr</dd> 
+        </dl>
+        <dl class="corp_gift">
+            <dt>기업선물</dt>
+            <dd>000-0000-0000</dd>
+            <dd>byeongyeong@kang.com</dd> 
+        </dl>
+        </div>
+        <div class="f_lnfo_r">
+            <address>
+            <p>서울 강남구 러쉬로 000 (0000빌딩) 1층 주식회사 0000000</p>
+            <p>사이트 운영자 : 주식회사 00000 | 대표이사 : 명지애</p>
+            <p>사업자 등록번호 : 000-00-00000 사업자 정보확인</p>
+            <p>통신판매업 신고번호 : 0000-서울강남-00000 | 개인정보보호책임자 : 강재민</p>
+
+            <p>COPYRIGHT&copy; 0000000.CO.LTD.ALL RIGHTS RESERVED.</p>
+        </address>
+        </div>
+        </div>
+        <a href="#" title="상단으로 바로가기" class="t_btn"></a>
+    </footer> -->
 </body>
 </html>

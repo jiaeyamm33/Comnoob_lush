@@ -8,238 +8,13 @@
 
   <!-- css 리셋 -->
   <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <link rel="stylesheet" href="./css/common.css" type="text/css">
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
 
 
 
-  <style>
-
-    /*                 헤더영역 서식 시작              */
-
-    header{
-      /* background-color : #ff0; */
-      width : 100%;
-      position : fixed;
-      top : 0px;
-      left : 0px;
-      z-index : 9999;
-    }
-
-    header > article {
-      width : 1260px;       /* 콘텐츠 영역 확정 X */
-      margin : 0 auto;
-      /* background-color : #00ffff; */
-      height : 60px;
-    }
-
-    h1 {
-      font-size : 40px;
-      padding-top : 10px;
-    }
-
-    header > article, header > article > ul{
-      display : flex;
-    }
-
-    header > article {
-      justify-content : space-between;
-      color : #fff;
-    }
-
-    header > article > ul{
-      line-height : 50px;
-      margin-top : 10px;
-    }
-
-    header > article > ul >li{
-      margin-left : 50px;
-      font-size : 20px;
-    }
-
-    header > article > ul > li > div {
-      padding : 8px;      /* 선택영역 확장 */
-    }
-
-    header > article > ul > li > div > .sub > li {      /* gnb 영역만큼 패딩영역을 늘린다.*/
-
-    }
-
-    header > article > div {
-      width : 40px; height : 40px;
-      background-color : #333;
-      margin-top : 10px;
-    }
-
-    #gnb_bg {       /*              gnb 백그라운드           */
-      background-color : rgba(0,0,0,.8);
-      width : 100%; height : 660px;
-      display : none;
-      position : absolute;
-      top : 0;left : 0;
-      transition : .5s;
-    }
-
-    .sub {
-      display : none;
-      z-index : 0;
-      margin-left : 0;
-    }
-    
-    /*                   오버서식들 시작                 */
-
-    .gnb_mnu:hover ~ #gnb_bg
-    /* .gnb_mnu:hover ~ .gnb_mnu > li > div */{
-      display : block;
-      margin : 0;
-      z-index : -1;
-    }
-
-    #gnb_bg:hover {
-      display : block;
-      z-index : -1;
-      margin : 0;
-    }
-
-    .gnb_mnu:hover > li > div > ul {
-      display : block;
-    }
-
-    .gnb_mnu > li > div > ul:hover {
-      display : block;
-    }
-    /*                   오버서식들 끝                 */
-    
-    /*            헤더 영역 끝             */
-    
-    /*           메인 영역 시작           */
-    
-    #vid {
-      width : 100%;
-      height : 950px;
-      background-color : aqua;
-      border-bottom : 2px solid #000;
-      box-sizing : border-box;
-    }
-    #product {
-      height : 1600px;
-
-    }
-    main section[id=product] article {
-      height : 950px;
-      border-bottom : 2px solid #000;
-      box-sizing : border-box;
-      background-color : rgb(148, 148, 39);
-    }
-    #pro_1 {
-      position : relative;
-    }
-
-    main section[id=campaign] article {
-      height : 800px;
-      border-bottom : 2px solid #000;
-      box-sizing : border-box;
-      background-color : #f0f;
-    }
-    h2{
-      display : inline-block;
-    }
-    main div[id=bottom_box] {
-      height : 140px;
-      background-color : #aaa;
-    }
-
-    #pro_1 > .new_slide {                 /* 제품 section 시작 */
-      width : 1270px;
-      height : 400px;
-      position : absolute;
-      left : 650px;
-      top : 330px;
-      background-color : #ccc;
-      display : flex;
-      justify-content : space-between;
-    }
-
-    #pro_1 > .new_banner {
-      width : 300px;
-      height : 250px;
-      position : absolute;
-      top : 480px;
-    }
-
-    #pro_1 > .new_banner > p:first-child,
-    #pro_1 > .new_banner > p:last-child{
-      text-indent : 30px;
-    }
-
-    #pro_1 > .new_banner > p:first-child {
-      font-size : 40px;   /* 피그마에선 50입니다. */
-      color : #fff;
-      line-height : 50px;
-      padding-top : 60px;;
-      margin-bottom : 30px;
-    }
-
-    #pro_1 > .new_banner > p:last-child{
-      font-size : 40px;
-      color : #fff;
-      margin-bottom : auto;
-    }
-
-    #pro_1 > .new_slide > .new_pro{          /* new 제품 슬라이드 */
-      height : 400px; width : 300px;
-      background-color : #f0f;
-    }
-
-
-    #pro_2 {
-      position : relative;
-    }
-
-
-    #pro_2 > #best_txt_box{
-      position : absolute;
-      top : 50px;
-      left : 50px;
-      height : 66px;
-    }
-    #pro_2 > #best_txt_box > h3 {
-      font-size : 30px;
-      padding-bottom : 20px;
-    }
-
-    #best_product_box {
-      width : 1270px;
-      height : 700px;
-      margin : 0 auto;
-      background-color : #333;
-      position : absolute;
-      top : 110px;
-      left : 50%;
-      transform : translateX(-50%);
-      display : flex;
-      justify-content : space-around;
-      align-items : center;
-    }
-
-
-    #best_product_box > div {
-      height : 700px;
-      width : 700px;
-      background-color : #fff;
-    }
-
-    
-
-
-    /*          메인영역 끝           */
-
-    /*          푸터영역 시작         */
-    footer {
-      height : 480px;
-      background-color : #222;
-    }
-
-
-  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="./script/common.js"></script>
 </head>
 <body>
   <header>
@@ -348,6 +123,52 @@
   <footer>                      <!--     footer 시작      -->
 
 
+
+    <!-- 푸터 영역 -->
+    <div class="f_wrap">
+    <div class="subscribe">
+        <input type="text" id="sub_email">
+        <label for="sub_email"></label>
+        <p>매주 월요일 오후, 구독자님을 위한 제품과 브랜드 이야기를 전해 드립니다. 구독은 언제든지 해지하실 수 있습니다.
+        <a href="#none;" title="미리보기">미리보기</a>
+        </p>
+    </div>
+    <div class="sns"></div>
+    <div class="f_lnb">
+        <ul>
+            <li><a href="#none" title="러쉬소개">러쉬소개</a></li>
+            <li><a href="#none" title="개인정보처리방침">개인정보처리방침</a></li>
+            <li><a href="#none" title="FAQ">FAQ</a></li>
+            <li><a href="#none" title="커뮤니티">커뮤니티</a></li>
+            <li><a href="#none" title="영상정보관리지침">영상정보관리지침</a></li>
+            <li><a href="#none" title="1:1문의">1:1문의</a></li>
+            <li><a href="#none" title="채용안내">채용안내</a></li>
+            <li><a href="#none" title="이용약관">이용약관</a></li>
+        </ul>
+    </div>
+    <div class="f_lnfo_l">
+        <ul>
+            <li>
+                <p>고객센터</p>
+                <p>0000-0000</p>
+                <span>webmaster@0000.co.kr</span>
+            </li>
+            <li>
+                <p>기업선물</p>
+                <p>000-0000-0000</p>
+                <span>order@0000.co.kr</span>
+            </li>
+        </ul>
+    </div>
+    <div class="f_lnfo_r">
+        서울 강남구 러쉬로 000 (0000빌딩) 1층 주식회사 0000000
+        사이트 운영자 : 주식회사 00000 | 대표이사 : 명지애
+        사업자 등록번호 : 000-00-00000 사업자 정보확인
+        통신판매업 신고번호 : 0000-서울강남-00000 | 개인정보보호책임자 : 강재민
+        <p>COPYRIGHT&copy; 0000000.CO.LTD.ALL RIGHTS RESERVED.</p>
+    </div>
+    </div>
+    <a href="#" title="상단으로 바로가기" class="t_btn"></a>
   </footer>
   
 </body>

@@ -1,12 +1,12 @@
 @charset "utf-8";
 
 main {
-    width: 100%;
+    width:100%;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 128px;
 }
 
 article {
@@ -22,8 +22,14 @@ input {
     width: 345px;
     height: 40px;
     margin-bottom: 15px;
+    border: 1px solid #222;
+    color: #949494;
+    text-indent:10px;
 }
 
+input[name="email"] {
+    width: 155px;
+}
 
 .input_block {
     display: block;
@@ -44,7 +50,149 @@ select {
 }
 
 .check_box {
-    width: 25px;
-    height: 25px;   
+    width: 20px;
+    height: 20px;   
     border-radius: 7px;
+    margin-bottom: 3px;
+}
+
+.certification_number {
+    width: 195px;
+    transform: translateX(-7px);
+}
+
+.certification_check {
+    width: 130px;
+    transform: translateX(7px);
+    background-color: #fff;
+    border: 1px solid #222;
+}
+
+.email_at {
+    display: inline-block;
+    transform: translateY(-7px);
+}
+
+.email_id {
+    transform: translateX(-5px);
+}
+
+.email_add {
+    transform: translateX(5px);
+}
+
+.sms {
+    height: 25px;
+    line-height: 25px;
+}
+
+button {
+    width: 345px;
+    height: 50px;
+    color: #fff;
+    background-color: #222;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+@media screen and (max-width:1024px) and (min-width:767px){
+
+    main {
+        width: 100%;
+}
+
+article {
+    width: 100%;
+}
+
+
+input {
+    width: 328px;
+    height: 48px;
+}
+
+input[name="email"] {
+    width: 151px;
+}
+
+
+select { 
+    height: 48px;
+    width: 80px;
+}
+
+
+
+.certification_number {
+    width: 190px;
+}
+
+.certification_check {
+    width: 126px;
+
+}
+
+
+button {
+    width: 328px;
+    height: 64px;
+    color: #fff;
+    background-color: #222;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+}
+
+/* 로그인 폼 */
+.login_wrap{
+    width:100%;
+    padding-top:128px;
+    text-align: center;
+}
+.title{
+    font-size:32px;
+}
+.login_tab{
+    width:100%;
+    margin:0 auto;
+    text-align: center;
+}
+.login_tab > ul{
+    width:200px;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    margin:50px auto;
+}
+input[type=radio]{
+    display:none;    
+}
+.login_box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+input[type=text]{
+    background: #fff;
+    color: #222;
+    font-size: 1em;
+    line-height: 46px;
+    text-indent:10px;
+}
+input[type=password]{
+    background: #fff;
+    color: #222;
+    font-size: 1em;
+    line-height: 46px;
+    text-indent:10px;
+}
+.remember_wrap{
+    width:324px;
+    margin:0px auto;
+}
+input[type=checkbox]{
+    width: 25px;
+    height: 25px;
 }

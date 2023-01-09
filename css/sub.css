@@ -1,2 +1,101 @@
 @charset "utf-8";
 
+.banner{
+    width:100%;
+    height:456px;
+    background-image:url(../images/intro/intro_banner.jpg);
+    background-repeat:no-repeat;
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section{
+    width:100%;
+    margin:0px auto;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.section article img{width:100%;display:block;}
+article{
+    width:1260px;
+    margin:0px auto;
+    text-align: center;
+}
+.article_1{padding:120px 0px;}
+.title{
+    font-size:96px;
+    font-family:'LushKR Handwritten OTF';
+}
+.title_sub{
+    font-size:32px;
+    padding-top:15px;
+}
+.s_top{
+    padding-top:50px;
+}
+.sub_title{
+    font-size:32px;
+    margin-bottom:20px;
+    line-height:42px;
+    letter-spacing:-0.9px;
+    text-align: center;
+}
+.desc{
+    font-size:16px;
+    line-height:24px;
+    letter-spacing:-0.45px;
+    color:#222;
+    text-align: center;
+}
+.article_2{padding-bottom:120px;}
+.article_3{padding-bottom:120px;}
+.article_4{padding-bottom:120px;}
+.article_5{margin-bottom:28px;}
+
+#intro_btn{
+    width:312px;height:64px;
+    background:#222;
+    color:#fff;
+    margin:0px auto;
+}
+
+@media screen and (max-width:1024px) and (min-width:767px){
+    article{width:100%;}
+    .title_sub, .sub_title{
+        font-size:32px;
+    }
+    .desc{
+        font-size:1rem;
+    }
+}
+@media screen and (max-width:766px) and (min-width:376px){
+    article{width:100%;}
+    .title{font-size:64px;}
+    .title_sub, .sub_title{
+        font-size:24px;
+    }
+    .desc{
+        font-size:12px;
+    }
+}
+@media screen and (max-width:375px){
+    article{width:100%;}
+    .title{font-size:32px;}
+    .title_sub, .sub_title{
+        font-size:18px;
+    }
+    .desc{
+        font-size:12px;
+    }
+    .article_2 .desc{
+        letter-spacing:-0.9px;
+    }
+    .article_4 .desc{
+        letter-spacing:0.8px;
+    }
+}

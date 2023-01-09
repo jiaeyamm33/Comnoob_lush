@@ -40,9 +40,14 @@ article{
 .sub_title{
     font-size:32px;
     margin-bottom:20px;
+    line-height:42px;
+    letter-spacing:-0.9px;
 }
 .desc{
     font-size:16px;
+    line-height:24px;
+    letter-spacing:-0.45px;
+    color:#222;
 }
 .article_2{padding-bottom:120px;}
 .article_3{padding-bottom:120px;}

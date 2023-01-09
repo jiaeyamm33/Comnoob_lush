@@ -20,6 +20,19 @@ footer{
     margin-top:160px;
     color:#fff;
 }
+.ethical{
+    background:#f2f2f2;
+    text-align: center;
+    padding:15px 0px;
+}
+.ethical > ul {
+    width:1260px;
+    margin:0px auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ethical > ul > li img{width:136px;}
 .t_btn{
     background:#222 url(../images/common/ico_footer_top.svg) no-repeat center center;
     background-repeat:no-repeat;

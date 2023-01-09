@@ -12,10 +12,15 @@
     align-items: center;
 }
 .section{
-    width:1260px;
+    width:100%;
     margin:0px auto;
     text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
 }
+.section img{width:100%;}
 article{
     margin:0px auto;
     text-align: center;
@@ -48,4 +53,5 @@ article{
     width:312px;height:64px;
     background:#222;
     color:#fff;
+    margin-bottom:50px;
 }

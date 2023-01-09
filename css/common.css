@@ -38,7 +38,7 @@ footer{
     grid-template-areas:
     "subscribe sns"
     "lnb lnb"
-    "infor inforl"
+    "infol infor"
 }
 .subscribe{
     grid-area: subscribe;

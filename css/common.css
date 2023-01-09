@@ -24,6 +24,8 @@ footer{
     background:#f2f2f2;
     text-align: center;
     padding:15px 0px;
+    display:flex;
+    justify-content: center;
 }
 .ethical > ul {
     width:1260px;

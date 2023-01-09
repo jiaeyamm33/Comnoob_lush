@@ -1,12 +1,76 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Gowun+Batang:wght@700&family=Lobster&family=Nanum+Gothic:wght@400;700&family=Nerko+One&family=Noto+Sans+KR:wght@400;500;700&family=Raleway&display=swap');
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
 a {
   cursor : pointer;
   text-decoration : none;
   color : #000;
 }
+@font-face {
+    font-family: 'LushKR Handwritten OTF';
+    src:url('../fonts/LUSHKR_Medium.otf');
+} 
+@font-face {
+    font-family: 'Lush';
+    src:url('../fonts/Lush.ttf');
+} 
 
+/* 푸터 영역 서식 */
+footer{
+    background:#000;
+    margin-top:160px;
+    color:#fff;
+    width: 100%;
+    height: 500px;
+}
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.ethical{
+    width:100%;
+    background:#f2f2f2;
+    text-align: center;
+    padding:15px 0px;
+    display:flex;
+    justify-content: center;
+}
+.ethical > ul {
+    width:1260px;
+    margin:0px auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ethical > ul > li img{width:136px;}
+.t_btn{
+    background:#222 url(../images/common/ico_footer_top.svg) no-repeat center center;
+    background-repeat:no-repeat;
+    width:56px;height:56px;
+    box-shadow:0px 4px 4px rgb(0,0,0,.25);
+    position:fixed;
+    right:10px;
+    bottom:50px;
+    font-size:0px;
+    text-indent: -9999px;
+    border-radius:50%;
+    display:none;
+}
+.f_wrap{
+    padding:50px 0px;
+    display:grid;
+    grid-template-areas:
+    "subscribe sns"
+    "lnb lnb"
+    "infol infor";
+    width: 1260px;
+    margin: 0px auto;
+}
 /* 헤더 영역 시작 */
 
 
@@ -17,11 +81,21 @@ header {
   width : 100%;
   /* background-color : #999; */
 }
+.subscribe{
+    grid-area: subscribe;
+    width: 630px;
+    height: 90px;
+    position: relative;
+}
 
 .inside_box {
   width : 1260px;
 }
 
+.subscribe p {
+    font-size: 14px;
+    line-height: 17px;
+}
 
 
 
@@ -34,12 +108,26 @@ header > #header_wrap {
   justify-content : space-between;
 }
 
+.subs_btn {
+    color: #fff;
+    background-color: #333;
+    width: 40px;
+    transform: translate(-5px, -2px);    font-size: 14px;
+    height: 30px;
+    position: absolute;
+    left: 395px;
+    top:2px;
+    border: none;
+}
 /* 헤더 로고 */
 #header_wrap > #logo {
   width : 103px;
   margin-right : 107px;
 }
 
+.preview {
+    text-decoration: underline;
+}
 /* 헤더 로고의 a 태그 */
 #header_wrap > #logo > a {
   line-height : 100px;
@@ -47,6 +135,11 @@ header > #header_wrap {
   color : #fff;
 }
 
+.sns{
+    grid-area: sns;
+    width: 630px;
+    text-align: center;
+}
 /* 1단 gnb 서식 */
 #header_wrap > #gnb {
   width : auto;
@@ -56,11 +149,18 @@ header > #header_wrap {
   padding-right : 250px;
 }
 
+.sns ul {
+    display: flex;
+    justify-content: center;
+}
 
 /* 1단 gnb의 직계 li들 */
 #header_wrap > #gnb > li {
 }
 
+.sns ul li {
+    margin: 0px 20px;
+}
 
 /* 1단 gnb의 직계 li들의 a태그 */
 #header_wrap > #gnb > li > a {
@@ -69,6 +169,10 @@ header > #header_wrap {
   color : #fff;
 }
 
+.sns ul li:first-child img {
+    width: 40px;
+    height: 40px;
+}
 
 /* gnb 백그라운드 */
 .gnb_bg{
@@ -83,10 +187,18 @@ header > #header_wrap {
 }
 
 
+.f_lnb{
+    margin: 25px 0px;
+    grid-area: lnb;
+}
 #gnb2_1,
 #gnb2_2,
 #gnb2_3 {
   display : none;
+}
+.f_info_r{
+    grid-area: infor;
+    height: 70px;
 }
 
 #gnb2_1 > li > a,
@@ -96,13 +208,24 @@ header > #header_wrap {
   display : inline-block;
   padding : 10px 10px 10px 0;
 }
+.f_info_l{
+    grid-area: infol;
+    display: flex;
+    height: 50px;
+  }
 
 .gnb a {
   color : #fff !important;
 }
 
 
+.corp_gift {
+    margin-left: 150px;
+}
 
+.cs_service, .corp_gift {
+    float: left;
+  }
 #gnb > li:first-child:hover #gnb2_1,
 #gnb > li:nth-child(3):hover #gnb2_2,
 #gnb > li:nth-child(4):hover #gnb2_3 {
@@ -114,23 +237,42 @@ header > #header_wrap {
   justify-content : space-between;
 }
 
+dl dt, dl dd {
+    line-height: 20px;
+  }
 #header_wrap > #gnb > li:hover > a,
 #gnb > li:first-child .gnb2 > li:hover a
 {
   color : #0f0;
 }
 
+dt {
+    font-weight: bold;
+}
 
+.cs_service::after, .corp_gift::after {
+    clear: both;
+  }
 #gnb > li:nth-child(3):hover #gnb2_2 {
   width : 500px;
   left : 620px;
 }
 
+.f_lnb > ul {
+    display: flex;
+    justify-content: space-between;
+  }
 #gnb > li:nth-child(4):hover #gnb2_3 {
   width : 300px;
   left : 870px;
 }
 
+address {
+    font-style: normal;
+    line-height: 20px;
+    padding-left: 20px;
+    margin-left: 100px;
+  }
 
 
 #gnb > li:first-child:hover .gnb_bg,
@@ -139,6 +281,13 @@ header > #header_wrap {
   display : block;
 }
 
+#sub_email {
+    width: 392px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #333;
+    border: none;
+  }
 
 
 
@@ -153,6 +302,10 @@ header > #header_wrap {
   align-items : center;
 }
 
+#sub_email::placeholder {
+    font-size: 16px;
+    color: #ccc;
+  }
 
 
 

@@ -53,6 +53,7 @@ a {
     font-size:0px;
     text-indent: -9999px;
     border-radius:50%;
+    display:none;
 }
 .f_wrap{
     padding:50px 0px;

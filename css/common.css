@@ -15,6 +15,11 @@
 } 
 
 /* 푸터 영역 서식 */
+footer{
+    background:#222;
+    margin-top:160px;
+    color:#fff;
+}
 .t_btn{
     background:#222 url(../images/common/ico_footer_top.svg) no-repeat center center;
     background-repeat:no-repeat;
@@ -26,4 +31,27 @@
     font-size:0px;
     text-indent: -9999px;
     border-radius:50%;
+}
+.f_wrap{
+    padding:50px 0px;
+    display:grid;
+    grid-template-areas:
+    "subscribe sns"
+    "lnb lnb"
+    "infor inforl"
+}
+.subscribe{
+    grid-area: subscribe;
+}
+.sns{
+    grid-area: sns;
+}
+.f_lnb{
+    grid-area: lnb;
+}
+.f_info_r{
+    grid-area: infor;
+}
+.f_info_l{
+    grid-area: infol;
 }

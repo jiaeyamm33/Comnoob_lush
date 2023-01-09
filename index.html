@@ -11,125 +11,144 @@
   <link rel="stylesheet" href="./css/common.css" type="text/css">
   <link rel="stylesheet" href="./css/main.css" type="text/css">
 
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
 
-  <style>
-
-    /* gnb 배경 체크박스 */
-    #gnb_toggle {
-    }
-
-    /* 헤더영역 서식 시작 */
-    header{
-      /* background-color : #ff0; */
-    }
-    header > article {
-      width : 1260px;       /* 콘텐츠 영역 확정 X */
-      margin : 0 auto;
-      /* background-color : #ccc; */
-      height : 60px;
-    }
-    h1 {
-      font-size : 40px;
-      padding-top : 10px;
-    }
-    header > article, header > article > ul{
-      display : flex;
-    }
-    header > article {
-      justify-content : space-between;
-    }
-    header > article > ul{
-      line-height : 50px;
-      margin-top : 10px;
-    }
-
-    header > article > ul >li{
-      margin-left : 50px;
-      font-size : 24px;
-    }
-    header > article > ul > li > label {
-      padding : 8px;      /* 선택영역 확장 */
-    }
-    header > article > div {
-      width : 40px; height : 40px;
-      background-color : #333;
-      margin-top : 10px;
-    }
-    #gnb_bg { /* gnb 백그라운드 */
-      background-color : #ccc;
-      width : 100%; height : 660px;
-      display : none;
-      position : absolute;
-      top : 0;left : 0;
-      transition : .5s;
-    }
-
-    .gnb_mnu:hover ~  #gnb_bg,
-    .gnb_mnu:hover ~ .gnb_mnu > li > label
-    {
-      display : block;
-      z-index : -1;
-      margin : 0;
-    }
-    
-    #gnb_bg:hover {
-      display : block;
-      z-index : -1;
-      margin : 0;
-    }
-
-
-
-  </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="./script/common.js"></script>
 </head>
 <body>
   <header>
-    <article>
-      <h1 class="logo">LUSH</h1>
-      <ul class="gnb_mnu">
-        <li><label for="gnb_toggle" >제품</label></li>
-        <li><label for="gnb_toggle" >매장안내</label></li>
-        <li><label for="gnb_toggle" >매거진</label></li>
-        <li><label for="gnb_toggle" >러쉬소개</label></li>
-        <li><label for="gnb_toggle" >이벤트</label></li>
+    <div id="header_wrap" class="inside_box ">
+      <h1 id="logo">
+        <a href="javascript:void(0);" title="main 바로가기">
+          LUSH
+        </a>
+      </h1>
+      <ul id="gnb">
+        <li>
+          <a href="#none" title="제품">제품</a>
+          <ul id="gnb2_1" class="gnb2">
+            <li><a href="#none" title="BEST">BEST</a></li>
+            <li><a href="#none" title="NEW">NEW</a></li>
+            <li><a href="#none" title="보디">보디</a></li>
+            <li><a href="#none" title="페이스">페이스</a></li>
+            <li><a href="#none" title="퍼퓸">퍼퓸</a></li>
+            <li><a href="#none" title="스파">스파</a></li>
+            <li><a href="#none" title="기프트">기프트</a></li>
+            <li><a href="#none" title="가치소비">가치소비</a></li>
+          </ul>
+          <div class="gnb_bg">&nbsp;</div>
+        </li>
+        <li>
+          <a href="#none" title="매장안내">매장안내</a>
+        </li>
+        <li>
+          <a href="#none" title="매거진">매거진</a>
+          <ul id="gnb2_2" class="gnb2">
+            <li><a href="#none" title="채러티팟 바로가기">채러티팟</a></li>
+            <li><a href="#none" title="커뮤니티 바로가기">커뮤니티</a></li>
+            <li><a href="#none" title="서명 캠페인 바로가기">서명 캠페인</a></li>
+          </ul>
+          <div class="gnb_bg">&nbsp;</div>
+        </li>
+        <li>
+          <a href="#none" title="러쉬소개">러쉬소개</a>
+          <ul id="gnb2_3" class="gnb2">
+            <li><a href="#none" title="러쉬소개 바로가기">러쉬소개</a></li>
+            <li><a href="#none" title="러쉬로운 바로가기">러쉬로운</a></li>
+          </ul>
+          <div class="gnb_bg">&nbsp;</div>
+        </li>
+        <li>
+          <a href="#none" title="이벤트">이벤트</a>
+        </li>
       </ul>
-      <div>아</div>
-      <div>이</div>
-      <div>콘</div>
-      <div>들</div>
-      <div id="gnb_bg"> </div>
-    </article>
+
+      <div class="icon_wrap">
+        <a href="#none" title="검색창">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#none" title="장바구니">
+          <i class="fa-light fa-cart-shopping"></i>   
+        </a>
+        <a href="#none" title="마이페이지">
+          <i class="fa-regular fa-face-smile"></i>
+        </a>
+        <a href="javescript:void(0);" title="고객센터">
+          <i class="fa-regular fa-comment"></i>
+        </a>
+      </div>
+
+    </div>
+
+
   </header>
 
-  <main>
-    <article>
-      <h2>
+  <main>                      <!--       메인 시작      -->
 
-      </h2>
-    </article>
-    <section>
-      <h2>
+    <article id="vid">         <!--  영상 배너 시작  -->
+      <h2>비디오</h2>
+    </article>                  <!--  영상 배너 끝  -->
 
-      </h2>
-    </section>
+    <section id="product">      <!--   best&new  시작  -->
+      <h2>product</h2>
+      <article id="pro_1">
+        <h2>newnewnew</h2>
 
-  </main>
+        <div class="new_banner">
+          <p>New Arrivals</p>
+          <p> dd </p>
+        </div>
 
-  <footer>
-    <!-- 회색 라벨 자리 -->
-    <div class="ethical">
-      <ul>
-        <li><a href="#none;" title="가치소비1"><img src="./images/common/ethical1.png" alt="가치소비1"></a></li>
-        <li><a href="#none;" title="가치소비2"><img src="./images/common/ethical2.png" alt="가치소비2"></a></li>
-        <li><a href="#none;" title="가치소비3"><img src="./images/common/ethical3.png" alt="가치소비3"></a></li>
-        <li><a href="#none;" title="가치소비4"><img src="./images/common/ethical4.png" alt="가치소비4"></a></li>
-        <li><a href="#none;" title="가치소비5"><img src="./images/common/ethical5.png" alt="가치소비5"></a></li>
-        <li><a href="#none;" title="가치소비6"><img src="./images/common/ethical6.png" alt="가치소비6"></a></li>
-      </ul>
+        <div class="new_slide">
+          <div class="new_pro"> </div>
+          <div class="new_pro"> </div>
+          <div class="new_pro"> </div>
+        </div>
+      </article>
+      <article id="pro_2">
+        <h2>bestbest</h2>
+        <div id="best_txt_box">
+          <h3 class="best_txt"> BEST </h3>
+          <p id="best_h2" class="best_txt"> 지금 가장 인기있는 제품을 만나보세요 </p>
+        </div>
+        <div id="best_product_box">
+          <div id="best_big_img"> </div>
+          <div id="best_small_box">
+            <ul>
+              <li><div class="best_small_img_"></div></li>
+              <li><div class="best_small_img_"></div></li>
+              <li><div class="best_small_img_"></div></li>
+              <li><div class="best_small_img_"></div></li>
+            </ul>
+          </div>
+        </div>
+      
+      </article>
+    </section>                 <!--   best&new  끝  -->
+    <section id="campaign">     <!--   캠페인 시작    -->
+
+      <article>
+        <h2>cam_1</h2>
+      </article>
+
+      <article>
+        <h2>cam_2</h2>
+      </article>
+
+    </section>                <!--   캠페인 끝    -->
+
+    <div id="bottom_box">  <!-- 이 친구 div article 뭐로 할까요?? -->
+
     </div>
+
+  </main>                       <!--   main 끝   -->
+
+  <footer>                      <!--     footer 시작      -->
+
+
 
     <!-- 푸터 영역 -->
     <div class="f_wrap">

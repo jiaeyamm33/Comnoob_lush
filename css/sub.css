@@ -42,12 +42,14 @@ article{
     margin-bottom:20px;
     line-height:42px;
     letter-spacing:-0.9px;
+    text-align: center;
 }
 .desc{
     font-size:16px;
     line-height:24px;
     letter-spacing:-0.45px;
     color:#222;
+    text-align: center;
 }
 .article_2{padding-bottom:120px;}
 .article_3{padding-bottom:120px;}
@@ -64,6 +66,27 @@ article{
 @media screen and (max-width:1024px) and (min-width:767px){
 
 }
-@media screen and (max-width:766px){
-
+@media screen and (max-width:766px) and (min-width:376px){
+    .title{font-size:64px;}
+    .title_sub, .sub_title{
+        font-size:24px;
+    }
+    .desc{
+        font-size:12px;
+    }
+}
+@media screen and (max-width:375px){
+    .title{font-size:32px;}
+    .title_sub, .sub_title{
+        font-size:18px;
+    }
+    .desc{
+        font-size:12px;
+    }
+    .article_2 .desc{
+        letter-spacing:-0.9px;
+    }
+    .article_4 .desc{
+        letter-spacing:1px;
+    }
 }

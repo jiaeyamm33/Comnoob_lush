@@ -16,10 +16,11 @@
 
 /* 푸터 영역 서식 */
 footer{
-    background:#222;
+    background:#000;
     margin-top:160px;
     color:#fff;
     width: 100%;
+    height: 500px;
 }
 
 a {
@@ -67,35 +68,109 @@ a {
 .subscribe{
     grid-area: subscribe;
     width: 630px;
+    height: 90px;
+    position: relative;
 }
 
 .subscribe p {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 17px;
 }
+
+.subs_btn {
+    color: #fff;
+    background-color: #333;
+    width: 40px;
+    transform: translate(-5px, -2px);    font-size: 14px;
+    height: 30px;
+    position: absolute;
+    left: 395px;
+    top:2px;
+    border: none;
+}
+
+.preview {
+    text-decoration: underline;
+}
+
 .sns{
     grid-area: sns;
     width: 630px;
+    text-align: center;
 }
+
+.sns ul {
+    display: flex;
+    justify-content: center;
+}
+
+.sns ul li {
+    margin: 0px 20px;
+}
+
+.sns ul li:first-child img {
+    width: 40px;
+    height: 40px;
+}
+
+
 .f_lnb{
+    margin: 25px 0px;
     grid-area: lnb;
 }
 .f_info_r{
     grid-area: infor;
+    height: 70px;
 }
 .f_info_l{
     grid-area: infol;
+    display: flex;
+    height: 50px;
+}
+
+
+.corp_gift {
+    margin-left: 150px;
+}
+
+.cs_service, .corp_gift {
+    float: left;
+}
+
+dl dt, dl dd {
+    line-height: 20px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+.cs_service::after, .corp_gift::after {
+    clear: both;
 }
 
 .f_lnb > ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+address {
+    font-style: normal;
+    line-height: 20px;
+    padding-left: 20px;
+    margin-left: 100px;
 }
 
 #sub_email {
-    width: 390px;
+    width: 392px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #333;
+    border: none;
 }
 
-.sns > img:first-child {
-    width: 40px;
-    height: 40px;
+#sub_email::placeholder {
+    font-size: 16px;
+    color: #ccc;
 }
+

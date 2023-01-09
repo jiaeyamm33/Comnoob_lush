@@ -64,7 +64,12 @@ article{
 }
 
 @media screen and (max-width:1024px) and (min-width:767px){
-
+    .title_sub, .sub_title{
+        font-size:32px;
+    }
+    .desc{
+        font-size:1rem;
+    }
 }
 @media screen and (max-width:766px) and (min-width:376px){
     .title{font-size:64px;}
@@ -87,6 +92,6 @@ article{
         letter-spacing:-0.9px;
     }
     .article_4 .desc{
-        letter-spacing:1px;
+        letter-spacing:0.8px;
     }
 }

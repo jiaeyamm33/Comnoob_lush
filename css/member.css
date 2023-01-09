@@ -22,9 +22,10 @@ input {
     width: 345px;
     height: 40px;
     margin-bottom: 15px;
-    border: 1px solid #222;
+    border: 1px solid #949494;
     color: #949494;
     text-indent:10px;
+    font-size:14px;
 }
 
 input[name="email"] {
@@ -97,7 +98,7 @@ button {
 
 @media screen and (max-width:1024px) and (min-width:767px){
 
-    main {
+main {
         width: 100%;
 }
 
@@ -107,8 +108,8 @@ article {
 
 
 input {
-    width: 328px;
-    height: 48px;
+    width: 345px;
+    height: 40px;
 }
 
 input[name="email"] {
@@ -134,8 +135,8 @@ select {
 
 
 button {
-    width: 328px;
-    height: 64px;
+    width: 345px;
+    height: 50px;
     color: #fff;
     background-color: #222;
     margin-top: 20px;
@@ -145,6 +146,9 @@ button {
 }
 
 /* 로그인 폼 */
+label{
+    font-size:14px;
+}
 .login_wrap{
     width:100%;
     padding-top:128px;
@@ -177,22 +181,72 @@ input[type=radio]{
 input[type=text]{
     background: #fff;
     color: #222;
-    font-size: 1em;
+    font-size: 14px;
+    border: 1px solid #949494;
+    height: 48px;
     line-height: 46px;
     text-indent:10px;
 }
 input[type=password]{
     background: #fff;
     color: #222;
-    font-size: 1em;
+    font-size: 14px;
+    border: 1px solid #949494;
+    height: 48px;
     line-height: 46px;
     text-indent:10px;
+    margin:0px;
 }
 .remember_wrap{
-    width:324px;
+    width:345px;
     margin:0px auto;
+    display:flex;
+    justify-content: baseline;
+    align-items:center;
 }
 input[type=checkbox]{
     width: 25px;
     height: 25px;
+    margin-top:15px;
+}
+input[type=submit]{
+    width:345px;
+    height:50px;
+    color:#fff;
+    background:#222;
+    margin:0px;
+}
+#log_txt{
+    width:345px;
+    margin:0px auto;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:50px 0px;
+}
+#log_txt a{
+    color:#222;
+    display:block;
+    font-size:14px;
+}
+
+.sns_login{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+#n_login{
+    width:345px;
+    height:50px;
+    background:#2db400;
+    color:#fff;
+    font-weight:700;
+}
+#k_login{
+    width:345px;
+    height:50px;
+    background: #fee500;
+    color:#222;
+    font-weight:700;
 }

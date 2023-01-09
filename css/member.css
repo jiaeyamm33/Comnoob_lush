@@ -24,6 +24,7 @@ input {
     margin-bottom: 15px;
     border: 1px solid #222;
     color: #949494;
+    text-indent:10px;
 }
 
 input[name="email"] {
@@ -147,7 +148,6 @@ button {
 .login_wrap{
     width:100%;
     padding-top:128px;
-    margin:0px auto;
     text-align: center;
 }
 .title{
@@ -178,9 +178,6 @@ input[type=text]{
     background: #fff;
     color: #222;
     font-size: 1em;
-    width:324px;
-    border: 1px solid #949494;
-    height: 48px;
     line-height: 46px;
     text-indent:10px;
 }
@@ -188,9 +185,6 @@ input[type=password]{
     background: #fff;
     color: #222;
     font-size: 1em;
-    width:324px;
-    border: 1px solid #949494;
-    height: 48px;
     line-height: 46px;
     text-indent:10px;
 }

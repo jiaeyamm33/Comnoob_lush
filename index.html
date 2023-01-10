@@ -16,7 +16,8 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="./script/common.js"></script>
+  <script src="./script/common.js" async></script>
+  <script src="./script/main.js" async></script>
 </head>
 <body>
   <header>
@@ -87,63 +88,88 @@
   </header>
 
   <main>                      <!--       메인 시작      -->
-
-    <article id="vid">         <!--  영상 배너 시작  -->
+    <section id="main_video_box" class="main_box"><!--  영상 배너 시작  -->
       <h2 class="hidden">메인영상</h2>
       <video src="./video/main.mp4" autoplay muted loop></video>
-    </article>          <!--  영상 배너 끝  -->
-
-    <section id="product">      <!--   best&new  시작  -->
-      <h2>product</h2>
-      <article id="pro_1">
-        <h2>newnewnew</h2>
-
-        <div class="new_banner">
-          <p>New Arrivals</p>
-          <p> dd </p>
-        </div>
-
-        <div class="new_slide">
-          <div class="new_pro"> </div>
-          <div class="new_pro"> </div>
-          <div class="new_pro"> </div>
-        </div>
-      </article>
-      <article id="pro_2">
-        <h2>bestbest</h2>
-        <div id="best_txt_box">
-          <h3 class="best_txt"> BEST </h3>
-          <p id="best_h2" class="best_txt"> 지금 가장 인기있는 제품을 만나보세요 </p>
-        </div>
-        <div id="best_product_box">
-          <div id="best_big_img"> </div>
-          <div id="best_small_box">
-            <ul>
-              <li><div class="best_small_img_"></div></li>
-              <li><div class="best_small_img_"></div></li>
-              <li><div class="best_small_img_"></div></li>
-              <li><div class="best_small_img_"></div></li>
+    </section>     <!--  영상 배너 끝  -->
+    <section id="product_box">
+      <div id="new_bg">
+        <article id="product_new" class="main_content_box">
+          <div id="new_left">
+            <h2>New Arrivals</h2>
+            <p><a href="#none" title="new 바로가기">새로운 제품 더 보기</a></p>
+          </div>
+          <div id="new_right">
+            <!-- ul 요소를 슬라이드 해야할듯!! -->
+            <ul id="new_list">
+              <li><img src="./images/new_pro_1.png" alt="new 제품 사진">
+              <div class="new_des">
+                <h3>
+                  <a href="#none" title="new 제품 바로가기">
+                    딥슬립
+                  </a>
+                </h3>
+                <p>
+                  배쓰 밤
+                </p>
+                <p>
+                  &#x20a9;1,5000
+                </p>
+              </div>
+            </li>
+              <li>
+                <img src="./images/new_pro_2.png" alt="new 제품 사진">
+                <div class="new_des">
+                  <h3>
+                    <a href="#none" title="new 제품 바로가기">
+                      골드 래빗
+                    </a>
+                  </h3>
+                  <p>
+                    배쓰 밤
+                  </p>
+                  <p>
+                    &#x20a9;1,5000
+                  </p>
+                </div>
+              </li>
+              <li>
+                <img src="./images/new_pro_3.png" alt="new 제품 사진">
+                <div class="new_des">
+                  <h3>
+                    <a href="#none" title="new 제품 바로가기">
+                      피닉스 솝 디시
+                    </a>
+                  </h3>
+                  <p>
+                    악세사리
+                  </p>
+                  <p>
+                    &#x20a9;1,5000
+                  </p>
+              </div>
+            </li>
+              <li><img src="./images/new_pro_4.png" alt="new 제품 사진"><div class="new_des">
+                <h3>
+                  <a href="#none" title="new 제품 바로가기">
+                    해피 페이스
+                  </a>
+                </h3>
+                <p>
+                  배쓰 밤
+                </p>
+                <p>
+                  &#x20a9;1,5000
+                </p>
+              </div></li>
             </ul>
           </div>
-        </div>
-      
+        </article>
+      </div>
+      <article id="product_best" class="main_content_box">
+
       </article>
-    </section>                 <!--   best&new  끝  -->
-    <section id="campaign">     <!--   캠페인 시작    -->
-
-      <article>
-        <h2>cam_1</h2>
-      </article>
-
-      <article>
-        <h2>cam_2</h2>
-      </article>
-
-    </section>                <!--   캠페인 끝    -->
-
-    <div id="bottom_box">  <!-- 이 친구 div article 뭐로 할까요?? -->
-
-    </div>
+    </section>
 
   </main>                       <!--   main 끝   -->
 

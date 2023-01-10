@@ -234,7 +234,6 @@ header > #header_wrap {
 #gnb > li:nth-child(4):hover #gnb2_3 {
   display : flex;
   position : absolute;
-  left : 533px;
   top : 100px;
   width : 700px;
   justify-content : space-between;

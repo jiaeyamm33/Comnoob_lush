@@ -382,6 +382,10 @@ address {
   .cs_service::after, .corp_gift::after {
     clear: both;
   }
+
+  .corp_gift {
+    margin-left: 50px;
+  }
   
   dt {
     font-weight: bold;
@@ -433,7 +437,7 @@ address {
   }
 
   .sns ul li {
-    margin: 0px;
+    margin: 0px 20px;
   }
   
   .sns ul li:first-child img {
@@ -444,5 +448,19 @@ address {
 .f_lnfo_l, .f_lnfo_r, .sns, .subscribe {
   width: auto;
 }
+
+
+.subs_btn {
+  color: #fff;
+  background-color: #333;
+  width: 40px;
+  text-indent: 0px;
+  font-size: 0.8em;
+  height: 30px;
+  border: none;
+  position: absolute;
+  left: 350px;
+}
+
 
 }

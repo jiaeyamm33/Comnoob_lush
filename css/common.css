@@ -47,17 +47,7 @@ header > #header_wrap {
   justify-content : space-between;
 }
 
-.subs_btn {
-    color: #fff;
-    background-color: #333;
-    width: 40px;
-    transform: translate(-5px, -2px);    font-size: 14px;
-    height: 30px;
-    position: absolute;
-    left: 395px;
-    top:2px;
-    border: none;
-}
+
 /* 헤더 로고 */
 #header_wrap > #logo {
   width : 103px;
@@ -284,7 +274,6 @@ dt {
 
 .f_info_l{
   grid-area: infol;
-  display: flex;
   height: 50px;
 }
 
@@ -315,6 +304,18 @@ dt {
   border: none;
 }
 
+.subs_btn {
+  color: #fff;
+  background-color: #333;
+  width: 40px;
+  transform: translate(-5px, -2px);    font-size: 14px;
+  height: 30px;
+  position: absolute;
+  left: 395px;
+  top:2px;
+  border: none;
+  text-indent: 0px;
+}
 
 address {
   font-style: normal;
@@ -471,6 +472,7 @@ address {
     margin-top:160px;
     color:#fff;
     width: 100%;
+    height: auto;
   }
   
   a {
@@ -498,7 +500,7 @@ address {
 
   .f_wrap{
     width: 100%;
-    padding-left: 30px;
+    padding-left: 25px;
     display: block;
   }
   
@@ -510,26 +512,22 @@ address {
   }
   
   .subscribe p {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 0.9em;
+    line-height: 1.1em;
   }
   
   .corp_gift {
     margin-left: 0px;
   }
   
-  
+  .corp_gift, .cs_service {
+    width: 50%;
+    margin-bottom: 30px;
+  }
   
   dt {
     font-weight: bold;
   }
-  
-  
-  .f_info_l{
-    width: 100%;
-    display: flex;
-  }
-  
   
   .f_lnb{
     margin: 25px 0px;
@@ -550,15 +548,26 @@ address {
 
   .f_lnb > ul li {
     margin-right: 40px;
-    margin-top: 20px;
+    padding: 10px 0px;
+  }
+
+  .f_lnb > ul li {
+
   }
   
   #sub_email {
-    width: 350px;
+    width: 405px;
     height: 30px;
     margin-bottom: 10px;
     background-color: #333;
     border: none;
+  }
+
+  .subs_btn {
+    transform: translate(-5px, -2px);    font-size: 0.9em;
+    height: 30px;
+    left: 405px;
+
   }
   
   address {
@@ -566,9 +575,11 @@ address {
     line-height: 20px;
     width: 100%;
     margin: 0px;
+    padding: 0px;
   }
   
   .sns{
+    margin: 20px 0px;
     width: 100%;
     text-align: center;
   }
@@ -577,10 +588,6 @@ address {
     margin: 0px 20px;
   }
   
-  .sns ul li:first-child img {
-    width: 40px;
-    height: 40px;
-  }
 
 
 }

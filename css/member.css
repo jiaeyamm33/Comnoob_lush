@@ -43,17 +43,22 @@ input[name="email"] {
     margin-bottom: 15px;
 }
 
+#tell{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom:15px;
+}
 select { 
     height: 40px;
     width: 90px;
-    transform: translate(3px,-7.5px);
     text-align: center;
     color: #949494;
 }
 
 .tel_num2 {
     width: 255px;
-    transform: translateX(-3px);
+    margin:0px;
 }
 
 .check_box {
@@ -234,7 +239,7 @@ input[type=text]{
     line-height: 46px;
     text-indent:10px;
 }
-input[type=password]{
+#l_password{
     background: #fff;
     color: #222;
     font-size: 14px;

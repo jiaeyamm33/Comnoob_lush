@@ -203,3 +203,106 @@ main{
   color:#222;
   padding:10px 40px;
 }
+
+
+
+
+
+
+/* 베스트 영역 서식 시작  */
+
+#product_best {
+}
+
+
+#best_left{
+  height : 90px;
+  position : relative;
+  color : #000;
+  top : 20px;
+}
+
+#best_left > h2,
+#best_left > p {
+  position : absolute;
+}
+
+#best_left > h2{
+  left : 0;
+  top : 0;
+  font-size : 50px;
+}
+
+#best_left > p{
+  font-size : 16px;
+  left : 0;
+  bottom : 0;
+}
+#best_left > p > a {
+  color : #555;
+}
+
+
+
+#best_wrap_box {
+  display : flex;
+  justify-content : space-between;
+}
+
+
+#best_wrap_box > .best_product_box {
+  width : 500px;
+  height : 500px;
+}
+
+#best_wrap_box > .best_product_box:last-child > div {
+  width : 200px;
+  height : 250px;
+  position : relative;
+}
+
+#best_wrap_box > .best_product_box:last-child > div .best_des_box {
+  position : absolute;
+  left : 0; bottom : 0;
+  width : 200px;
+  height : 150px;
+  border : 1px solid #000;
+  box-sizing : border-box;
+}
+
+#best_wrap_box > .best_product_box:last-child > div .best_des{
+  height : 50px;
+  position : absolute;
+  left : 10px;
+  bottom : 10px;
+}
+
+
+
+
+
+#best_wrap_box > .best_product_box:first-child {
+  display : flex;
+  justify-content: center;
+  align-items : center;
+}
+
+#best_wrap_box > .best_product_box:first-child img {
+  width : 400px;
+  height : 400px;
+}
+
+#best_wrap_box > .best_product_box:last-child img {
+  width : 200px; height : 200px;
+  position : absolute;
+  left : 0; top : 0;
+  z-index : 800;
+}
+
+
+#best_wrap_box > .best_product_box:last-child {
+  display : flex;
+  flex-wrap : wrap;
+  justify-content : space-between;
+  align-content : space-between;
+}

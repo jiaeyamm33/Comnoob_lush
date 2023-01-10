@@ -5,6 +5,7 @@
     height:456px;
     background-image:url(../images/intro/intro_banner.jpg);
     background-repeat:no-repeat;
+    background-size: cover;
     color:#fff;
     display:flex;
     flex-direction: column;

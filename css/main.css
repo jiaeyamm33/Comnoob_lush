@@ -159,17 +159,17 @@ main{
   align-items: center;
 }
 .c_left{
-  width:630px;
+  width:100%;
   margin:0px auto;
   display:flex;
   justify-content: center;
   align-items: center;
 }
 .c_left a img{
-  width:500px;weight:500px;
+  width:500px;height:500px;
 }
 .c_right{
-  width:630px;
+  width:100%;
   margin:0px auto;
   display:flex;
   flex-direction: column;
@@ -305,4 +305,32 @@ main{
   flex-wrap : wrap;
   justify-content : space-between;
   align-content : space-between;
+}
+
+/* 미디어 스크린 */
+
+/* 태블릿 */
+@media screen and (max-width:1024px) and (min-width:767px){
+
+  /* WE BELIEVE LUSH 서식 */
+  
+
+}
+
+/* 모바일 */
+@media screen and (max-width:766px) and (min-width:1px) {
+    /* WE BELIEVE LUSH 서식 */
+    .b_title{
+      font-size:64px;
+    }
+    .b_sub{
+      font-size:24px;
+    }
+      /* 캠페인 영역 서식 */
+      .charity{
+        flex-direction:column;
+      }
+      .c_right h3{
+        padding-top:50px;
+      }
 }

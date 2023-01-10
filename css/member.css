@@ -43,17 +43,22 @@ input[name="email"] {
     margin-bottom: 15px;
 }
 
+#tell{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom:15px;
+}
 select { 
     height: 40px;
     width: 90px;
-    transform: translate(3px,-7.5px);
     text-align: center;
     color: #949494;
 }
 
 .tel_num2 {
     width: 255px;
-    transform: translateX(-3px);
+    margin:0px;
 }
 
 .check_box {
@@ -92,6 +97,9 @@ select {
     height: 25px;
     line-height: 25px;
     color: #222;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
@@ -231,12 +239,11 @@ input[type=text]{
     line-height: 46px;
     text-indent:10px;
 }
-input[type=password]{
+#l_password{
     background: #fff;
     color: #222;
     font-size: 14px;
     border: 1px solid #949494;
-    height: 48px;
     line-height: 46px;
     text-indent:10px;
     margin:0px auto;
@@ -248,7 +255,7 @@ input[type=password]{
     justify-content: baseline;
     align-items:center;
 }
-input[type=checkbox]{
+#save_id{
     width: 25px;
     height: 25px;
     margin-top:15px;

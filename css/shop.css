@@ -23,7 +23,7 @@
 .shop_subbanner > .shop_subbanner_text > p {
   font-size: 32px;
   font-weight: bold;
-  padding-top:15px;
+  padding-top:40px;
   text-align: center;
 }
 
@@ -62,7 +62,6 @@
   width: 100%;
   max-width: 1260px;
   margin: 0 auto 50px;
-  padding: 0 15px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -110,6 +109,11 @@
   width: 100%;
   max-width: 300px;
   padding-top: 50px;
+}
+@media screen and (max-width:1024px){
+  .shop_itemlist {
+    padding: 0 15px;
+  }
 }
 @media screen and (max-width:1024px) and (min-width:375px){
   .shop_itemlist {

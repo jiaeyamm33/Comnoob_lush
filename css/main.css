@@ -1,77 +1,108 @@
 @charset "utf-8";
 
-/*           메인 영역 시작           */
 
-#vid {
+main{
   width : 100%;
-  height : 100vh;
-  border-bottom : 2px solid #000;
-  position: relative;
-  z-index: -1;
 }
-#product {
-  height : 1600px;
+
+
+#main_video_box {
+  height : 950px;
+  background-color : #ccc;
 }
-main section[id=product] article {
-  height : 800px;
-  border-bottom : 2px solid #000;
-  background-color : rgb(148, 148, 39);
+
+.main_box {
+  height : 950px;
+  width : 100%;
 }
-#pro_1 {
+
+/* 메인 안쪽 상자 가로 길이 고정 중앙정렬 */
+.main_content_box {
+  height : 950px;
+  width : 1260px;
+  margin : 0 auto;
+}
+
+#new_bg {
+  background-image : url('../images/main_new_bg.jpg');
+  background-repeat : no-repeat;
   position : relative;
 }
 
-main section[id=campaign] article {
-  height : 800px;
-  border-bottom : 2px solid #000;
-  background-color : #f0f;
-}
-h2{
-  display : inline-block;
-}
-main div[id=bottom_box] {
-  height : 140px;
-  background-color : #aaa;
+
+/* new 영역 왼쪽 텍스트 */
+#new_left{
+  height : 120px;
+  position : relative;
+  color : #fff;
+  top : 500px;
 }
 
-#pro_1 > .new_slide {                 /* 제품 section 시작 */
-  width : 1270px;
-  height : 400px;
+#new_left > h2,
+#new_left > p {
   position : absolute;
-  left : 650px;
-  top : 330px;
-  background-color : #ccc;
+}
+
+#new_left > h2{
+  left : 0;
+  top : 0;
+  font-size : 50px;
+}
+
+#new_left > p{
+  width : 170px;
+  height : 40px;
+  border : 1px solid #fff;
+  font-size : 16px;
+  text-align : center;
+  left : 0;
+  bottom : 0;
+}
+#new_left > p > a {
+  color : #fff;
+  line-height : 40px;
+  display : block;
+}
+
+
+#new_right {
+  position : absolute;
+  height : 400px;
+  top : 220px;
+  left : 600px;
+}
+
+#new_list {
   display : flex;
+  width : 1500px;
   justify-content : space-between;
 }
+#new_list > li{
+  position : relative;
+  width : 300px;
+  height : 400px;
+}
 
-#pro_1 > .new_banner {
+#new_list > li > img {
+  position : relative;
+  z-index : 9999;
+}
+
+.new_des {
   width : 300px;
   height : 250px;
   position : absolute;
-  top : 480px;
+  top : 150px;
+  left : 0;
+  background-color : #eee;
 }
 
-#pro_1 > .new_banner > p:first-child,
-#pro_1 > .new_banner > p:last-child{
-  text-indent : 30px;
+.new_des > h3{
+  padding-bottom : 10px;
+  font-size : 1.25rem;
+  line-height : 24px;
+  margin : 140px 0 10px 30px;   
 }
-
-#pro_1 > .new_banner > p:first-child {
-  font-size : 40px;   /* 피그마에선 50입니다. */
-  color : #fff;
-  line-height : 50px;
-  padding-top : 60px;;
-  margin-bottom : 30px;
-}
-
-#pro_1 > .new_banner > p:last-child{
-  font-size : 40px;
-  color : #fff;
-  margin-bottom : auto;
-}
-
-#pro_1 > .new_slide > .new_pro{          /* new 제품 슬라이드 */
-  height : 400px; width : 300px;
-  background-color : #f0f;
+.new_des p {
+  margin : 0 0 10px 30px;
 }

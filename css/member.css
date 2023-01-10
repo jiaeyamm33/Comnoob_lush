@@ -239,7 +239,7 @@ input[type=password]{
     height: 48px;
     line-height: 46px;
     text-indent:10px;
-    margin:0px;
+    margin:0px auto;
 }
 .remember_wrap{
     width:345px;

@@ -290,14 +290,14 @@ input[type=submit]{
 #n_login{
     width:345px;
     height:50px;
-    background:#2db400;
+    background:#2db400 url(../images/member/naver.png) no-repeat center left 24px;
     color:#fff;
     font-weight:700;
 }
 #k_login{
     width:345px;
     height:50px;
-    background: #fee500;
+    background: #fee500 url(../images/member/kakao.png) no-repeat center left 24px;
     color:#222;
     font-weight:700;
 }

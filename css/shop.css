@@ -92,7 +92,7 @@
 .shop_itemlist > .product > img {
   width: 100%;
   position: absolute;
-  top: -50%;
+  top: calc(-50% - 25px);
   left: 0;
   transition: .3s ease;
 }

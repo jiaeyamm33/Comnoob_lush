@@ -83,6 +83,9 @@ article{
     .desc{
         font-size:12px;
     }
+    .article_2 .sub_title{
+        letter-spacing: -1.1px;
+    }
 }
 @media screen and (max-width:375px){
     article{width:100%;}

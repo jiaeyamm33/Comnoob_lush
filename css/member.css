@@ -301,3 +301,45 @@ input[type=submit]{
     color:#222;
     font-weight:700;
 }
+.l_tab{
+    display:none;
+}
+.r_tab{
+    display:none;
+}
+#reg:checked ~ article .login_tab .l_tab{display:block;}
+article .login_tab > ul >li:first-child{
+    position:relative;
+}
+#reg:checked ~ article .login_tab > ul >li:first-child::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    left:0;bottom:-5px;
+    border-bottom:2px solid #222;
+}
+#n_reg:checked ~ article .login_tab .r_tab{display:block;}
+article .login_tab > ul >li:last-child{
+    position:relative;
+}
+#n_reg:checked ~ article .login_tab > ul >li:last-child::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    left:0px;bottom:-5px;
+    border-bottom:2px solid #222;
+}
+
+
+.unknown{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.forgot{
+    color:#949494;
+    margin-top:50px;
+    text-align: center;
+    font-size:14px;
+}

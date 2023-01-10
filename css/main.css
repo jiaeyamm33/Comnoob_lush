@@ -111,7 +111,39 @@ main{
 }
 
 /* WE BELIEVE LUSH 서식 */
-.believe{
+.b_wrap{
   width:100%;height:950px;
   background:url(../images/main/webelievelush.jpg)no-repeat;
+  background-size: cover;
+}
+.believe{
+  width:100%;height:950px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+.b_sub, .b_title, .b_btn{
+  font-family:'Lush';
+  color:#fff;
+  padding:20px 0px;
+}
+.b_sub{
+  font-size:36px;
+}
+.b_title{
+  font-size:94px;
+}
+.b_btn{
+  padding:0px;
+  margin-top:300px;
+  font-size:16px;
+  border:2px solid #fff;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+.b_btn > a{
+  display:block;
+  padding:20px;
 }

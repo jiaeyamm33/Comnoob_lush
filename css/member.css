@@ -296,15 +296,17 @@ input[type=submit]{
     width:345px;
     height:50px;
     background:#2db400 url(../images/member/naver.png) no-repeat center left 24px;
-    color:#fff;
-    font-weight:700;
+    letter-spacing: -0.45px;
+    color: #fff;
+    text-align: center;
 }
 #k_login{
     width:345px;
     height:50px;
     background: #fee500 url(../images/member/kakao.png) no-repeat center left 24px;
     color:#222;
-    font-weight:700;
+    letter-spacing: -0.45px;
+    text-align: center;
 }
 .l_tab{
     display:none;

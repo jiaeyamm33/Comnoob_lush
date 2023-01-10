@@ -62,10 +62,12 @@ select {
 }
 
 .check_box {
-    width: 20px;
-    height: 20px;   
     border-radius: 7px;
     margin-bottom: 3px;
+}
+input[type=checkbox]{
+    accent-color: #222;
+    width:20px;height:20px;
 }
 
 .certification_number {
@@ -256,8 +258,6 @@ input[type=text]{
     align-items:center;
 }
 #save_id{
-    width: 25px;
-    height: 25px;
     margin-top:15px;
 }
 input[type=submit]{

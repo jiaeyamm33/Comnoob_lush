@@ -238,14 +238,14 @@ a {
   "subscribe sns"
   "lnb lnb"
   "infol infor";
-  width: 1260px;
+  max-width: 1260px;
   margin: 0px auto;
+  width: 100%;
 }
 
 
 .subscribe{
   grid-area: subscribe;
-  width: 630px;
   height: 90px;
   position: relative;
 }
@@ -294,6 +294,7 @@ dt {
 .f_lnb > ul {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #sub_email {
@@ -576,6 +577,7 @@ address {
     width: 100%;
     margin: 0px;
     padding: 0px;
+    font-size: 0.9em;
   }
   
   .sns{

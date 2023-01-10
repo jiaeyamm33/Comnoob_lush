@@ -150,6 +150,8 @@ main{
 
 /* 캠페인 영역 서식 */
 .charity{
+  max-width:1260px;
+  width:100%;
   padding-top:100px;
   margin:0px auto;
   display:flex;

@@ -147,3 +147,30 @@ main{
   display:block;
   padding:20px;
 }
+
+/* 캠페인 영역 서식 */
+.charity{
+  width:1260px;
+  margin:0px auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.c_left{
+  width:50%;
+  margin:0px auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.c_left a img{
+  width:500px;weight:500px;
+}
+.c_right{
+  width:50%;
+  margin:0px auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}

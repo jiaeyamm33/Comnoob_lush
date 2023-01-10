@@ -19,6 +19,9 @@ a {
     src:url('../fonts/Lush.ttf');
 } 
 
+/* 가리기 */
+.hidden {display: none;}
+
 /* 푸터 영역 서식 */
 footer{
     background:#000;

@@ -151,6 +151,7 @@ main{
 /* 캠페인 영역 서식 */
 .charity{
   width:1260px;
+  padding-top:100px;
   margin:0px auto;
   display:flex;
   justify-content: center;
@@ -173,4 +174,31 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items:center;
+}
+.c_right h3{
+  font-size:24px;
+  padding-bottom:24px;
+  line-height: 36px;
+  text-align: center;
+}
+.c_right p{
+  font-size:1rem;
+  line-height:32px;
+  padding:10px 0px;
+  text-align: center;
+}
+.social_icons{
+  width:450px;height:43px;
+  background-image: url(../images/main/social\ icons.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.c_zoom{
+  border:2px solid #949494;
+  margin-top:20px;
+}
+.c_zoom > a{
+  display:block;
+  color:#222;
+  padding:10px 40px;
 }

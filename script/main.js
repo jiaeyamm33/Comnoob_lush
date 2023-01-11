@@ -15,9 +15,9 @@ $(function(){
   }, {passive:false});
   $(window).scroll(function(){
     if($(this).scrollTop() >= $('#main_video_box').height()-100){
-      $('header').css('background-color','#000');
+      $('#pc_header').css('background-color','#000');
     } else {
-      $('header').css('background-color','');
+      $('#pc_header').css('background-color','');
     }
   });
 });

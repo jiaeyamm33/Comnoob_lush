@@ -26,7 +26,7 @@ a {
 /* 헤더 영역 시작 */
 
 
-header {
+#pc_header {
   position : relative;
   left : 0;
   top : 0;
@@ -36,7 +36,7 @@ header {
 }
 
 /* 헤더 안쪽 상자 */
-header > #header_wrap {
+#pc_header > #header_wrap {
   width: 100%;
   max-width: 1260px;
   height : 100px;

@@ -9,8 +9,15 @@ $(function(){
   window.addEventListener('wheel',function(e){
     if(stopScroll == 0 && e.deltaY > 0 && $(this).scrollTop() == 0){
       e.preventDefault();
-      $('html, body').animate({scrollTop: $('#main_video_box').height()}, 'slow');
+      $('html, body').animate({scrollTop: $('#main_video_box').height()-100}, 'slow');
       stopScroll = 1;
     }
   }, {passive:false});
+  $(window).scroll(function(){
+    if($(this).scrollTop() >= $('#main_video_box').height()-100){
+      $('header').css('background-color','#000');
+    } else {
+      $('header').css('background-color','');
+    }
+  });
 });

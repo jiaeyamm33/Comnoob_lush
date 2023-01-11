@@ -51,16 +51,3 @@ uLogbtn.addEventListener('submit', function(e) {
         swal('주문자명 오류', '주문자명를 확인해주세요.', 'error');
     }
 });
-
-let signBtn = document.getElementById('s_done');
-
-signBtn.addEventListener('submit', function(e){
-
-    e.preventDefault();
-
-    swal('회원가입', '완료', 'success');
-
-    setTimeout(function() {
-        location.href = 'login.html';
-    }, 2000);
-});

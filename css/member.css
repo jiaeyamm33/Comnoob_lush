@@ -6,7 +6,7 @@ main {
 
 h2 {
     text-align: center;
-    margin-bottom: 128px;
+    margin:100px 0px 50px 0px;
     font-size: 32px;
 }
 
@@ -212,7 +212,6 @@ label{
 }
 .login_wrap{
     width:100%;
-    padding-top:128px;
     text-align: center;
 }
 .title{

@@ -5,6 +5,10 @@ main{
   width : 100%;
 }
 
+header {
+  position: fixed;
+}
+
 
 #main_video_box {
   width: 100%;

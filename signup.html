@@ -11,6 +11,10 @@
     <!-- 폰트어썸 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" type="text/css">
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
+    <!-- sweet alert -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="./script/signup.js" defer></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
 </head>
 <body>
     <header>
@@ -79,7 +83,7 @@
     <main>
         <article>
         <h2>회원가입</h2>
-        <form action="login.php" method="post" name="sign_up" class="input_block com_input">
+        <form action="login.php" method="post" name="sign_up" class="input_block com_input" id="s_done">
             <input type="text" placeholder=" 아이디" required>
             <input type="password" name="password" id="password" placeholder=" 비밀번호" class="input_block" required>
             <input type="password" name="paassword" id="password_check" placeholder=" 비밀번호 확인" class="input_block" required>
@@ -104,7 +108,7 @@
             <div class="sms"><input type="checkbox" name="체크박스" class="check_box">정보/이벤트 메일 수신에 동의합니다.</div>
             <div class="sms">
             <input type="checkbox" name="" id="" class="check_box">정보/이벤트 문자 수신에 동의합니다.</div>
-            <input type="submit" value="회원가입">
+            <input type="submit" value="회원가입" id="signUp">
         </form>
     </article>
     </main>

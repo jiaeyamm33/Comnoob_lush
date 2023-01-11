@@ -7,6 +7,12 @@ main{
 
 header {
   position: fixed;
+  background-color: transparent;
+  transition: .3s ease;
+}
+
+header:hover {
+  background-color: #000;
 }
 
 

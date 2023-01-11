@@ -21,7 +21,8 @@ header:hover {
   height : 100vh;
   background-color : #ccc;
   position: relative;
-  z-index: -1;
+  overflow: hidden;
+  z-index: -9999;
 }
 
 .main_box {
@@ -40,6 +41,7 @@ header:hover {
   background-image : url('../images/main_new_bg.jpg');
   background-repeat : no-repeat;
   position : relative;
+  overflow: hidden;
 }
 
 
@@ -156,6 +158,7 @@ header:hover {
 .b_btn > a{
   display:block;
   padding:20px;
+  color: #fff;
 }
 
 /* 캠페인 영역 서식 */
@@ -217,7 +220,7 @@ header:hover {
 
 
 
-
+/* ------------------------------------------------------------------------- */
 
 /* 베스트 영역 서식 시작  */
 
@@ -256,17 +259,32 @@ header:hover {
 
 #best_wrap_box {
   display : flex;
-  justify-content : space-between;
+  justify-content : space-around;
 }
 
 
-#best_wrap_box > .best_product_box {
+#best_wrap_box > .best_product_box:first-child {
   width : 500px;
+  height : 500px;
+  position : relative;
+}
+
+#best_wrap_box > .best_product_box:first-child #best_big_tray {
+  width : 500px;
+  height : 300px;
+  border : 1px solid #000;
+  position : absolute;
+  bottom : 0;
+  z-index : -1;
+}
+
+#best_wrap_box > .best_product_box:last-child {
+  width : 520px;
   height : 500px;
 }
 
 #best_wrap_box > .best_product_box:last-child > div {
-  width : 200px;
+  width : 210px;
   height : 250px;
   position : relative;
 }
@@ -274,18 +292,30 @@ header:hover {
 #best_wrap_box > .best_product_box:last-child > div .best_des_box {
   position : absolute;
   left : 0; bottom : 0;
-  width : 200px;
+  width : 210px;
   height : 150px;
   border : 1px solid #000;
   box-sizing : border-box;
+  z-index : -1;
 }
 
 #best_wrap_box > .best_product_box:last-child > div .best_des{
-  height : 50px;
+  /* height : 50px; */
+  height : 70px;
   position : absolute;
   left : 10px;
   bottom : 10px;
 }
+
+
+#best_wrap_box > .best_product_box:last-child > div .best_des > h3 {
+  padding-bottom : 10px;
+}
+
+#best_wrap_box > .best_product_box:last-child > div .best_des > p {
+  padding-bottom : 5px;
+}
+
 
 
 
@@ -298,17 +328,15 @@ header:hover {
 }
 
 #best_wrap_box > .best_product_box:first-child img {
-  width : 400px;
-  height : 400px;
+  width : 600px;
+  height : 600px;
 }
 
 #best_wrap_box > .best_product_box:last-child img {
-  width : 200px; height : 200px;
+  width : 210px; height : 200px;
   position : absolute;
   left : 0; top : 0;
-  z-index : 800;
 }
-
 
 #best_wrap_box > .best_product_box:last-child {
   display : flex;
@@ -316,6 +344,18 @@ header:hover {
   justify-content : space-between;
   align-content : space-between;
 }
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
 
 /* 미디어 스크린 */
 

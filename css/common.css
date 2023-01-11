@@ -109,14 +109,14 @@ header > #header_wrap {
   display : none;
 }
 
-#gnb2_1,
-#gnb2_2,
-#gnb2_3 {
+.gnb2 {
   position : absolute;
-  bottom: 0;
-  display : flex;
+  bottom: -40px;
+  display : none;
+}
+#gnb > li:hover > .gnb2 {
+  display: flex;
   gap: 30px;
-  transition: .5s ease;
 }
 
 #gnb2_1 > li > a,
@@ -131,17 +131,11 @@ header > #header_wrap {
   color : #fff !important;
 }
 
-#gnb > li:first-child:hover #gnb2_1,
-#gnb > li:nth-child(3):hover #gnb2_2,
-#gnb > li:nth-child(4):hover #gnb2_3 {
-  bottom: -40px;
-}
-
 dl dt, dl dd {
     line-height: 20px;
   }
 #header_wrap > #gnb > li:hover > a,
-#gnb > li:first-child .gnb2 > li:hover a
+#gnb > li .gnb2 > li:hover a
 {
   color : #ccc;
 }

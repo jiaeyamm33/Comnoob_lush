@@ -36,8 +36,8 @@ uLogbtn.addEventListener('submit', function(e) {
 
     e.preventDefault();
 
-    if(id == 'test') {
-        if(pw == '1234') {
+    if(uId == 'test') {
+        if(uPw == '1234') {
             swal('로그인 성공', '로그인 되었습니다.', 'success');
             setTimeout(function() {
                 location.href = 'index.html';
@@ -45,7 +45,7 @@ uLogbtn.addEventListener('submit', function(e) {
         } else {
             swal('주문번호 오류', '주문번호를 확인해주세요.', 'error');
         } 
-    } else if((id == '') || (pw == '')) {
+    } else if((uId == '') || (uPw == '')) {
         swal('입력 오류', '주문자명이나 주문번호를 입력해주세요.', 'error');
     } else {
         swal('주문자명 오류', '주문자명를 확인해주세요.', 'error');

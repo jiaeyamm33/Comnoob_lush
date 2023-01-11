@@ -20,3 +20,5 @@ logbtn.addEventListener('click', function() {
         swal('아이디 오류', '아이디를 확인해주세요.', 'error');
     }
 })
+
+let ulogbtn = document.getElementById('logbtn');

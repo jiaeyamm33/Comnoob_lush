@@ -112,7 +112,11 @@ header > #header_wrap {
 #gnb2_1,
 #gnb2_2,
 #gnb2_3 {
-  display : none;
+  position : absolute;
+  bottom: 0;
+  display : flex;
+  gap: 30px;
+  transition: .5s ease;
 }
 
 #gnb2_1 > li > a,
@@ -130,10 +134,7 @@ header > #header_wrap {
 #gnb > li:first-child:hover #gnb2_1,
 #gnb > li:nth-child(3):hover #gnb2_2,
 #gnb > li:nth-child(4):hover #gnb2_3 {
-  display : flex;
-  position : absolute;
-  top : 100px;
-  gap: 30px;
+  bottom: -40px;
 }
 
 dl dt, dl dd {
@@ -188,7 +189,7 @@ footer{
   height: 500px;
 }
 
-a {
+footer a {
   text-decoration: none;
   color: #fff;
 }

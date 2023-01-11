@@ -22,7 +22,7 @@ header:hover {
   background-color : #ccc;
   position: relative;
   overflow: hidden;
-  z-index: -9999;
+  z-index: -1;
 }
 
 .main_box {
@@ -100,7 +100,6 @@ header:hover {
 
 #new_list > li > img {
   position : relative;
-  z-index : 9999;
 }
 
 .new_des {

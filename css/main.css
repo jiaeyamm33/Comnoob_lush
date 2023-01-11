@@ -230,7 +230,7 @@ header:hover {
   height : 90px;
   position : relative;
   color : #000;
-  top : 20px;
+  top : 100px;
 }
 
 #best_left > h2,
@@ -258,6 +258,8 @@ header:hover {
 #best_wrap_box {
   display : flex;
   justify-content : space-around;
+  align-items : center;
+  transform : translateY(100px);
 }
 
 
@@ -265,6 +267,7 @@ header:hover {
   width : 500px;
   height : 500px;
   position : relative;
+  overflow : hidden;
 }
 
 #best_wrap_box > .best_product_box:first-child #best_big_tray {

@@ -10,7 +10,10 @@ logbtn.addEventListener('click', function() {
 
     if(id == 'test') {
         if(pw == '1234') {
-            swal('로그인 성공', '로그인 되었습니다.', 'success').delay(2000).location.href= 'index.html';
+            swal('로그인 성공', '로그인 되었습니다.', 'success');
+            setTimeout(function() {
+                location.href = 'index.html';
+            }, 2000);
         } else {
             swal('패스워드 오류', '비밀번호를 확인해주세요.', 'error');
         } 
@@ -20,5 +23,3 @@ logbtn.addEventListener('click', function() {
         swal('아이디 오류', '아이디를 확인해주세요.', 'error');
     }
 })
-
-let ulogbtn = document.getElementById('logbtn');

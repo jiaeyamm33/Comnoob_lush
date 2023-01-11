@@ -21,7 +21,8 @@ header:hover {
   height : 100vh;
   background-color : #ccc;
   position: relative;
-  z-index: -1;
+  overflow: hidden;
+  z-index: -9999;
 }
 
 .main_box {
@@ -40,6 +41,7 @@ header:hover {
   background-image : url('../images/main_new_bg.jpg');
   background-repeat : no-repeat;
   position : relative;
+  overflow: hidden;
 }
 
 
@@ -156,6 +158,7 @@ header:hover {
 .b_btn > a{
   display:block;
   padding:20px;
+  color: #fff;
 }
 
 /* 캠페인 영역 서식 */

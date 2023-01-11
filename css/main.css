@@ -297,11 +297,22 @@ header:hover {
 }
 
 #best_wrap_box > .best_product_box:last-child > div .best_des{
-  height : 50px;
+  /* height : 50px; */
+  height : 70px;
   position : absolute;
   left : 10px;
   bottom : 10px;
 }
+
+
+#best_wrap_box > .best_product_box:last-child > div .best_des > h3 {
+  padding-bottom : 10px;
+}
+
+#best_wrap_box > .best_product_box:last-child > div .best_des > p {
+  padding-bottom : 5px;
+}
+
 
 
 

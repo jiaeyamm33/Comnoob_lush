@@ -18,7 +18,9 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="./script/common.js" async></script>
-  <script src="./script/main.js" async></script>
+  <script src="./script/main.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
   <header>
@@ -99,73 +101,124 @@
             <p><a href="#none" title="new 바로가기">새로운 제품 더 보기</a></p>
           </div>
           <div id="new_right">
-            <!-- ul 요소를 슬라이드 해야할듯!! -->
-            <ul id="new_list">
-              <li>
-                <div class="new_des">
-                  <h3>
-                    <a href="#none" title="new 제품 바로가기">
-                      딥슬립
-                    </a>
-                  </h3>
-                  <p>
-                    배쓰 밤
-                  </p>
-                  <p>
-                    &#x20a9;1,5000
-                  </p>
-                </div>
-                <img src="./images/new_pro_1.png" alt="new 제품 사진">
-            </li>
-              <li>
-                <div class="new_des">
-                  <h3>
-                    <a href="#none" title="new 제품 바로가기">
-                      골드 래빗
-                    </a>
-                  </h3>
-                  <p>
-                    배쓰 밤
-                  </p>
-                  <p>
-                    &#x20a9;1,5000
-                  </p>
-                </div>
-                <img src="./images/new_pro_2.png" alt="new 제품 사진">
-              </li>
-              <li>
-                <div class="new_des">
-                  <h3>
-                    <a href="#none" title="new 제품 바로가기">
-                      피닉스 솝 디시
-                    </a>
-                  </h3>
-                  <p>
-                    악세사리
-                  </p>
-                  <p>
-                    &#x20a9;1,5000
-                  </p>
-                </div>
-                <img src="./images/new_pro_3.png" alt="new 제품 사진">
-            </li>
-              <li>
-                <div class="new_des">
-                <h3>
+            <div id="new_slide_wrap" class="mySwiper">
+              <!-- ul 요소를 슬라이드 해야할듯!! -->
+              <ul id="new_list" class="swiper-wrapper">
+                <li class="swiper-slide">
                   <a href="#none" title="new 제품 바로가기">
-                    해피 페이스
+                  <div class="new_des">
+                    <h3>
+                        딥슬립
+                      </h3>
+                      <p>
+                        배쓰 밤
+                      </p>
+                      <p>
+                        &#x20a9;1,5000
+                      </p>
+                    </div>
+                    <img src="./images/main/new_pro_1.png" alt="new 제품 사진">
                   </a>
-                </h3>
-                <p>
-                  배쓰 밤
-                </p>
-                <p>
-                  &#x20a9;1,5000
-                </p>
-              </div>
-              <img src="./images/new_pro_4.png" alt="new 제품 사진">
               </li>
-            </ul>
+                <li class="swiper-slide">
+                  <a href="#none" title="new 제품 바로가기">
+                  <div class="new_des">
+                    <h3>
+                        골드 래빗
+                      </h3>
+                      <p>
+                        배쓰 밤
+                      </p>
+                      <p>
+                        &#x20a9;1,5000
+                      </p>
+                    </div>
+                    <img src="./images/main/new_pro_2.png" alt="new 제품 사진">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#none" title="new 제품 바로가기">
+                  <div class="new_des">
+                    <h3>
+                        피닉스 솝 디시
+                      </h3>
+                      <p>
+                        악세사리
+                      </p>
+                      <p>
+                        &#x20a9;1,5000
+                      </p>
+                    </div>
+                    <img src="./images/main/new_pro_3.png" alt="new 제품 사진">
+                  </a>
+              </li>
+                <li class="swiper-slide">
+                  <a href="#none" title="new 제품 바로가기">
+                  <div class="new_des">
+                  <h3>
+                      해피 페이스
+                    </h3>
+                    <p>
+                      배쓰 밤
+                    </p>
+                    <p>
+                      &#x20a9;1,5000
+                    </p>
+                  </div>
+                  <img src="./images/main/new_pro_4.png" alt="new 제품 사진">
+                </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#none" title="new 제품 바로가기">
+                  <div class="new_des">
+                    <h3>
+                        딥슬립
+                      </h3>
+                      <p>
+                        배쓰 밤
+                      </p>
+                      <p>
+                        &#x20a9;1,5000
+                      </p>
+                    </div>
+                    <img src="./images/main/new_pro_5.png" alt="new 제품 사진">
+                  </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#none" title="new 제품 바로가기">
+                <div class="new_des">
+                  <h3>
+                      딥슬립
+                    </h3>
+                    <p>
+                      배쓰 밤
+                    </p>
+                    <p>
+                      &#x20a9;1,5000
+                    </p>
+                  </div>
+                  <img src="./images/main/new_pro_6.png" alt="new 제품 사진">
+                </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#none" title="new 제품 바로가기">
+              <div class="new_des">
+                <h3>
+                    딥슬립
+                  </h3>
+                  <p>
+                    배쓰 밤
+                  </p>
+                  <p>
+                    &#x20a9;1,5000
+                  </p>
+                </div>
+                <img src="./images/main/new_pro_7.png" alt="new 제품 사진">
+              </a>
+          </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </article>
       </div>
@@ -381,6 +434,7 @@
       </div>
       <a href="#" title="상단으로 바로가기" class="t_btn"></a>
     </footer>
+
   
 </body>
 </html>

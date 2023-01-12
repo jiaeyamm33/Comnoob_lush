@@ -314,6 +314,7 @@ address {
   line-height: 20px;
   padding-left: 20px;
   margin-left: 100px;
+  font-size: 15px;
 }
 
 .sns{
@@ -331,6 +332,29 @@ address {
   height: 40px;
 }
 
+@media screen and (max-width:1280px) and (min-width:1114px) {
+    footer {
+      height: auto;
+    }
+    .corp_gift {
+      margin-left: 70px;
+    }
+
+    .subscribe {
+      width: 500px;
+    }
+
+    .f_info_l {
+      width: 500px;
+
+}
+
+  address {
+    font-size: 0.9em;
+  }
+
+}
+
 /* 미디어 스크린 PC > 태블릿 전 */
 @media screen and (max-width:1159px) and (min-width:1114px) {
   footer {
@@ -341,30 +365,49 @@ address {
   }
 
   .sns {
-    width: 50%;
+    width: 500px;
+    padding-left: 50px;
   }
+
+  .sns ul {
+    justify-content: center;
+
+  }
+  address {
+    margin-left: 0px;
+    font-size: 0.9em;
+  }
+
 
 }
 
-@media screen and (max-width:1113px) and (min-width:1046x) {
-  
+@media screen and (max-width:1113px) and (min-width:1025px) {
+  footer {
+    height: auto;
+  }
   .corp_gift {
-    margin-left: 40px;
+    margin-left: 50px;
   }
+
+  .subscribe {
+    width: 500px;
+  }
+  .sns {
+
+    width: 500px;
+  }
+
+  .sns ul {
+    justify-content: center;
+
+  }
+  address {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
 }
 
-  @media screen and (max-width:1045px) and (min-width:1025px) {
-  
-    .corp_gift {
-      margin-left: 20px;
-    }
-
-    .sns {
-      width: 500px;
-    }
-    
-
-}
 
 /* 미디어 스크린 태블릿 */
 
@@ -468,6 +511,7 @@ address {
   address {
     font-style: normal;
     margin: 0px auto;
+    font-size: 1em;
   }
   
   .sns{
@@ -502,6 +546,7 @@ address {
 
 
 }
+
 
 /* 미디어 스크린 모바일 */
 @media screen and (max-width:768px) and (min-width:1px) {

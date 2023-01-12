@@ -237,6 +237,7 @@ footer a {
   grid-area: subscribe;
   height: 90px;
   position: relative;
+  width: 630px;
 }
 
 .subscribe p {
@@ -329,7 +330,43 @@ address {
   height: 40px;
 }
 
+/* 미디어 스크린 PC > 태블릿 전 */
+@media screen and (max-width:1159px) and (min-width:1114px) {
+  footer {
+    height: auto;
+  }
+  .corp_gift {
+    margin-left: 100px;
+  }
+
+  .sns {
+    width: 50%;
+  }
+
+}
+
+@media screen and (max-width:1113px) and (min-width:1046x) {
+  
+  .corp_gift {
+    margin-left: 40px;
+  }
+}
+
+  @media screen and (max-width:1045px) and (min-width:1025px) {
+  
+    .corp_gift {
+      margin-left: 20px;
+    }
+
+    .sns {
+      width: 500px;
+    }
+    
+
+}
+
 /* 미디어 스크린 태블릿 */
+
 @media screen and (max-width:1024px) and (min-width:767px) {
   
   /* 헤더 교체 */

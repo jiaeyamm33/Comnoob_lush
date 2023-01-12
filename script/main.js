@@ -20,4 +20,40 @@ $(function(){
       $('#pc_header').css('background-color','');
     }
   });
+
+  // 베스트 상품 오버시 상품 확대
+  let b_img = $('#b_img');
+  let s_img01 = $('#s_img01');
+  let s_img02 = $('#s_img02');
+  let s_img03 = $('#s_img03');
+  let s_img04 = $('#s_img04');
+
+  $(s_img01).mouseenter(function(){
+    if('./images/main/best_01.png'.split('_')[1] != document.getElementById('b_img').src.split('_')[1]){
+      $(b_img).css('display','none');
+      document.getElementById('b_img').src='./images/main/best_01.png';
+      $(b_img).fadeIn(500);
+    }
+  });
+  $(s_img02).mouseenter(function(){
+    if('./images/main/best_02.png'.split('_')[1] != document.getElementById('b_img').src.split('_')[1]){
+      $(b_img).css('display','none');
+      document.getElementById('b_img').src='./images/main/best_02.png';
+      $(b_img).fadeIn(500);
+    }
+  });
+  $(s_img03).mouseenter(function(){
+    if('./images/main/best_03.png'.split('_')[1] != document.getElementById('b_img').src.split('_')[1]){
+      $(b_img).css('display','none');
+      document.getElementById('b_img').src='./images/main/best_03.png';
+      $(b_img).fadeIn(500);
+    }
+  });
+  $(s_img04).mouseenter(function(){
+    if('./images/main/best_04.png'.split('_')[1] != document.getElementById('b_img').src.split('_')[1]){
+      $(b_img).css('display','none');
+      document.getElementById('b_img').src='./images/main/best_04.png';
+      $(b_img).fadeIn(500);
+    }
+  });
 });

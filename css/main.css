@@ -87,6 +87,19 @@ main{
 }
 
 
+#new_slide_wrap {
+  background-color : rgba(242, 242, 242, .6);
+  height : 500px;
+  display : flex;
+  align-items : center;
+  overflow : hidden;
+}
+
+
+
+
+
+
 /* new ul 슬라이드 필요 */
 #new_list {
   display : flex;
@@ -97,13 +110,24 @@ main{
 
 
 
+/* new ul 슬라이드 필요 */
+#new_list {
+  display : flex;
+  width : 2500px;
+}
+
+
 #new_list > li{
   position : relative;
   width : 300px;
   height : 400px;
+  margin-right : 50px;
+}
+#new_list > li:first-child {
+  margin-left : 50px;
 }
 
-#new_list > li > img {
+#new_list > li a > img {
   position : relative;
 }
 
@@ -116,15 +140,16 @@ main{
   background-color : #eee;
 }
 
-.new_des > h3{
+.new_des  > h3{
   padding-bottom : 10px;
   font-size : 1.25rem;
   line-height : 24px;
   margin : 140px 0 10px 30px;   
 }
-.new_des p {
+.new_des >  p {
   margin : 0 0 10px 30px;
 }
+
 
 /* WE BELIEVE LUSH 서식 */
 .b_wrap{

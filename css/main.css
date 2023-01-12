@@ -83,14 +83,20 @@ main{
   position : absolute;
   height : 400px;
   top : 220px;
-  left : 600px;
+  left : 700px;
 }
 
+
+/* new ul 슬라이드 필요 */
 #new_list {
   display : flex;
   width : 1500px;
   justify-content : space-between;
 }
+
+
+
+
 #new_list > li{
   position : relative;
   width : 300px;

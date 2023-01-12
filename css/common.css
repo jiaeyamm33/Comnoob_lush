@@ -22,7 +22,7 @@ a {
 /* 가리기 */
 .hidden {display: none;}
 
-
+body {overflow-x: hidden;}
 /* 헤더 영역 시작 */
 
 
@@ -353,8 +353,11 @@ address {
     font-size: 0.9em;
   }
 
-}
+  .f_lnb > ul {
+    justify-content: space-evenly;
 
+}
+}
 /* 미디어 스크린 PC > 태블릿 전 */
 @media screen and (max-width:1159px) and (min-width:1114px) {
   footer {
@@ -404,10 +407,14 @@ address {
   address {
     padding-left: 0px;
     margin-left: 0px;
+    font-size: 0.9em;
   }
 
-}
+  .f_lnb > ul {
+    justify-content: space-evenly;
 
+}
+}
 
 /* 미디어 스크린 태블릿 */
 
@@ -511,7 +518,7 @@ address {
   address {
     font-style: normal;
     margin: 0px auto;
-    font-size: 1em;
+    font-size: 0.9em;
   }
   
   .sns{
@@ -532,6 +539,7 @@ address {
 }
 
 
+
 .subs_btn {
   color: #fff;
   background-color: #333;
@@ -544,9 +552,75 @@ address {
   left: 350px;
 }
 
+.f_lnb > ul {
+  justify-content: space-evenly;
 
 }
+}
 
+@media screen and (max-width:920px) and (min-width:789px) {
+
+  .footbar {
+    display: none;
+  }
+
+  .f_secue {
+    display: block;
+  }
+
+  #sub_email {
+    width: 370px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #333;
+    border: none;
+}
+
+  .f_info_l {
+    font-size: 1em;
+  }
+
+  .subscribe p {
+    font-size: 0.8em;
+  }
+}
+
+
+@media screen and (max-width:788px) and (min-width:769px) {
+
+  .footbar {
+    display: none;
+  }
+
+  .f_secue {
+    display: block;
+  }
+
+  .subscribe p {
+    font-size: 0.75em;
+  }
+
+  #sub_email {
+    width: 320px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #333;
+    border: none;
+}
+
+.subs_btn {
+  left: 320px;
+}
+
+.cs_service, .corp_gift {
+  font-size: 0.9em;
+}
+
+.corp_gift {
+  margin-left: 15px;
+}
+
+}
 
 /* 미디어 스크린 모바일 */
 @media screen and (max-width:768px) and (min-width:1px) {

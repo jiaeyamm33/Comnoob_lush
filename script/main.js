@@ -32,28 +32,28 @@ $(function(){
     if('./images/main/best_01.png'.split('_')[1] != document.getElementById('b_img').src.split('_')[1]){
       $(b_img).css('display','none');
       document.getElementById('b_img').src='./images/main/best_01.png';
-      $(b_img).fadeIn(500);
+      $(b_img).fadeIn();
     }
   });
   $(s_img02).mouseenter(function(){
     if('./images/main/best_02.png'.split('_')[1] != document.getElementById('b_img').src.split('_')[1]){
       $(b_img).css('display','none');
       document.getElementById('b_img').src='./images/main/best_02.png';
-      $(b_img).fadeIn(500);
+      $(b_img).fadeIn();
     }
   });
   $(s_img03).mouseenter(function(){
     if('./images/main/best_03.png'.split('_')[1] != document.getElementById('b_img').src.split('_')[1]){
       $(b_img).css('display','none');
       document.getElementById('b_img').src='./images/main/best_03.png';
-      $(b_img).fadeIn(500);
+      $(b_img).fadeIn();
     }
   });
   $(s_img04).mouseenter(function(){
     if('./images/main/best_04.png'.split('_')[1] != document.getElementById('b_img').src.split('_')[1]){
       $(b_img).css('display','none');
       document.getElementById('b_img').src='./images/main/best_04.png';
-      $(b_img).fadeIn(500);
+      $(b_img).fadeIn();
     }
   });
   

@@ -181,6 +181,7 @@ main{
   display:flex;
   justify-content: center;
   align-items: center;
+  padding:0px 10px 0px 0px;
 }
 .c_left a img{
   width:500px;height:500px;
@@ -192,7 +193,9 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items:center;
+  padding:0px 10px 0px 0px;
 }
+
 .c_right h3{
   font-size:24px;
   padding-bottom:24px;
@@ -385,6 +388,10 @@ main{
       }
       .c_right{
         max-width:500px;
+        padding:0px;
+      }
+      .c_left{
+        padding:10px;
       }
 }
 
@@ -403,8 +410,13 @@ main{
       }
       .c_right{
         max-width:500px;
+        padding:10px;
+      }
+      .c_left{
+        padding:10px;
       }
       .c_right h3{
         padding-top:50px;
       }
+      br{display:none;}
 }

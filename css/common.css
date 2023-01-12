@@ -26,6 +26,7 @@ a {
 /* 헤더 영역 시작 */
 
 
+#m_header {display: none;}
 #pc_header {
   position : relative;
   left : 0;
@@ -330,6 +331,10 @@ address {
 
 /* 미디어 스크린 태블릿 */
 @media screen and (max-width:1024px) and (min-width:767px) {
+  
+  /* 헤더 교체 */
+  #pc_header {display: none;}
+  #m_header {display: block;}
 
   /* 푸터 회색 띠 */
   .ethical{
@@ -462,6 +467,10 @@ address {
 
 /* 미디어 스크린 모바일 */
 @media screen and (max-width:766px) and (min-width:1px) {
+
+  /* 헤더 교체 */
+  #pc_header {display: none;}
+  #m_header {display: block;}
 
   /* 푸터 회색 띠 */
   .ethical{

@@ -84,7 +84,7 @@ body.stop-scrolling {
       width: 24px;
       height: 24px;
       border-radius: 50%;
-      background-color: #ea7d7d;
+      background-color: #000;
       color: white;
       line-height: 24px;
       text-align: center;
@@ -108,7 +108,7 @@ body.stop-scrolling {
       content: "";
       width: 20px;
       height: 6px;
-      background-color: #f06e57;
+      background-color: #000;
       border-radius: 3px;
       position: absolute;
       top: 50%;
@@ -225,7 +225,7 @@ body.stop-scrolling {
     position: relative;
     box-sizing: content-box; }
     .sweet-alert .sa-icon.sa-error {
-      border-color: #F27474; }
+      border-color: #000; }
       .sweet-alert .sa-icon.sa-error .sa-x-mark {
         position: relative;
         display: block; }
@@ -233,7 +233,7 @@ body.stop-scrolling {
         position: absolute;
         height: 5px;
         width: 47px;
-        background-color: #F27474;
+        background-color: #000;
         display: block;
         top: 37px;
         border-radius: 2px; }
@@ -246,7 +246,7 @@ body.stop-scrolling {
           transform: rotate(-45deg);
           right: 16px; }
     .sweet-alert .sa-icon.sa-warning {
-      border-color: #F8BB86; }
+      border-color: #000; }
       .sweet-alert .sa-icon.sa-warning .sa-body {
         position: absolute;
         width: 5px;
@@ -256,7 +256,7 @@ body.stop-scrolling {
         -webkit-border-radius: 2px;
         border-radius: 2px;
         margin-left: -2px;
-        background-color: #F8BB86; }
+        background-color: #000; }
       .sweet-alert .sa-icon.sa-warning .sa-dot {
         position: absolute;
         width: 7px;
@@ -266,9 +266,9 @@ body.stop-scrolling {
         margin-left: -3px;
         left: 50%;
         bottom: 10px;
-        background-color: #F8BB86; }
+        background-color: #000; }
     .sweet-alert .sa-icon.sa-info {
-      border-color: #C9DAE1; }
+      border-color: #000; }
       .sweet-alert .sa-icon.sa-info::before {
         content: "";
         position: absolute;
@@ -278,7 +278,7 @@ body.stop-scrolling {
         bottom: 17px;
         border-radius: 2px;
         margin-left: -2px;
-        background-color: #C9DAE1; }
+        background-color: #000; }
       .sweet-alert .sa-icon.sa-info::after {
         content: "";
         position: absolute;
@@ -287,9 +287,9 @@ body.stop-scrolling {
         border-radius: 50%;
         margin-left: -3px;
         top: 19px;
-        background-color: #C9DAE1; }
+        background-color: #000; }
     .sweet-alert .sa-icon.sa-success {
-      border-color: #A5DC86; }
+      border-color: #000; }
       .sweet-alert .sa-icon.sa-success::before, .sweet-alert .sa-icon.sa-success::after {
         content: '';
         -webkit-border-radius: 40px;
@@ -322,7 +322,7 @@ body.stop-scrolling {
       .sweet-alert .sa-icon.sa-success .sa-placeholder {
         width: 80px;
         height: 80px;
-        border: 4px solid rgba(165, 220, 134, 0.2);
+        border: 4px solid #000;
         -webkit-border-radius: 40px;
         border-radius: 40px;
         border-radius: 50%;
@@ -343,7 +343,7 @@ body.stop-scrolling {
         transform: rotate(-45deg); }
       .sweet-alert .sa-icon.sa-success .sa-line {
         height: 5px;
-        background-color: #A5DC86;
+        background-color: #000;
         display: block;
         border-radius: 2px;
         position: absolute;
@@ -686,15 +686,15 @@ body.stop-scrolling {
 
 @-webkit-keyframes pulseWarning {
   0% {
-    border-color: #F8D486; }
+    border-color: #000; }
   100% {
-    border-color: #F8BB86; } }
+    border-color: #000; } }
 
 @keyframes pulseWarning {
   0% {
-    border-color: #F8D486; }
+    border-color: #000; }
   100% {
-    border-color: #F8BB86; } }
+    border-color: #000; } }
 
 .pulseWarning {
   -webkit-animation: pulseWarning 0.75s infinite alternate;
@@ -702,15 +702,15 @@ body.stop-scrolling {
 
 @-webkit-keyframes pulseWarningIns {
   0% {
-    background-color: #F8D486; }
+    background-color: #000; }
   100% {
-    background-color: #F8BB86; } }
+    background-color: #000; } }
 
 @keyframes pulseWarningIns {
   0% {
-    background-color: #F8D486; }
+    background-color: #000; }
   100% {
-    background-color: #F8BB86; } }
+    background-color: #000; } }
 
 .pulseWarningIns {
   -webkit-animation: pulseWarningIns 0.75s infinite alternate;

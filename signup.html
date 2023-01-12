@@ -11,80 +11,85 @@
     <!-- 폰트어썸 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" type="text/css">
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
+    <!-- sweet alert -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="./script/signup.js" defer></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
 </head>
 <body>
     <header>
-        <div id="header_wrap" class="inside_box ">
-          <h1 id="logo">
-            <a href="javascript:void(0);" title="main 바로가기">
-              <img src="./images/common/logo.png" alt="LUSH">
-            </a>
-          </h1>
-          <ul id="gnb">
-            <li>
-              <div class="gnb_bg">&nbsp;</div>
-              <a href="#none" title="제품">제품</a>
-              <ul id="gnb2_1" class="gnb2">
-                <li><a href="#none" title="BEST">BEST</a></li>
-                <li><a href="#none" title="NEW">NEW</a></li>
-                <li><a href="#none" title="보디">보디</a></li>
-                <li><a href="#none" title="페이스">페이스</a></li>
-                <li><a href="#none" title="퍼퓸">퍼퓸</a></li>
-                <li><a href="#none" title="스파">스파</a></li>
-                <li><a href="#none" title="기프트">기프트</a></li>
-                <li><a href="#none" title="가치소비">가치소비</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#none" title="매장안내">매장안내</a>
-            </li>
-            <li>
-              <div class="gnb_bg">&nbsp;</div>
-              <a href="#none" title="매거진">매거진</a>
-              <ul id="gnb2_2" class="gnb2">
-                <li><a href="#none" title="채러티팟 바로가기">채러티팟</a></li>
-                <li><a href="#none" title="커뮤니티 바로가기">커뮤니티</a></li>
-                <li><a href="#none" title="서명 캠페인 바로가기">서명 캠페인</a></li>
-              </ul>
-            </li>
-            <li>
-              <div class="gnb_bg">&nbsp;</div>
-              <a href="#none" title="러쉬소개">러쉬소개</a>
-              <ul id="gnb2_3" class="gnb2">
-                <li><a href="#none" title="러쉬소개 바로가기">러쉬소개</a></li>
-                <li><a href="#none" title="러쉬로운 바로가기">러쉬로운</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#none" title="이벤트">이벤트</a>
-            </li>
-          </ul>
-    
-          <div class="icon_wrap">
-            <a href="#none" title="검색창">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-            <a href="#none" title="장바구니">
-              <i class="fas fa-shopping-bag"></i>   
-            </a>
-            <a href="#none" title="마이페이지">
-              <i class="fa-regular fa-face-smile"></i>
-            </a>
-            <a href="javescript:void(0);" title="고객센터">
-              <i class="fa-regular fa-comment"></i>
-            </a>
+        <div id="pc_header">
+          <div id="header_wrap" class="inside_box ">
+            <h1 id="logo">
+              <a href="javascript:void(0);" title="main 바로가기">
+                <img src="./images/common/logo.png" alt="LUSH">
+              </a>
+            </h1>
+            <ul id="gnb">
+              <li>
+                <div class="gnb_bg">&nbsp;</div>
+                <a href="#none" title="제품">제품</a>
+                <ul id="gnb2_1" class="gnb2">
+                  <li><a href="#none" title="BEST">BEST</a></li>
+                  <li><a href="#none" title="NEW">NEW</a></li>
+                  <li><a href="#none" title="보디">보디</a></li>
+                  <li><a href="#none" title="페이스">페이스</a></li>
+                  <li><a href="#none" title="퍼퓸">퍼퓸</a></li>
+                  <li><a href="#none" title="스파">스파</a></li>
+                  <li><a href="#none" title="기프트">기프트</a></li>
+                  <li><a href="#none" title="가치소비">가치소비</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#none" title="매장안내">매장안내</a>
+              </li>
+              <li>
+                <div class="gnb_bg">&nbsp;</div>
+                <a href="#none" title="매거진">매거진</a>
+                <ul id="gnb2_2" class="gnb2">
+                  <li><a href="#none" title="채러티팟 바로가기">채러티팟</a></li>
+                  <li><a href="#none" title="커뮤니티 바로가기">커뮤니티</a></li>
+                  <li><a href="#none" title="서명 캠페인 바로가기">서명 캠페인</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="gnb_bg">&nbsp;</div>
+                <a href="#none" title="러쉬소개">러쉬소개</a>
+                <ul id="gnb2_3" class="gnb2">
+                  <li><a href="#none" title="러쉬소개 바로가기">러쉬소개</a></li>
+                  <li><a href="#none" title="러쉬로운 바로가기">러쉬로운</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#none" title="이벤트">이벤트</a>
+              </li>
+            </ul>
+            <div class="icon_wrap">
+              <a href="#none" title="검색창">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a href="#none" title="장바구니">
+                <i class="fas fa-shopping-bag"></i>
+              </a>
+              <a href="#none" title="마이페이지">
+                <i class="fa-regular fa-face-smile"></i>
+              </a>
+              <a href="javescript:void(0);" title="고객센터">
+                <i class="fa-regular fa-comment"></i>
+              </a>
+            </div>
           </div>
         </div>
     </header>
     <main>
         <article>
         <h2>회원가입</h2>
-        <form action="server.php" method="post" name="sign_up" class="input_block com_input">
-            <input type="text" placeholder=" 아이디">
-            <input type="password" name="password" id="password" placeholder=" 비밀번호" class="input_block">
-            <input type="password" name="paassword" id="password_check" placeholder=" 비밀번호 확인" class="input_block">
-            <input type="text" name="name" id="name" placeholder=" 이름" class="input_block">
-            <input type="text" name="niknam" id="nik_name" placeholder=" 닉네임" class="input_block">
+        <form action="login.php" method="post" name="sign_up" class="input_block com_input" id="s_done">
+            <input type="text" placeholder=" 아이디" required>
+            <input type="password" name="password" id="password" placeholder=" 비밀번호" class="input_block" required>
+            <input type="password" name="paassword" id="password_check" placeholder=" 비밀번호 확인" class="input_block" required>
+            <input type="text" name="name" id="name" placeholder=" 이름" class="input_block" required>
+            <input type="text" name="niknam" id="nik_name" placeholder=" 닉네임" class="input_block" required>
             <div id="tell">
             <select name="tel" class="tell">
                 <option value="010">010</option>
@@ -94,18 +99,17 @@
                 <option value="010">019</option>
                 <option value="010">02</option>
             </select>
-            <input type="text" name="telnumber" class="tel_num2" placeholder=" 휴대전화번호">
+            <input type="text" name="telnumber" class="tel_num2" placeholder=" 휴대전화번호" required>
             </div>
-            <p><input type="text" name="certification_number" placeholder="인증번호" class="certification_number">
-            <input type="button" value="인증번호 확인" name="certification_number" class="certification_check"></p>
+            <p><input type="text" name="certification_number" placeholder="인증번호" class="certification_number" required>
+            <input type="button" value="인증번호 확인" name="certification_number" class="certification_check" required></p>
             <input type="text" placeholder=" 이메일" name="email" class="email_id"> <span class="email_at">@</span>
             <input type="text" name="email" class="email_add">
             <hr>
             <div class="sms"><input type="checkbox" name="체크박스" class="check_box">정보/이벤트 메일 수신에 동의합니다.</div>
             <div class="sms">
             <input type="checkbox" name="" id="" class="check_box">정보/이벤트 문자 수신에 동의합니다.</div>
-            <button>회원가입</button>
-
+            <input type="submit" value="회원가입" id="signUp">
         </form>
     </article>
     </main>

@@ -5,12 +5,12 @@ main{
   width : 100%;
 }
 
-header {
+#pc_header {
   position: fixed;
   background-color: transparent;
 }
 
-header:hover {
+#pc_header:hover {
   background-color: #000;
 }
 

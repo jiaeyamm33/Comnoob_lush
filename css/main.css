@@ -83,7 +83,7 @@ main{
   position : absolute;
   height : 400px;
   top : 220px;
-  left : 700px;
+  left : 40%;
 }
 
 
@@ -113,7 +113,7 @@ main{
 /* new ul 슬라이드 필요 */
 #new_list {
   display : flex;
-  width : 2500px;
+  /* width : 2500px; */
 }
 
 

@@ -65,12 +65,15 @@ main{
   position : absolute;
 }
 
+#new_left > a{
+  display: block;
+}
 #new_left > a > h2{
   left : 0;
   top : 0;
   font-size : 50px;
   color:#fff;
-  display: inline;
+  display: inline-block;
 }
 
 #new_left > p{
@@ -96,6 +99,7 @@ main{
 #new_slide_wrap {
   background-color : rgba(242, 242, 242, .6);
   width: 60vw;
+  padding-bottom: 50px;
   display : flex;
   align-items : center;
   overflow : hidden;
@@ -264,6 +268,7 @@ main{
 /* 베스트 영역 서식 시작  */
 
 #product_best {
+  max-width: 1260px;
 }
 
 
@@ -420,13 +425,17 @@ main{
 
 
 /* 메인 안쪽 상자 가로 길이 고정 중앙정렬 */
-.main_content_box {
+#product_best.main_content_box {
   height : 950px;
   width : 100%;
   max-width : 625px;
   margin : 0 auto;
 }
 
+#product_new {
+  max-width: 100%;
+  gap: 60px;
+}
 
 #new_bg {
   background-image : url('../images/main_new_bg.jpg');
@@ -437,16 +446,15 @@ main{
 
 /* new 영역 왼쪽 텍스트 */
 #new_left{
-  height : 12%;
   position : relative;
   color : #fff;
-  top : 500px;
-  left : -45px;
+  bottom : 130px;
+
 }
 
 #new_left > h2,
 #new_left > p {
-  position : absolute;
+  /* position : absolute; */
 }
 
 #new_left > h2{
@@ -457,13 +465,14 @@ main{
 
 
 #new_left > p{
-  width : 16%;
   height : 40px;
   border : 1px solid #fff;
   font-size : 1em;
   text-align : center;
-  left : 0;
-  bottom : 0;
+  position: relative;
+  margin-top: 32px;
+  /* left : 0;
+  bottom : 0; */
 }
 
 #new_left > p > a {
@@ -473,10 +482,8 @@ main{
 }
 
 #new_right {
-  position : absolute;
-  height : 400px;
-  top : 220px;
-  left : 40%;
+  /* position : absolute; */
+  /* height : 400px; */
 }
 
 #new_slide_wrap {
@@ -508,7 +515,9 @@ main{
   position : relative;
   width : 300px;
   height : 400px;
-  margin-right : 50px;
+  margin-right : 0;
+  padding-right: 50px;
+  box-sizing: content-box;
 }
 
 #new_list > li:first-child {

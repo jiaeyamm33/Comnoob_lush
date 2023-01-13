@@ -32,7 +32,8 @@ main{
 /* 메인 안쪽 상자 가로 길이 고정 중앙정렬 */
 .main_content_box {
   height : 950px;
-  width : 1260px;
+  /* width : 1260px; */
+  width : 100%;
   margin : 0 auto;
 }
 
@@ -45,11 +46,18 @@ main{
 
 
 /* new 영역 왼쪽 텍스트 */
+#product_new {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 200px;
+}
 #new_left{
-  height : 120px;
-  position : relative;
-  color : #fff;
-  top : 500px;
+  height: 120px;
+  position: relative;
+  color: #fff;
+  bottom: 55px;
+  left: 50px;
 }
 
 #new_left > h2,
@@ -62,6 +70,7 @@ main{
   top : 0;
   font-size : 50px;
   color:#fff;
+  display: inline;
 }
 
 #new_left > p{
@@ -81,16 +90,12 @@ main{
 
 
 #new_right {
-  position : absolute;
-  height : 400px;
-  top : 220px;
-  left : 40%;
 }
 
 
 #new_slide_wrap {
   background-color : rgba(242, 242, 242, .6);
-  height : 500px;
+  width: 60vw;
   display : flex;
   align-items : center;
   overflow : hidden;
@@ -104,8 +109,8 @@ main{
 /* new ul 슬라이드 필요 */
 #new_list {
   display : flex;
-  width : 1500px;
-  justify-content : space-between;
+  /* width : 1500px; */
+  /* justify-content : space-between; */
 }
 
 
@@ -236,6 +241,7 @@ main{
 }
 .social_icons{
   width:450px;height:43px;
+  margin-top: 16px;
   background-image: url(../images/main/social\ icons.jpg);
   background-size: cover;
   background-repeat: no-repeat;

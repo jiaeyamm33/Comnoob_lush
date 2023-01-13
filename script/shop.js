@@ -1,6 +1,3 @@
-/* 
-
-
 let products = [
   {'name' : '인터갈릭틱', 'category' : '배쓰 밤', 'price' : '17000', 'like' : 9, 'view' : 10, 'src' : './images/shop/product01.png'},
   {'name' : '럭스', 'category' : '배쓰 밤', 'price' : '20000', 'like' : 8, 'view' : 30, 'src' : './images/shop/product05.png'},
@@ -20,52 +17,74 @@ let products = [
   {'name' : '말차 롤', 'category' : '버블 바', 'price' : '20000', 'like' : 1, 'view' : 4, 'src' : './images/shop/product16.png'}
 ];
 
+let selecTap = document.getElementById('sort'); // 셀렉트박스
+let sortValue = 'view'; // 정렬기준
 
-let selecTap = document.getElementById('sort').value;
-
-
-// 가격 낮은 순
-  products.sort(function(a,b) {
-    if(a.price > b.price) {
-      return 1;
-    } else if (a.price < b.price) {
-      return -1;
-    }
-  });
+productSet();
+selecTap.addEventListener('change', function(){
+  productSet();
+});
 
 
+function productSet() {
+  productSort();
+  for(let i = 0; i < products.length; i++){
+    let product_img = '<img src="'+products[i].src+'" alt="상품"'+i+'>';
+    let product_content = '<div>'+
+    '<strong>'+products[i].name+'</strong>'+
+    '<p>'+products[i].category+'</p>'+
+    '<p>&#xFFE6;'+Number(products[i].price).toLocaleString('ko-KR')+'</p>'+
+    '</div>';
+    document.getElementsByClassName('product')[i].setAttribute('title', '상품'+i);
+    document.getElementsByClassName('product')[i].innerHTML = product_img+product_content;
+  }
+}
 
-// 가격 높은순
-    products.sort(function(a,b) {
-    if(a.price > b.price) {
-      return -1;
-    } else if (a.price < b.price) {
-      return 1;
-    }
-  });
-
-
-
-// 인기순
-  products.sort(function(a,b) {
-    if(a.view > b.view) {
-      return -1;
-    } else if (a.view < b.view) {
-      return 1;
-    }
-  })
-
-  console.log(products);
-
-  // 추천순
-    products.sort(function(a,b) {
-    if(a.like > b.like) {
-      return -1;
-    } else if (a.like < b.like) {
-      return 1;
-    }
-    })
-
-
-
-*/
+function productSort() { 
+  sortValue = selecTap.value;
+  switch(sortValue){
+    // 가격 낮은 순
+    case 'priceLow':
+      products.sort(function(a,b) {
+        if(a.price > b.price) {
+          return 1;
+        } else if (a.price < b.price) {
+          return -1;
+        }
+      });
+      break;
+    case 'priceHigh':  
+    // 가격 높은순
+      products.sort(function(a,b) {
+        if(a.price > b.price) {
+          return -1;
+        } else if (a.price < b.price) {
+          return 1;
+        }
+      });
+      break;
+    case 'view':  
+      // 인기순
+      products.sort(function(a,b) {
+        if(a.view > b.view) {
+          return -1;
+        } else if (a.view < b.view) {
+          return 1;
+        }
+      });
+      break;
+    case 'like':  
+      // 추천순
+      products.sort(function(a,b) {
+        if(a.like > b.like) {
+          return -1;
+        } else if (a.like < b.like) {
+          return 1;
+        }
+      });
+      break;
+    default:
+      console.log('정렬 오류 발생!!');
+      break;
+  }
+}

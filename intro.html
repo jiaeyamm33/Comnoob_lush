@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>러쉬코리아</title>
+
     <link rel="stylesheet" href="./css/reset.css" type="text/css">
     <link rel="stylesheet" href="./css/common.css" type="text/css">
     <link rel="stylesheet" href="./css/sub.css" type="text/css">
@@ -13,10 +14,64 @@
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="./script/common.js"></script>
+    <style>
+      #m_header {
+        width: 100%; height: 64px;
+        display: flex;
+        padding: 0 15px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000;
+      }
+      #m_menu {display: none;}
+      #m_header > .m_menu_wrap {
+        width: 24px; height: 24px;
+        position: relative;
+      }
+      #m_header > .m_menu_wrap > span {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        /* border-radius: 3px; */
+      }
+      #m_header > .m_menu_wrap > span:nth-of-type(1) {top: 0;}
+      #m_header > .m_menu_wrap > span:nth-of-type(2) {top: 10.5px;}
+      #m_header > .m_menu_wrap > span:nth-of-type(3) {bottom: 0;}
+  
+      #m_menu span:nth-of-type(1) {top: 0;}
+      span:nth-of-type(2) {top: 10px;}
+      span:nth-of-type(3) {bottom: 0;}
+      #m_header > #m_logo {width: 140px;}
+      #m_header > #m_logo > a {}
+      #m_header > #m_logo > a > img {width: 100%;}
+      #m_header > .m_icons {
+        font-size: 24px;
+        display: flex;
+        justify-content: right;
+        gap: 20px;
+      }
+      #m_header > .m_icons > a {display: block;}
+      
+      /* 펼쳐지는 m_gnb 서식 */
+
+      #m_menu:checked ~ .m_gnb{display:block;}
+      .m_gnb{
+        display:none;
+        width:100%;
+        /* background:rgba(255, 255, 255, 0.5); */
+        background:rgba(255, 255, 255, 0.5);
+        position:absolute;
+      }
+  
+    </style>
 </head>
 <body>
     <!-- 헤더 영역 -->
     <header>
+      <input type="checkbox" id="m_menu">
       <div id="pc_header">
         <div id="header_wrap" class="inside_box ">
           <h1 id="logo">
@@ -78,6 +133,51 @@
             </a>
           </div>
         </div>
+      </div>
+      <div id="m_header">
+        <label for="m_menu" class="m_menu_wrap">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <h1 id="m_logo">
+          <a href="index.html" title="main 바로가기">
+            <img src="./images/common/m_logo.png" alt="LUSH">
+          </a>
+        </h1>
+        <div class="m_icons">
+          <a href="shop_list.html" title="장바구니">
+            <i class="fas fa-shopping-bag"></i>
+          </a>
+          <a href="login.html" title="마이페이지">
+            <i class="fa-regular fa-face-smile"></i>
+          </a>
+        </div>
+      </div>
+      <div class="m_gnb">
+        <h2 class="gnb_logo">
+          <a href="index.html" title="main 바로가기">
+            <img src="./images/common/m_logo.png" alt="LUSH">
+          </a>
+        </h2>
+        <form action="search.php" name="search" method="post">
+          <div search_box>
+          <input type="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <ul class="m_category">
+            <li><a href="shop_list.html" title="제품">제품</a> </li>
+            <li><a href="intro.html" title="매장안내">매장안내</a></li>
+            <li><a href="intro.html" title="매거진">매거진</a></li>
+            <li><a href="intro.html" title="러쉬소개">러쉬소개</a></li>
+            <li><a href="intro.html" title="이벤트">이벤트</a></li>
+          </ul>
+          <ul class="m_subc">
+            <li><a href="login.html" title="mypage">My Page</a></li>
+            <li><a href="shop_list.html" title="cart">Cart</a></li>
+            <li><a href="login.html" title="customerservice">Customer Service</a></li>
+          </ul>
+        </form>
       </div>
   </header>
 

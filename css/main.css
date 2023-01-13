@@ -398,6 +398,271 @@ main{
 /* 태블릿 */
 @media screen and (max-width:1024px) and (min-width:767px){
 
+
+  
+  #main_video_box {
+    width: 100%;
+    height : 100vh;
+    background-color : #ccc;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+
+
+
+
+/* 메인 안쪽 상자 가로 길이 고정 중앙정렬 */
+.main_content_box {
+  height : 950px;
+  width : 100%;
+  max-width : 625px;
+  margin : 0 auto;
+}
+
+
+#new_bg {
+  background-image : url('../images/main_new_bg.jpg');
+  background-repeat : no-repeat;
+  position : relative;
+  overflow: hidden;
+}
+
+/* new 영역 왼쪽 텍스트 */
+#new_left{
+  height : 12%;
+  position : relative;
+  color : #fff;
+  top : 500px;
+  left : -45px;
+}
+
+#new_left > h2,
+#new_left > p {
+  position : absolute;
+}
+
+#new_left > h2{
+  left : 0;
+  top : 0;
+  font-size : 2.5em;
+}
+
+
+#new_left > p{
+  width : 16%;
+  height : 40px;
+  border : 1px solid #fff;
+  font-size : 1em;
+  text-align : center;
+  left : 0;
+  bottom : 0;
+}
+
+#new_left > p > a {
+  color : #fff;
+  line-height : 40px;
+  display : block;
+}
+
+#new_right {
+  position : absolute;
+  height : 400px;
+  top : 220px;
+  left : 40%;
+}
+
+#new_slide_wrap {
+  background-color : rgba(242, 242, 242, .6);
+  height : 500px;
+  display : flex;
+  align-items : center;
+  overflow : hidden;
+}
+
+/* new ul 슬라이드 필요 */
+#new_list {
+  display : flex;
+  width : 1500px;
+  justify-content : space-between;
+}
+
+
+
+
+/* new ul 슬라이드 필요 */
+#new_list {
+  display : flex;
+  /* width : 2500px; */
+}
+
+
+#new_list > li{
+  position : relative;
+  width : 300px;
+  height : 400px;
+  margin-right : 50px;
+}
+
+#new_list > li:first-child {
+  margin-left : 50px;
+}
+
+#new_list > li a > img {
+  position : relative;
+}
+
+.new_des {
+  width : 300px;
+  height : 250px;
+  position : absolute;
+  top : 150px;
+  left : 0;
+  background-color : #eee;
+}
+
+.new_des  > h3{
+  padding-bottom : 10px;
+  font-size : 1.25em;
+  line-height : 24px;
+  margin : 140px 0 10px 30px;   
+}
+.new_des >  p {
+  margin : 0 0 10px 30px;
+}
+
+
+
+
+
+
+
+
+
+/* 베스트 영역 서식 시작  */
+#product_best {
+}
+
+
+#best_left{
+  height : 90px;
+  position : relative;
+  color : #000;
+  top : 100px;
+  left : -30px;
+}
+
+#best_left > h2,
+#best_left > p {
+  position : absolute;
+}
+
+#best_left > h2{
+  left : 0;
+  top : 0;
+  font-size : 3.1em;
+}
+
+#best_left > p{
+  display : none;
+  font-size : 1em;
+  left : 0;
+  bottom : 0;
+}
+#best_left > p > a {
+  color : #555;
+}
+
+
+
+#best_wrap_box {
+  display : flex;
+  justify-content : space-around;
+  align-items : center;
+  transform : translateY(100px);
+}
+
+/* display : none */
+#best_wrap_box > .best_product_box:first-child {
+  display : none;
+  width : 500px;
+  height : 500px;
+  position : relative;
+  overflow : hidden;
+}
+
+/* display : none */
+#best_wrap_box > .best_product_box:first-child #best_big_tray {
+  width : 500px;
+  height : 300px;
+  border : 1px solid #000;
+  position : absolute;
+  bottom : 0;
+  z-index : -1;
+}
+
+
+#best_wrap_box > .best_product_box:last-child {
+  width : 100%;
+  height : 500px;
+}
+
+#best_wrap_box > .best_product_box:last-child > div {
+  width : 48%;
+  height : 70%;
+  position : relative;
+}
+
+#best_wrap_box > .best_product_box:last-child > div .best_des_box {
+  position : absolute;
+  left : 0; bottom : 0;
+  width : 100%;
+  height : 60%;
+  border : 1px solid #000;
+  box-sizing : border-box;
+  z-index : -1;
+}
+
+#best_wrap_box > .best_product_box:last-child > div .best_des{
+  /* height : 50px; */
+  height : 70px;
+  position : absolute;
+  left : 10px;
+  bottom : 10px;
+}
+
+
+#best_wrap_box > .best_product_box:last-child > div .best_des > h3 {
+  padding-bottom : 10px;
+}
+
+#best_wrap_box > .best_product_box:last-child > div .best_des > p {
+  padding-bottom : 5px;
+}
+
+
+
+
+#best_wrap_box > .best_product_box:first-child img {
+  width : 600px;
+  height : 600px;
+}
+
+#best_wrap_box > .best_product_box:last-child img {
+  width : 100%; height : 80%;
+  position : absolute;
+  left : 0; top : 0;
+}
+
+#best_wrap_box > .best_product_box:last-child {
+  display : flex;
+  flex-wrap : wrap;
+  justify-content : space-between;
+  align-content : space-between;
+}
+
+
   /* WE BELIEVE LUSH 서식 */
   .b_title{
     font-size:64px;

@@ -57,10 +57,11 @@ main{
   position : absolute;
 }
 
-#new_left > h2{
+#new_left > a > h2{
   left : 0;
   top : 0;
   font-size : 50px;
+  color:#fff;
 }
 
 #new_left > p{
@@ -272,7 +273,7 @@ main{
   position : absolute;
 }
 
-#best_left > h2{
+#best_left > a > h2{
   left : 0;
   top : 0;
   font-size : 50px;

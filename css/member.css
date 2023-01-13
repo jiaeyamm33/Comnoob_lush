@@ -213,6 +213,9 @@ label{
     align-items: center;
     margin:50px auto;
 }
+.login_tab > ul > li > label{
+    cursor:pointer;
+}
 input[type=radio]{
     display:none;    
 }
@@ -254,6 +257,7 @@ input[type=submit]{
     color:#fff;
     background:#222;
     margin:0px;
+    cursor:pointer;
 }
 #log_txt{
     width:345px;
@@ -282,6 +286,7 @@ input[type=submit]{
     letter-spacing: -0.45px;
     color: #fff;
     text-align: center;
+    cursor:pointer;
 }
 #k_login{
     width:345px;
@@ -290,6 +295,7 @@ input[type=submit]{
     color:#222;
     letter-spacing: -0.45px;
     text-align: center;
+    cursor:pointer;
 }
 .l_tab{
     display:none;

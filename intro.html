@@ -58,13 +58,185 @@
       /* 펼쳐지는 m_gnb 서식 */
 
       #m_menu:checked ~ .m_gnb{display:block;}
+      #m_menu:checked ~ #m_header{display:none;}
       .m_gnb{
         display:none;
         width:100%;
-        /* background:rgba(255, 255, 255, 0.5); */
-        background:rgba(255, 255, 255, 0.5);
+        background:rgba(0, 0, 0, 0.5);
         position:absolute;
       }
+      .gnb_logo{
+        padding-top:24px;
+        padding-left:24px;
+      }
+      .gnb_logo img{
+        width:140px;height:36px;
+      }
+      .search_box{
+        width:100%;
+        margin:0px auto;
+        text-align: center;
+        padding:50px 0px;
+      }
+      #m_search{
+        width:50%;
+        background:none;
+        border:none;
+        border-bottom:3px solid #fff;
+        color:#fff;
+        font-size:1rem;
+      }
+      .fa-magnifying-glass{
+        font-size:24px;
+        color:#fff;
+        cursor:pointer;
+      }
+      .m_category{
+        padding-left:50px;
+      }
+      .m_category > li{
+        line-height:50px;
+      }
+      .m_category > li {
+        font-size:28px;
+        font-weight:bold;
+      }
+      .m_category > li label{
+        font-size:28px;
+        font-weight:bold;
+        display:block;
+        color:#fff;
+      }
+      .m_des > li {
+        text-indent:20px;
+        line-height:50px;
+      }
+      .m_des > li > a{
+        font-size:24px;
+      }
+      .m_subc{
+        padding:50px 0px 100px 50px;
+      }
+      .m_subc > li > a{
+        font-size:28px;
+        font-weight:bold;
+      }
+      .m_subc > li{
+        line-height: 50px;
+      }
+
+      .m_guide{
+        padding:100px 0px 50px 0px;
+      }
+      .m_guide > p{
+        text-align: center;
+        margin:0px auto;
+      }
+      .m_guide > p span{
+        color:#f2f2f2;
+        font-size:12px;
+      }
+      .p_hide{
+        overflow: hidden;
+        height: 0;
+        transition: 0.5s;
+      }
+      #m_product{display:none;}
+      #m_magazine{display:none;}
+      #m_intro{display:none;}
+      #m_product:checked ~.m_gnb .m_category .p_hide {
+        height: 468px;
+      }
+      .m_hide{
+        overflow: hidden;
+        height: 0;
+        transition: 0.5s;
+      }
+      #m_magazine:checked ~.m_gnb .m_category .m_hide {
+        height: 156px;
+      }
+      .i_hide{
+        overflow: hidden;
+        height: 0;
+        transition: 0.5s;
+      }
+      #m_intro:checked ~.m_gnb .m_category .i_hide {
+        height: 104px;
+      }
+
+      .m_category > li:first-child label{
+        position:relative;
+      }
+      .m_category > li:nth-child(3) label{
+        position: relative;
+      }
+      .m_category > li:nth-child(3) label{
+        position:relative;
+      }
+      #m_product:checked ~ .m_gnb .m_category > li:first-child label::after{
+        transform:rotate(180deg);
+      }
+      .m_category > li:first-child label::after{
+        content:'\f107';
+        font-family:'Font Awesome 5 Free';
+        position:absolute;
+        right:50px;
+        cursor:pointer;
+      }
+      #m_magazine:checked ~ .m_gnb .m_category > li:nth-child(3) label::after{
+        transform:rotate(180deg);
+      }
+      .m_category > li:nth-child(3) label::after{
+        content:'\f107';
+        font-family:'Font Awesome 5 Free';
+        position:absolute;
+        right:50px;
+        cursor:pointer;
+      }
+      #m_intro:checked ~ .m_gnb .m_category > li:nth-child(4) label::after{
+        transform:rotate(180deg);
+      }
+      .m_category > li:nth-child(4) label::after{
+        content:'\f107';
+        font-family:'Font Awesome 5 Free';
+        position:absolute;
+        right:50px;
+        cursor:pointer;
+      }
+
+      .m_subc li:first-child::after{
+        content:'\f118';
+        font-family:'Font Awesome 5 Free';
+        position:absolute;
+        right:50px;
+        cursor:pointer;
+        color:#fff;
+        font-size:25px;
+      }
+      .m_subc li:nth-child(2)::after{
+        content:'\f290';
+        font-family:'Font Awesome 5 Free';
+        position:absolute;
+        right:50px;
+        cursor:pointer;
+        color:#fff;
+        font-size:25px;
+        font-weight:bold;
+      }
+      .m_subc li:last-child::after{
+        content:'\f075';
+        font-family:'Font Awesome 5 Free';
+        position:absolute;
+        right:50px;
+        cursor:pointer;
+        color:#fff;
+        font-size:25px;
+      }
+
+
+
+
+
   
     </style>
 </head>
@@ -72,6 +244,9 @@
     <!-- 헤더 영역 -->
     <header>
       <input type="checkbox" id="m_menu">
+      <input type="checkbox" id="m_product">
+      <input type="checkbox" id="m_magazine">
+      <input type="checkbox" id="m_intro">
       <div id="pc_header">
         <div id="header_wrap" class="inside_box ">
           <h1 id="logo">
@@ -161,22 +336,45 @@
           </a>
         </h2>
         <form action="search.php" name="search" method="post">
-          <div search_box>
-          <input type="search">
+          <div class="search_box">
+          <input type="search" id="m_search">
           <i class="fa-solid fa-magnifying-glass"></i>
           </div>
           <ul class="m_category">
-            <li><a href="shop_list.html" title="제품">제품</a> </li>
+            <li><label for="m_product">제품</label>
+              <ul class="m_des p_hide">
+                <li><a href="shop_list.html" title="BEST">BEST</a></li>
+                <li><a href="shop_list.html" title="NEW">NEW</a></li>
+                <li><a href="shop_list.html" title="보디">보디</a></li>
+                <li><a href="shop_list.html" title="헤어">헤어</a></li>
+                <li><a href="shop_list.html" title="페이스">페이스</a></li>
+                <li><a href="shop_list.html" title="퍼퓸">퍼퓸</a></li>
+                <li><a href="shop_list.html" title="스파">스파</a></li>
+                <li><a href="shop_list.html" title="기프트">기프트</a></li>
+                <li><a href="shop_list.html" title="가치소비">가치소비</a></li>
+              </ul>
+            </li>
             <li><a href="intro.html" title="매장안내">매장안내</a></li>
-            <li><a href="intro.html" title="매거진">매거진</a></li>
-            <li><a href="intro.html" title="러쉬소개">러쉬소개</a></li>
+            <li><label for="m_magazine">매거진</label>
+              <ul class="m_des m_hide">
+                <li><a href="intro.html" title="채러티 팟">채러티 팟</a></li>
+                <li><a href="intro.html" title="커뮤니티">커뮤니티</a></li>
+                <li><a href="intro.html" title="서명 캠페인">서명 캠페인</a></li>
+              </ul>
+            </li>
+            <li><label for="m_intro">러쉬소개</label>
+              <ul class="m_des i_hide">
+                <li><a href="intro.html" title="러쉬소개">러쉬소개</a></li>
+                <li><a href="intro.html" title="러쉬로운">러쉬로운</a></li> 
+              </ul>
+            </li>
             <li><a href="intro.html" title="이벤트">이벤트</a></li>
           </ul>
           <ul class="m_subc">
             <li><a href="login.html" title="mypage">My Page</a></li>
             <li><a href="shop_list.html" title="cart">Cart</a></li>
             <li><a href="login.html" title="customerservice">Customer Service</a></li>
-          </ul>
+          </ul> 
         </form>
       </div>
   </header>

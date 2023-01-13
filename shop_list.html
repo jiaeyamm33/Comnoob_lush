@@ -13,6 +13,46 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" type="text/css">
   <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
   <style>
+    #m_header {
+      width: 100%; height: 64px;
+      display: flex;
+      padding: 0 15px;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000;
+    }
+    #m_header > #m_menu {display: none;}
+    #m_header > .m_menu_wrap {
+      width: 24px; height: 24px;
+      position: relative;
+    }
+    #m_header > .m_menu_wrap > span {
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #fff;
+      /* border-radius: 3px; */
+    }
+    #m_header > .m_menu_wrap > span:nth-of-type(1) {top: 0;}
+    #m_header > .m_menu_wrap > span:nth-of-type(2) {top: 10.5px;}
+    #m_header > .m_menu_wrap > span:nth-of-type(3) {bottom: 0;}
+
+    #m_menu span:nth-of-type(1) {top: 0;}
+    span:nth-of-type(2) {top: 10px;}
+    span:nth-of-type(3) {bottom: 0;}
+    #m_header > #m_logo {width: 140px;}
+    #m_header > #m_logo > a {}
+    #m_header > #m_logo > a > img {width: 100%;}
+    #m_header > .m_icons {
+      font-size: 24px;
+      display: flex;
+      justify-content: right;
+      gap: 20px;
+    }
+    #m_header > .m_icons > a {display: block;}
+
   </style>
 </head>
 <body>
@@ -78,6 +118,27 @@
             <i class="fa-regular fa-comment"></i>
           </a>
         </div>
+      </div>
+    </div>
+    <div id="m_header">
+      <input type="checkbox" id="m_menu">
+      <label for="m_menu" class="m_menu_wrap">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <h1 id="m_logo">
+        <a href="index.html" title="main 바로가기">
+          <img src="./images/common/m_logo.png" alt="LUSH">
+        </a>
+      </h1>
+      <div class="m_icons">
+        <a href="shop_list.html" title="장바구니">
+          <i class="fas fa-shopping-bag"></i>
+        </a>
+        <a href="login.html" title="마이페이지">
+          <i class="fa-regular fa-face-smile"></i>
+        </a>
       </div>
     </div>
 </header>

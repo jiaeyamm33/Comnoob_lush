@@ -345,33 +345,42 @@ article .login_tab > ul >li:last-child{
 
 /* 모달 박스 */
 
-.modal {
+#modal {
+    position: fixed;
     width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: 100;
     background-color: rgba(0,0,0,.9);
 }
 
 .modal_img {
     width: 600px;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
+    display: block;
 }
 
 .modal_img img {
     width: 100%;
+    display: block;
     position: relative;
 }
 
 .modal_img p {
     position: absolute;
-    top: 40%;
-    left: 20%;
+    top: 42%;
+    left: 15%;
     color: #fff;
 }
 
+.modal_btn {
+    display: flex;
+}
 .modal_img input {
-    width: 600px;
+    width: 300px;
     display: block;
     background-color: #222;
     color: fff;
@@ -379,4 +388,9 @@ article .login_tab > ul >li:last-child{
     bottom: 0px;
 }
 
+
+.modal_img input:last-child {
+    background-color: #fff;
+    color: #000;
+}
 

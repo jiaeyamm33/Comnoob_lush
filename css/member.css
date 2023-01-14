@@ -347,8 +347,7 @@ article .login_tab > ul >li:last-child{
 
 .modal {
     width: 100%;
-    background-color: rgba(0,0,0,.6);
-    height: 100%;
+    background-color: rgba(0,0,0,.9);
 }
 
 .modal_img {
@@ -377,5 +376,7 @@ article .login_tab > ul >li:last-child{
     background-color: #222;
     color: fff;
     height: 50px;
-    bottom: -5px;
+    bottom: 0px;
 }
+
+

@@ -40,6 +40,7 @@ main{
 #new_bg {
   background-image : url('../images/main_new_bg.jpg');
   background-repeat : no-repeat;
+  background-position : center;
   position : relative;
   overflow: hidden;
 }
@@ -52,6 +53,11 @@ main{
   align-items: flex-end;
   padding-bottom: 200px;
 }
+
+
+/* 모바일과 서식 안겹치게 하려고 */
+@media screen and (min-width:767px){
+
 #new_left{
   height: 120px;
   position: relative;
@@ -59,6 +65,9 @@ main{
   bottom: 55px;
   left: 50px;
 }
+}
+
+
 
 #new_left > h2,
 #new_left > p {
@@ -93,6 +102,12 @@ main{
 
 
 #new_right {
+}
+
+
+/* 모바일 new 상품 display : none; */
+#mobile_new_right {
+  display :none;
 }
 
 
@@ -486,6 +501,10 @@ main{
   /* height : 400px; */
 }
 
+#mobile_new_right {
+  display : none;
+}
+
 #new_slide_wrap {
   background-color : rgba(242, 242, 242, .6);
   height : 500px;
@@ -701,8 +720,154 @@ main{
       }
 }
 
+
+
+
+
+
+
+
+
+
+
 /* 모바일 */
 @media screen and (max-width:766px) and (min-width:1px) {
+
+
+  /* mobile new 영역 서식 */
+
+  #product_new {
+    display : block;
+    width : 100%;
+    max-height : 950px;
+    padding : 0;
+  }
+
+  #product_new a {
+    color : #000;
+  }
+
+
+
+  .mobile_new_left{
+    height: 15%;
+    position: relative;
+    color: #fff;
+    top: 50px !important;
+    left : 13%;
+    display : block;
+    margin-bottom : 100px;
+  }
+  
+  .mobile_new_left > h2,
+  .mobile_new_left > p {
+    position : absolute;
+  }
+  
+  .mobile_new_left > a{
+    display: block;
+  }
+  .mobile_new_left > a > h2{
+    left : 0;
+    top : 0;
+    font-size : 40px;
+    color:#fff;
+    display: inline-block;
+  }
+  
+  .mobile_new_left > p{
+    width : 170px;
+    height : 40px;
+    border : 1px solid #fff;
+    font-size : 16px;
+    text-align : center;
+    left : 0;
+    bottom : 0;
+    margin-top : 15px;
+  }
+  .mobile_new_left > p > a {
+    color : #fff;
+    line-height : 40px;
+    display : block;
+  }
+
+
+
+  /* pc, tablet 상품 슬라이드 배너 */
+  #new_right {
+    display : none !important;
+  }
+
+  /* 모바일 new 상품 시작 */
+  #mobile_new_right {
+    width : 90%;
+    min-height : 550px;
+    display : block;
+    margin : 0 auto;
+  }
+
+  .mobile_new_list {
+    width : 100%;
+    height : 100%;
+    min-height : 550px;
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : space-between;
+    align-content : space-between ;
+  }
+
+  .mobile_new_list > li {
+    width : 40%;
+    height : 275px;
+    position : relative;
+    text-align: center;
+    
+  }
+
+  .mobile_new_list > li a > img {
+    width : 75%;
+    min-width : 165px;
+    position : relative;
+  }
+  
+  .mobile_new_des {
+    width : 100%;
+    height : 60%;
+    position : absolute;
+    bottom : 0;
+    left : 0;
+    background-color : #eee;
+    text-align : left;
+    text-indent : 15px;
+  }
+  
+  
+  .mobile_new_des  > h3{
+    padding-bottom : 10px;
+    font-size : 1.25rem;
+    line-height : 24px;
+    color : #000;
+    margin-top : 60px;
+  }
+
+  .mobile_new_des >  p {
+    color : #000;
+    margin-top :5px;
+  }
+
+
+  /* 모바일 best 서식 시작 */
+  #best_wrap_box > .best_product_box:first-child {
+    display : none;
+    width : 500px;
+    height : 500px;
+    position : relative;
+    overflow : hidden;
+  }
+
+
+
+
   /* WE BELIEVE LUSH 서식 */
   .b_title{
     font-size:64px;

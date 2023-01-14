@@ -369,11 +369,19 @@ article .login_tab > ul >li:last-child{
     position: relative;
 }
 
-.modal_img p {
-    position: absolute;
-    top: 42%;
-    left: 15%;
+.modal_img p:first-of-type{
+    position:absolute;
+    bottom:50%;left:10%;
     color: #fff;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+.modal_img p:last-of-type{
+    position:absolute;
+    bottom:40%;
+    left:10%;
+    color: #fff;
+    font-weight:bold;
 }
 
 .modal_btn {
@@ -386,6 +394,7 @@ article .login_tab > ul >li:last-child{
     color: #fff;
     height: 50px;
     bottom: 0px;
+    border:none;
 }
 
 

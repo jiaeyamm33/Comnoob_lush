@@ -355,7 +355,7 @@ article .login_tab > ul >li:last-child{
 }
 
 .modal_img {
-    width: 600px;
+    max-width: 600px;
     position: relative;
     top: 50%;
     left: 50%;
@@ -380,7 +380,7 @@ article .login_tab > ul >li:last-child{
     display: flex;
 }
 .modal_img input {
-    width: 300px;
+    max-width: 300px;
     display: block;
     background-color: #222;
     color: fff;

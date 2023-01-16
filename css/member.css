@@ -22,7 +22,7 @@ form {
 input {
     width: 100%;
     max-width: 345px;
-    height: 40px;
+    height: 50px;
     margin-bottom: 15px;
     border: 1px solid #949494;
     color: #949494;
@@ -52,7 +52,7 @@ input[name="email"] {
     margin-bottom:15px;
 }
 select { 
-    height: 40px;
+    height: 50px;
     width: 100%;
     max-width: 90px;
     text-align: center;
@@ -96,7 +96,7 @@ input[type=checkbox]{
 .email_box {
     display: flex;
     justify-content: space-between;
-    line-height: 40px;
+    line-height: 50px;
 
 }
 
@@ -133,7 +133,6 @@ h2 {
 
 
 select { 
-    height: 40px;
     width: 92px;
 }
 
@@ -203,15 +202,12 @@ input[type=text]{
     
 }
 input[type=submit]{
-    width:345px;
-    height:50px;
     color:#fff;
     background:#222;
     margin:0px;
     cursor:pointer;
 }
 #log_txt{
-    width:345px;
     margin:0px auto;
     display:flex;
     justify-content: space-evenly;
@@ -231,8 +227,6 @@ input[type=submit]{
     align-items:center;
 }
 #n_login{
-    width:345px;
-    height:50px;
     background:#2db400 url(../images/member/naver.png) no-repeat center left 24px;
     letter-spacing: -0.45px;
     color: #fff;
@@ -240,7 +234,6 @@ input[type=submit]{
     cursor:pointer;
 }
 #k_login{
-    width:345px;
     height:50px;
     background: #fee500 url(../images/member/kakao.png) no-repeat center left 24px;
     color:#222;

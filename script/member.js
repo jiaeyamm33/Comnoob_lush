@@ -67,18 +67,17 @@ const getCookie = (name) => {
 
 let closeTodayBtn = document.getElementById('m_n_btn');
 
+const closeModal = () => {
+    document.getElementById('modal').style.display = 'none';
+}
+
 closeTodayBtn.addEventListener('click', function closeToday() {
         let date = new Date(Date.now() + 86400e3);
         date = date.toUTCString();
         document.cookie = 'modalClose=T; expires=$(date)';
-        document.getElementById('modal').style.display = 'none';
+        closeModal();
     }
 )
 
 
 
-
-$(function(){
-
-
-})

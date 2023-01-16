@@ -570,6 +570,10 @@ address {
     display: block;
   }
 
+.sns {
+  height: 50px;
+}
+
   #sub_email {
     width: 345px;
     height: 30px;
@@ -596,6 +600,10 @@ address {
 
   .footbar {
     display: none;
+  }
+
+  .sns {
+    height: 50px;
   }
 
   .f_secue {
@@ -648,7 +656,7 @@ address {
     width: 100%;
     height: auto;
   }
-  
+
   .ethical{
     display: none;
   }  
@@ -752,6 +760,7 @@ address {
     margin: 20px 0px;
     width: 100%;
     text-align: center;
+    height: 50px;
   }
   
   .sns ul li {

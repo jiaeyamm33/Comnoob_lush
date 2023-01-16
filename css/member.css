@@ -11,7 +11,7 @@ h2 {
 }
 
 article {
-    width: 1260px;
+    width: 345px;
     margin: 0px auto;
 }
 
@@ -20,8 +20,9 @@ form {
 }
 
 input {
-    width: 345px;
-    height: 40px;
+    width: 100%;
+    max-width: 345px;
+    height: 50px;
     margin-bottom: 15px;
     border: 1px solid #949494;
     color: #949494;
@@ -34,7 +35,8 @@ input::placeholder {
 }
 
 input[name="email"] {
-    width: 155px;
+    width: 100%;
+    max-width: 155px;
 }
 
 .input_block {
@@ -50,14 +52,16 @@ input[name="email"] {
     margin-bottom:15px;
 }
 select { 
-    height: 40px;
-    width: 90px;
+    height: 50px;
+    width: 100%;
+    max-width: 90px;
     text-align: center;
     color: #949494;
 }
 
 .tel_num2 {
-    width: 255px;
+    width: 100%;
+    max-width: 255px;
     margin:0px;
 }
 
@@ -67,36 +71,38 @@ select {
 }
 input[type=checkbox]{
     accent-color: #222;
-    width:20px;height:20px;
+    width: 100%;
+    max-width: 20px;
+    height:20px;
 }
 
 .certification_number {
-    width: 195px;
-    transform: translateX(-7px);
+    width: 100%;
+    max-width: 200px;
 }
 
 .certification_check {
-    width: 130px;
-    transform: translateX(7px);
+    width: 100%;
+    max-width: 130px;
     background-color: #fff;
     text-indent: 0px;
 }
 
-.email_at {
-    display: inline-block;
-    transform: translateY(-7px);
+.tell_box {
+    display: flex;
+    justify-content: space-between;
 }
 
-.email_id {
-    transform: translateX(-5px);
-}
+.email_box {
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
 
-.email_add {
-    transform: translateX(5px);
 }
 
 .sms {
-    height: 25px;
+    max-height: 25px;
+    height: 100%;
     line-height: 25px;
     color: #222;
     display:flex;
@@ -107,39 +113,7 @@ input[type=checkbox]{
 
 @media screen and (max-width:1024px) and (min-width:767px){
 
-main {
-        width: 100%;
-}
 
-article {
-    width: 100%;
-}
-
-
-input[name="email"] {
-    width: 151px;
-}
-
-
-select { 
-    height: 40px;
-    width: 92px;
-}
-
-
-
-.certification_number {
-    width: 203px;
-}
-
-.certification_check {
-    width: 126px;
-
-}
-
-input[name="email"] {
-    width: 157px;
-}
 
 input[type="checkbox"] {
     accent-color: #222;
@@ -153,38 +127,13 @@ input[type="checkbox"] {
 
 @media screen and (max-width:766px) and (min-width:1px){
 
-    main {
-        width: 100%;
-}
-
 h2 {
     font-size: 2em;
 }
 
-article {
-    width: 100%;
-}
-
-input[name="email"] {
-    width: 151px;
-}
 
 select { 
-    height: 40px;
     width: 92px;
-}
-
-.certification_number {
-    transform: translateX(-7px);
-}
-
-.certification_check {
-    width: 135px;
-
-}
-
-input[name="email"] {
-    width: 157px;
 }
 
 
@@ -199,7 +148,7 @@ label{
     text-align: center;
 }
 .title{
-    font-size:32px;
+    font-size:2rem;
 }
 .login_tab{
     width:100%;
@@ -216,6 +165,7 @@ label{
 .login_tab > ul > li > label{
     cursor:pointer;
 }
+
 input[type=radio]{
     display:none;    
 }
@@ -252,15 +202,12 @@ input[type=text]{
     
 }
 input[type=submit]{
-    width:345px;
-    height:50px;
     color:#fff;
     background:#222;
     margin:0px;
     cursor:pointer;
 }
 #log_txt{
-    width:345px;
     margin:0px auto;
     display:flex;
     justify-content: space-evenly;
@@ -280,8 +227,6 @@ input[type=submit]{
     align-items:center;
 }
 #n_login{
-    width:345px;
-    height:50px;
     background:#2db400 url(../images/member/naver.png) no-repeat center left 24px;
     letter-spacing: -0.45px;
     color: #fff;
@@ -289,7 +234,6 @@ input[type=submit]{
     cursor:pointer;
 }
 #k_login{
-    width:345px;
     height:50px;
     background: #fee500 url(../images/member/kakao.png) no-repeat center left 24px;
     color:#222;
@@ -303,6 +247,11 @@ input[type=submit]{
 .r_tab{
     display:none;
 }
+
+.r_tab p {
+    margin-top: 10px;
+}
+
 #reg:checked ~ article .login_tab .l_tab{display:block;}
 article .login_tab > ul >li:first-child{
     position:relative;
@@ -355,6 +304,7 @@ article .login_tab > ul >li:last-child{
 }
 
 .modal_img {
+    width: 100%;
     max-width: 600px;
     position: relative;
     top: 50%;

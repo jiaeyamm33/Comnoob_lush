@@ -60,7 +60,7 @@ $(function(){
   //New slide
   let swiper = new Swiper(".mySwiper", {
     slidesPerView: 'auto',
-    spaceBetween: 50,
+    // spaceBetween: 50,
     
     pagination: {
       el: ".swiper-pagination",

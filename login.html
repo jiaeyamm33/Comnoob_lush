@@ -97,36 +97,36 @@
             <div class="login_tab">
                 <ul>
                     <li>
-                        <label for="reg" value="회원">회원</label>
+                        <label for="reg">회원</label>
                     </li>
                     <li>
-                        <label for="n_reg" value="비회원">비회원</label>
+                        <label for="n_reg">비회원</label>
                     </li>
                 </ul>
-                <form action="" method="post" name="user_login" id="user_login">
+                <form action="login.php" method="post" name="user_login" id="user_login">
                 <div class="l_tab">
-                <div class="login_box">
+                    <div class="login_box">
                     <input type="text" name="username" placeholder="아이디" id="username">
                     <input type="password" name="l_password" placeholder="비밀번호" id="l_password">
-                </div>
-                <div class="remember_wrap">
+                    </div>
+                    <div class="remember_wrap">
                     <input type="checkbox" id="save_id" name="remember_me" >
                     <label for="save_id">아이디 저장</label>
-                </div>
-                <input type="submit" class="black_btn" value="로그인" id="btn">
-                <ul id="log_txt">
-                    <li><a href="signup.html" title="회원가입">회원가입</a></li>
-                    <li><a href="#none" title="아이디찾기">아이디 찾기</a></li>
-                    <li><a href="#none" title="비밀번호찾기">비밀번호찾기</a></li>
-                </ul>
-                <div class="sns_login">
+                    </div>
+                    <input type="submit" class="black_btn" value="로그인" id="btn">
+                    <ul id="log_txt">
+                      <li><a href="signup.html" title="회원가입">회원가입</a></li>
+                      <li><a href="#none" title="아이디찾기">아이디 찾기</a></li>
+                      <li><a href="#none" title="비밀번호찾기">비밀번호찾기</a></li>
+                  </ul>
+                  <div class="sns_login">
                     <input type="button" value="네이버 아이디로 로그인" id="n_login">
                     <input type="button" value="카카오 아이디로 로그인" id="k_login">
+                  </div>
                 </div>
                 </form>
-                </div>
                 <div class="r_tab">
-                    <form action="" method="post" name="unknown_login" id="unknown_login">
+                    <form action="order.php" method="post" name="unknown_login" id="unknown_login">
                     <div class="unknown">
                     <input type="text" placeholder="주문자명" id="u_name">
                     <input type="text" placeholder="주문번호" id="u_num">
@@ -138,6 +138,21 @@
             
             </div>
         </article>
+        
+        <div id="modal">
+          <div class="modal_img">
+          <a href="signup.html" title="회원가입">
+          <img src="./images/member/20230113153203L.png" alt="배너 증정">
+          <!-- <p>지금 회원가입 하시면 랜덤으로 보디 스프레이 테스터를 드려요!</p> -->
+          <p><span>보디 스프레이<br>깜짝 이벤트!</span></p>
+          <p>[EVENT]회원가입 하고 선물 받기!</p>
+          </a>
+          <div class="modal_btn">
+          <input type="button" value="닫기" id="m_c_btn">
+          <input type="button" value="오늘 하루 더이상 보지 않기" id="m_n_btn">
+        </div>  
+        </div>
+        </div>
         
         
     </main>

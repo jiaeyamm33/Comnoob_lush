@@ -439,7 +439,7 @@ address {
     font-size: 1em;
   }
   
-  a {
+  footer a {
     text-decoration: none;
     color: #fff;
   }
@@ -643,7 +643,7 @@ address {
     height: auto;
   }
   
-  a {
+  footer a {
     text-decoration: none;
     color: #fff;
   }

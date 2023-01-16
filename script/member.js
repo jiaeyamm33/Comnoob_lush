@@ -51,3 +51,14 @@ uLogbtn.addEventListener('submit', function(e) {
         swal('주문자명 오류', '주문자명를 확인해주세요.', 'error');
     }
 });
+
+let modalBtn = document.getElementById('m_c_btn');
+let modalToday = document.getElementById('m_n_btn');
+
+m_c_btn.addEventListener('click', function() {
+    document.getElementById('modal').style.display = 'none';
+})
+
+modalToday.addEventListener('click', function() {
+    document.getElementById('modal').style.display = 'none';
+})

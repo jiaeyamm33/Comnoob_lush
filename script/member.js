@@ -52,13 +52,33 @@ uLogbtn.addEventListener('submit', function(e) {
     }
 });
 
+
 let modalBtn = document.getElementById('m_c_btn');
-let modalToday = document.getElementById('m_n_btn');
 
 m_c_btn.addEventListener('click', function() {
     document.getElementById('modal').style.display = 'none';
 })
 
-modalToday.addEventListener('click', function() {
-    document.getElementById('modal').style.display = 'none';
+const getCookie = (name) => {
+    const vlaue = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+    return vlaue ? value[2] : null;
+}
+
+
+let closeTodayBtn = document.getElementById('m_n_btn');
+
+closeTodayBtn.addEventListener('click', function closeToday() {
+        let date = new Date(Date.now() + 86400e3);
+        date = date.toUTCString();
+        document.cookie = 'modalClose=T; expires=$(date)';
+        document.getElementById('modal').style.display = 'none';
+    }
+)
+
+
+
+
+$(function(){
+
+
 })

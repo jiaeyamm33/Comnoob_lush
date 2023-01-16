@@ -78,14 +78,12 @@ input[type=checkbox]{
 
 .certification_number {
     width: 100%;
-    max-width: 195px;
-    transform: translateX(-7px);
+    max-width: 200px;
 }
 
 .certification_check {
     width: 100%;
     max-width: 130px;
-    transform: translateX(7px);
     background-color: #fff;
     text-indent: 0px;
 }
@@ -151,7 +149,7 @@ label{
     text-align: center;
 }
 .title{
-    font-size:32px;
+    font-size:2rem;
 }
 .login_tab{
     width:100%;
@@ -168,6 +166,7 @@ label{
 .login_tab > ul > li > label{
     cursor:pointer;
 }
+
 input[type=radio]{
     display:none;    
 }
@@ -255,6 +254,11 @@ input[type=submit]{
 .r_tab{
     display:none;
 }
+
+.r_tab p {
+    margin-top: 10px;
+}
+
 #reg:checked ~ article .login_tab .l_tab{display:block;}
 article .login_tab > ul >li:first-child{
     position:relative;
@@ -307,6 +311,7 @@ article .login_tab > ul >li:last-child{
 }
 
 .modal_img {
+    width: 100%;
     max-width: 600px;
     position: relative;
     top: 50%;

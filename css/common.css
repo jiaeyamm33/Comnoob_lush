@@ -757,6 +757,21 @@ address {
     margin: 0px 20px;
   }
   
+  @media screen and (max-width:420px) and (min-width:1px) {
+
+    #sub_email {
+      width: 300px;
+    }
+
+    .subs_btn {
+      font-size: 0.9em;
+      left: 300px;
+    }
+
+    .cs_service, .corp_gift {
+      font-size: 0.8em;
+    }
+  }
 
 
 }

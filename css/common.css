@@ -302,10 +302,6 @@ footer a {
   width: 100%;
 }
 
-.subscribe_box {
-  display: flex;
-  justify-content: left;
-}
 .subscribe{
   grid-area: subscribe;
   height: 90px;
@@ -362,6 +358,10 @@ dt {
   margin-bottom: 20px;
 }
 
+.email_flex {
+  display: flex;
+}
+
 #sub_email {
   width: 100%;
   max-width: 392px;
@@ -371,6 +371,7 @@ dt {
   border: none;
   color: #fff;
   outline: none;
+  padding: 0px;
 
 }
 
@@ -383,6 +384,7 @@ dt {
   height: 30px;
   border: none;
   text-indent: 0px;
+  vertical-align: none;
 }
 
 address {
@@ -788,7 +790,13 @@ address {
     height: 70px;
   }
   
-  
+  .footbar {
+    display: none;
+  }
+
+  .f_secue {
+    display: block;
+  }
   
   .f_lnb > ul {
     display: flex;

@@ -146,7 +146,6 @@ selecTap.addEventListener('change', function(){
   productSet(cateNum);
 });
 
-
 function productSet(num) {
   productSort();
   let temp = 0;

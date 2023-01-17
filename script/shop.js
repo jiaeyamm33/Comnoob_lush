@@ -149,11 +149,7 @@ selecTap.addEventListener('change', function(){
 
 function productSet(num) {
   // 카테고리에 맞게 배열 교체
-  if(num > 0){
-    productSortArray = productSort(products.slice(num*16, (num+1)*16));
-  } else {
-    productSortArray = productSort(products.slice(0, 16));
-  }
+  productSortArray = productSort(products.slice(num*16, (num+1)*16));
   let temp = 0;
   cateNum = num;
   for(let i=0;i<productSortArray.length;i++){
@@ -217,7 +213,7 @@ function productSort(sortArray) {
       console.log('정렬 오류 발생!!');
       break;
   }
-  return sortArray;
+  return sortArray; // 함수의 결과값을 리턴하여 배열을 저장
 }
 
 let s_category = document.getElementById('#s_category');

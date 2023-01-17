@@ -59,8 +59,9 @@ m_c_btn.addEventListener('click', function() {
     document.getElementById('modal').style.display = 'none';
 })
 
+/*
     // 쿠키 가져오기
-/*    let getCookie = function (cname) {
+    let getCookie = function (cname) {
         let name = cname + "=";
         let ca = document.cookie.split(';');
         for(var i=0; i<ca.length; i++) {
@@ -69,7 +70,9 @@ m_c_btn.addEventListener('click', function() {
             if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
         }
         return "";
-    } */
+    }
+*/
+
 
     // 24시간 기준 쿠키 설정하기  
     let setCookie = function (cname, cvalue, exdays) {

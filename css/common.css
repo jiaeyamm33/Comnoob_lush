@@ -185,6 +185,9 @@ dl dt, dl dd {
   background: #000;
   padding:50px 0px;
   overflow:hidden;
+  position: fixed;
+  top: 100px;
+  z-index: 1;
 }
 .fa-magnifying-glass {
   font-size:24px;

@@ -1,8 +1,8 @@
 $(function(){
   //메인 휠 이벤트
   let stopScroll = 0;
-  $(window).on('load', function(e){ // 페이지가 로딩되면
-    if($(this).scrollTop() != 0){ // 현재 스크롤을 검증하여 
+  $(window).on('load', function(e){
+    if($(this).scrollTop() != 0 || window.matchMedia("screen and (max-width: 1024px)").matches){
       stopScroll = 1;
     }
   });

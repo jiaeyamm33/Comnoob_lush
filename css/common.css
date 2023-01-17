@@ -10,6 +10,8 @@ a {
   text-decoration : none;
   color : #000;
 }
+
+
 @font-face {
     font-family: 'LushKR Handwritten OTF';
     src:url('../fonts/LUSHKR_Medium.otf');
@@ -182,7 +184,6 @@ footer{
   margin-top:160px;
   color:#fff;
   width: 100%;
-
 }
 
 footer a {

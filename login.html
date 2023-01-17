@@ -106,32 +106,32 @@
                 <form action="login.php" method="post" name="user_login" id="user_login">
                 <div class="l_tab">
                     <div class="login_box">
-                    <input type="text" name="username" placeholder="아이디" id="username">
-                    <input type="password" name="l_password" placeholder="비밀번호" id="l_password">
+                    <input type="text" name="username" title="아이디 입략" placeholder="아이디" id="username">
+                    <input type="password" name="l_password" title="아이디 입력" placeholder="비밀번호" id="l_password">
                     </div>
                     <div class="remember_wrap">
-                    <input type="checkbox" id="save_id" name="remember_me" >
+                    <input type="checkbox" id="save_id" title="아이디 저장" name="remember_me">
                     <label for="save_id">아이디 저장</label>
                     </div>
-                    <input type="submit" class="black_btn" value="로그인" id="btn">
+                    <input type="submit" class="black_btn" title="로그인 버튼" value="로그인" id="btn">
                     <ul id="log_txt">
                       <li><a href="signup.html" title="회원가입">회원가입</a></li>
                       <li><a href="#none" title="아이디찾기">아이디 찾기</a></li>
                       <li><a href="#none" title="비밀번호찾기">비밀번호찾기</a></li>
                   </ul>
                   <div class="sns_login">
-                    <input type="button" value="네이버 아이디로 로그인" id="n_login">
-                    <input type="button" value="카카오 아이디로 로그인" id="k_login">
+                    <input type="button" value="네이버 아이디로 로그인" title="네이버 아이디 로그인" id="n_login">
+                    <input type="button" value="카카오 아이디로 로그인" title="카카오 아이디 로그인" id="k_login">
                   </div>
                 </div>
                 </form>
                 <div class="r_tab">
                     <form action="order.php" method="post" name="unknown_login" id="unknown_login">
                     <div class="unknown">
-                    <input type="text" placeholder="주문자명" id="u_name">
-                    <input type="text" placeholder="주문번호" id="u_num">
+                    <input type="text" placeholder="주문자명" title="주문자명 입력" id="u_name">
+                    <input type="text" placeholder="주문번호" title="주문번호 입력" id="u_num">
                     </div>
-                    <input type="submit" value="주문확인" id="logbtn">
+                    <input type="submit" value="주문확인" title="주문확인" id="logbtn">
                     <p class="forgot">주문번호를 잊으신 경우, <br>고객센터로 문의하여 주시기 바랍니다.</p>
                 </form>
                 </div>
@@ -148,8 +148,8 @@
           <p>[EVENT]회원가입 하고 선물 받기!</p>
           </a>
           <div class="modal_btn">
-          <input type="button" value="닫기" id="m_c_btn">
-          <input type="button" value="오늘 하루 더이상 보지 않기" id="m_n_btn">
+          <input type="button" value="닫기" title="팝업창 닫기 버튼" id="m_c_btn">
+          <input type="button" value="오늘 하루 더이상 보지 않기" title="팝업창 오늘 하루 보지 않기 버튼" id="m_n_btn">
         </div>  
         </div>
         </div>
@@ -175,9 +175,9 @@
         <div class="f_wrap">
         <div class="subscribe">
           <div class="subscribe_box">
-            <input type="text" id="sub_email" placeholder=" 이메일을 입력하세요">
+            <input type="text" id="sub_email" placeholder="이메일을 입력하세요" title="이메일 입력">
             <label for="sub_email"></label>
-            <input type="button" value="구독" class="subs_btn">
+            <input type="button" value="구독" title="구독버튼" class="subs_btn">
           </div>
             <p>매주 월요일 오후, 구독자님을 위한 제품과 브랜드 이야기를 전해 드립니다.<br>
                 구독은 언제든지 해지하실 수 있습니다.

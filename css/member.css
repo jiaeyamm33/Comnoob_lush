@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-main {
+main, input, select, .tel_num2, .certification_number, .certification_check {
     width:100%;
 }
 
@@ -20,12 +20,10 @@ form {
 }
 
 input {
-    width: 100%;
     max-width: 345px;
     height: 50px;
     margin-bottom: 15px;
     border: 1px solid #949494;
-    color: #949494;
     text-indent:10px;
     font-size: 14px;
 }
@@ -35,7 +33,6 @@ input::placeholder {
 }
 
 input[name="email"] {
-    width: 100%;
     max-width: 155px;
 }
 
@@ -53,14 +50,12 @@ input[name="email"] {
 }
 select { 
     height: 50px;
-    width: 100%;
     max-width: 90px;
     text-align: center;
     color: #949494;
 }
 
 .tel_num2 {
-    width: 100%;
     max-width: 255px;
     margin:0px;
 }
@@ -70,19 +65,16 @@ select {
     margin-bottom: 3px;
 }
 input[type=checkbox]{
-    accent-color: #222;
     width: 100%;
     max-width: 20px;
     height:20px;
 }
 
 .certification_number {
-    width: 100%;
     max-width: 200px;
 }
 
 .certification_check {
-    width: 100%;
     max-width: 130px;
     background-color: #fff;
     text-indent: 0px;
@@ -194,7 +186,7 @@ input[type=text]{
     width:345px;
     margin:0px auto;
     display:flex;
-    justify-content: baseline;
+    justify-content:left;
     align-items:center;
 }
 #save_id{

@@ -59,25 +59,39 @@ m_c_btn.addEventListener('click', function() {
     document.getElementById('modal').style.display = 'none';
 })
 
-const getCookie = (name) => {
-    const vlaue = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
-    return vlaue ? value[2] : null;
-}
+    // 쿠키 가져오기
+/*    let getCookie = function (cname) {
+        let name = cname + "=";
+        let ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1);
+            if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+        }
+        return "";
+    } */
 
-
-let closeTodayBtn = document.getElementById('m_n_btn');
-
-const closeModal = () => {
-    document.getElementById('modal').style.display = 'none';
-}
-
-closeTodayBtn.addEventListener('click', function closeToday() {
-        let date = new Date(Date.now() + 86400e3);
-        date = date.toUTCString();
-        document.cookie = 'modalClose=T; expires=$(date)';
-        closeModal();
+    // 24시간 기준 쿠키 설정하기  
+    let setCookie = function (cname, cvalue, exdays) {
+        let todayDate = new Date();
+        todayDate.setTime(todayDate.getTime() + (exdays*24*60*60*1000));    
+        let expires = "expires=" + todayDate.toUTCString(); //
+        document.cookie = cname + "=" + cvalue + "; " + expires;
     }
-)
 
+    $('#m_n_btn').click(function() {
+        setCookie("close", "y", 1);
+    $('#modal').hide();
+    });
+
+    
+    $(document).ready(function(){
+        let cookiedata = document.cookie;
+        if(cookiedata.indexOf("close=y")<0){
+            $("#modal").show();
+        }else{
+            $("#modal").hide();
+        }
+    });
 
 

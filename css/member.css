@@ -109,12 +109,9 @@ input[type=checkbox]{
 
 
 input[type="checkbox"] {
-    accent-color: #222;
     width: 20px;
     height: 20px;   
 }
-
-
 
 }
 

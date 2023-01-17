@@ -1,4 +1,21 @@
 let products = [
+  {'name' : '인터갈릭틱', 'category' : '배쓰 밤', 'price' : '17000', 'like' : 201, 'view' : 350, 'src' : './images/shop/product01.png'},
+  {'name' : '럭스', 'category' : '배쓰 밤', 'price' : '20000', 'like' : 153, 'view' : 174, 'src' : './images/shop/product05.png'},
+  {'name' : '슬리피', 'category' : '샤워 젤', 'price' : '19000', 'like' : 194, 'view' : 210, 'src' : './images/shop/product09.png'},
+  {'name' : '해피 페이스', 'category' : '배쓰 밤', 'price' : '15000', 'like' : 84, 'view' : 87, 'src' : './images/shop/product13.png'},
+  {'name' : '트와일라잇', 'category' : '보디 스프레이', 'price' : '60000', 'like' : 161, 'view' : 175, 'src' : './images/shop/product02.png'},
+  {'name' : '챠콜', 'category' : '페이셜 솝', 'price' : '22000', 'like' : 141, 'view' : 142, 'src' : './images/shop/product06.png'},
+  {'name' : '더 컴포터', 'category' : '배쓰 밤', 'price' : '19000', 'like' : 152, 'view' : 159, 'src' : './images/shop/product10.png'},
+  {'name' : '대디-오', 'category' : '샴푸', 'price' : '19000', 'like' : 142, 'view' : 149, 'src' : './images/shop/product14.png'},
+  {'name' : '마스크 오브 매그너민티', 'category' : '파워 마스크', 'price' : '22000', 'like' : 157, 'view' : 201, 'src' : './images/shop/product03.png'},
+  {'name' : '더티 보디 스프레이', 'category' : '보디 스프레이', 'price' : '60000', 'like' : 156, 'view' : 157, 'src' : './images/shop/product07.png'},
+  {'name' : '더티 로즈', 'category' : '배쓰 밤', 'price' : '18000', 'like' : 121, 'view' : 129, 'src' : './images/shop/product11.png'},
+  {'name' : '릴렉스', 'category' : '기프트', 'price' : '70000', 'like' : 74, 'view' : 86, 'src' : './images/shop/product15.png'},
+  {'name' : '섹스 밤', 'category' : '배쓰 밤', 'price' : '14000', 'like' : 101, 'view' : 150, 'src' : './images/shop/product04.png'},
+  {'name' : '팬시', 'category' : '향수', 'price' : '55000', 'like' : 149, 'view' : 151, 'src' : './images/shop/product08.png'},
+  {'name' : '스노우 페어리 4 윅', 'category' : '캔들', 'price' : '100000', 'like' : 80, 'view' : 98, 'src' : './images/shop/product12.png'},
+  {'name' : '말차 롤', 'category' : '버블 바', 'price' : '20000', 'like' : 60, 'view' : 84, 'src' : './images/shop/product16.png'},
+  //new
   {'name' : '인터갈릭틱', 'category' : '배쓰 밤', 'price' : '17000', 'like' : 9, 'view' : 10, 'src' : './images/shop/product01.png'},
   {'name' : '럭스', 'category' : '배쓰 밤', 'price' : '20000', 'like' : 8, 'view' : 30, 'src' : './images/shop/product05.png'},
   {'name' : '슬리피', 'category' : '샤워 젤', 'price' : '19000', 'like' : 13, 'view' : 27, 'src' : './images/shop/product09.png'},
@@ -119,27 +136,31 @@ let products = [
   {'name' : '러스트', 'category' : '퍼퓸', 'price' : '75000', 'like' : 120, 'view' : 167, 'src' : './images/shop/product112.png'}
 ];
 
-
 let selecTap = document.getElementById('sort'); // 셀렉트박스
 let sortValue = 'view'; // 정렬기준
 
-productSet();
+let cateNum = 0;
+
+productSet(cateNum);
 selecTap.addEventListener('change', function(){
-  productSet();
+  productSet(cateNum);
 });
 
 
-function productSet() {
+function productSet(num) {
   productSort();
-  for(let i = 0; i < products.length; i++){
+  let temp = 0;
+  cateNum = num;
+  for(let i=(num*16);i<((num+1)*16);i++){
     let product_img = '<img src="'+products[i].src+'" alt="상품"'+i+'>';
     let product_content = '<div>'+
     '<strong>'+products[i].name+'</strong>'+
     '<p>'+products[i].category+'</p>'+
     '<p>&#xFFE6;'+Number(products[i].price).toLocaleString('ko-KR')+'</p>'+
     '</div>';
-    document.getElementsByClassName('product')[i].setAttribute('title', '상품'+i);
-    document.getElementsByClassName('product')[i].innerHTML = product_img+product_content;
+    document.getElementsByClassName('product')[temp].setAttribute('title', '상품'+i);
+    document.getElementsByClassName('product')[temp].innerHTML = product_img+product_content;
+    temp++;
   }
 }
 
@@ -191,3 +212,18 @@ function productSort() {
       break;
   }
 }
+
+let s_category = document.getElementById('#s_category');
+let c_content = document.querySelectorAll('#s_category li a');
+
+for(let c_i=0;c_i<8;c_i++){
+  c_content[c_i].addEventListener('click',function(){
+    for(let c_j=0;c_j<8;c_j++){
+      c_content[c_j].classList.remove('on');
+    }
+    c_content[c_i].classList.add('on');
+    productSet(c_i);
+  });
+}
+
+

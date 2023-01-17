@@ -10,5 +10,14 @@ $(document).ready(function(){
             $('.t_btn').css('display','none');
         }
     });
-
+    //gnb 사이드메뉴
+    let m_menu = document.getElementById('m_menu');
+    m_menu.addEventListener('change', function(){
+        if(m_menu.checked==true){
+            document.querySelector('body').style.overflow = 'hidden';
+        } else {
+            document.querySelector('body').style.overflow = '';
+        }
+    });
 });
+

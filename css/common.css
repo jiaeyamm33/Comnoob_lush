@@ -178,6 +178,74 @@ dl dt, dl dd {
   font-size : 24px;
 }
 
+/* 검색폼 서식 */
+#search_form{
+  width:100%;
+  height:300px;
+  background: #000;
+  padding:50px 0px;
+  overflow:hidden;
+}
+.fa-magnifying-glass {
+  font-size:24px;
+  color:#fff;
+  cursor:pointer;
+}
+.s_wrap{
+  max-width:1200px;
+  margin:0px auto;
+  width:100%;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.s_form{
+  width:50%;
+  height:40px;
+  background: none;
+  border:none;
+  border-bottom:3px solid #fff;
+  color:#fff;
+}
+.s_word{
+  max-width:1200px;
+  margin:0px auto;
+  width:100%;
+  padding:50px 0px 24px 0px;
+  display:flex;
+  justify-content:space-around;
+}
+.s_word h2{
+  color:#fff;
+}
+.s_wrod h2:first-child{
+  position:relative;
+}
+.key_box{
+  width:500px;
+  margin:0 auto;
+  max-height:150px;
+  overflow:hidden;
+}
+.key_box a{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:20px;
+  border: 1px solid #949494;
+  color:#fff;
+  letter-spacing:-0.45px;
+  margin-right:24px;
+  margin-bottom:24px;
+}
+
+#search_form{
+  display:none;
+}
+#p_search:checked ~ #search_form{
+  display:block;
+}
+
 /* 푸터 영역 서식 */
 footer{
   background:#000;
@@ -787,5 +855,260 @@ address {
     }
   }
 
+  
+  
+  
+}
+/* gnb 태블릿 이하 서식 */
 
+#m_menu,.m_gnb, #m_product, #m_magazine , #m_intro{display: none;}
+/* 미디어 스크린 모바일 */
+@media screen and (max-width:1024px) {
+  #m_header {
+    width: 100%; height: 64px;
+    padding: 0 15px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #000;
+  }
+  #m_header > .m_menu_wrap {
+    width: 24px; height: 20px;
+    position: relative;
+    z-index: 501;
+  }
+  #m_header > .m_menu_wrap > span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: .3s;
+  }
+  #m_header > .m_menu_wrap > span:nth-of-type(1) {top: 0;}
+  #m_header > .m_menu_wrap > span:nth-of-type(2) {top: 8.5px;}
+  #m_header > .m_menu_wrap > span:nth-of-type(3) {bottom: 0;}
+  
+  #m_menu:checked ~ #m_header .m_menu_wrap > span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 8.5px;
+  }    
+  #m_menu:checked ~ #m_header .m_menu_wrap > span:nth-of-type(2) {
+    opacity: 0;
+  }
+  #m_menu:checked ~ #m_header .m_menu_wrap > span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    bottom: 8.5px;
+  }
+  
+  #m_header > #m_logo {
+    width: 140px;
+    justify-self: center;
+  }
+  #m_header > #m_logo > a {}
+  #m_header > #m_logo > a > img {width: 100%;}
+  #m_header > .m_icons {
+    font-size: 24px;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+  }
+  #m_header > .m_icons > a {
+    display: block;
+    color:#fff;
+  }
+  
+  /* 펼쳐지는 m_gnb 서식 */
+
+  #m_menu:checked ~ .m_gnb{left: 0;}
+  #m_menu:checked ~ .m_header .m_menu_wrap {justify-content: right;}
+  /* #m_menu:checked ~ #m_header{display:none;} */
+  .m_gnb{
+    display: block;
+    width:100%;
+    height: 100%;
+    overflow: auto;
+    background:rgba(0, 0, 0, 0.7);
+    position:absolute;
+    top: 0;
+    left: -100vw;
+    z-index: 500;
+    transition: .3s;
+  }
+  .m_gnb a{
+    color: #fff;
+  }
+  .m_gnb li {
+    text-align: left;
+  }
+  .gnb_logo{
+    padding-top:24px;
+    padding-left:24px;
+  }
+  .gnb_logo img{
+    width:140px;height:36px;
+  }
+  .search_box{
+    width:100%;
+    margin:0px auto;
+    text-align: center;
+    padding:50px 0px;
+  }
+  #m_search{
+    width:50%;
+    background:none;
+    border:none;
+    border-bottom:3px solid #fff;
+    color:#fff;
+    font-size:1rem;
+
+  }
+  #m_search:focus{
+    outline: none;
+  }
+  .fa-magnifying-glass{
+    font-size:24px;
+    color:#fff;
+    cursor:pointer;
+  }
+  .m_category{
+    padding-left:50px;
+  }
+  .m_category > li{
+    line-height:50px;
+  }
+  .m_category > li {
+    font-size:28px;
+    font-weight:bold;
+  }
+  .m_category > li label{
+    font-size:28px;
+    font-weight:bold;
+    display:block;
+    color:#fff;
+  }
+  .m_des > li {
+    text-indent:20px;
+    line-height:50px;
+  }
+  .m_des > li > a{
+    font-size:24px;
+  }
+  .m_subc{
+    padding:50px 0px 100px 50px;
+  }
+  .m_subc > li > a{
+    font-size:28px;
+    font-weight:bold;
+  }
+  .m_subc > li{
+    line-height: 50px;
+  }
+
+  .m_guide{
+    padding:100px 0px 50px 0px;
+  }
+  .m_guide > p{
+    text-align: center;
+    margin:0px auto;
+  }
+  .m_guide > p span{
+    color:#f2f2f2;
+    font-size:12px;
+  }
+  .p_hide{
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s;
+  }
+  #m_product:checked ~.m_gnb .m_category .p_hide {
+    height: 468px;
+  }
+  .m_hide{
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s;
+  }
+  #m_magazine:checked ~.m_gnb .m_category .m_hide {
+    height: 156px;
+  }
+  .i_hide{
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s;
+  }
+  #m_intro:checked ~.m_gnb .m_category .i_hide {
+    height: 104px;
+  }
+
+  .m_category > li:first-child label{
+    position:relative;
+  }
+  .m_category > li:nth-child(3) label{
+    position: relative;
+  }
+  .m_category > li:nth-child(3) label{
+    position:relative;
+  }
+  #m_product:checked ~ .m_gnb .m_category > li:first-child label::after{
+    transform:rotate(180deg);
+  }
+  .m_category > li:first-child label::after{
+    content:'\f107';
+    font-family:'Font Awesome 5 Free';
+    position:absolute;
+    right:50px;
+    cursor:pointer;
+  }
+  #m_magazine:checked ~ .m_gnb .m_category > li:nth-child(3) label::after{
+    transform:rotate(180deg);
+  }
+  .m_category > li:nth-child(3) label::after{
+    content:'\f107';
+    font-family:'Font Awesome 5 Free';
+    position:absolute;
+    right:50px;
+    cursor:pointer;
+  }
+  #m_intro:checked ~ .m_gnb .m_category > li:nth-child(4) label::after{
+    transform:rotate(180deg);
+  }
+  .m_category > li:nth-child(4) label::after{
+    content:'\f107';
+    font-family:'Font Awesome 5 Free';
+    position:absolute;
+    right:50px;
+    cursor:pointer;
+  }
+
+  .m_subc li:first-child::after{
+    content:'\f118';
+    font-family:'Font Awesome 5 Free';
+    position:absolute;
+    right:50px;
+    cursor:pointer;
+    color:#fff;
+    font-size:25px;
+  }
+  .m_subc li:nth-child(2)::after{
+    content:'\f290';
+    font-family:'Font Awesome 5 Free';
+    position:absolute;
+    right:50px;
+    cursor:pointer;
+    color:#fff;
+    font-size:25px;
+    font-weight:bold;
+  }
+  .m_subc li:last-child::after{
+    content:'\f075';
+    font-family:'Font Awesome 5 Free';
+    position:absolute;
+    right:50px;
+    cursor:pointer;
+    color:#fff;
+    font-size:25px;
+  }
 }

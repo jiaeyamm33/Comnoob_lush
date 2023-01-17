@@ -85,11 +85,11 @@
         <article>
         <h2>회원가입</h2>
         <form action="login.php" method="post" name="sign_up" class="input_block com_input" id="s_done">
-            <input type="text" placeholder=" 아이디" required>
-            <input type="password" name="password" id="password" placeholder=" 비밀번호" class="input_block" required>
-            <input type="password" name="paassword" id="password_check" placeholder=" 비밀번호 확인" class="input_block" required>
-            <input type="text" name="name" id="name" placeholder=" 이름" class="input_block" required>
-            <input type="text" name="nikname" id="nik_name" placeholder=" 닉네임" class="input_block" required>
+            <input type="text" title="아이디 입력" placeholder=" 아이디" required>
+            <input type="password" name="password" title="비밀번호 입력" id="password" placeholder=" 비밀번호" class="input_block" required>
+            <input type="password" name="paassword" title="비밀번호 확인" id="password_check" placeholder=" 비밀번호 확인" class="input_block" required>
+            <input type="text" name="name" title="이름 입력" id="name" placeholder=" 이름" class="input_block" required>
+            <input type="text" name="nikname" title="닉네임 입력" id="nik_name" placeholder=" 닉네임" class="input_block" required>
             <div id="tell">
             <select name="tel" class="tell">
                 <option value="010">010</option>
@@ -99,24 +99,24 @@
                 <option value="010">019</option>
                 <option value="010">02</option>
             </select>
-            <input type="text" name="telnumber" class="tel_num2" placeholder="휴대전화번호" required>
+            <input type="text" name="telnumber" class="tel_num2" title="휴대전화번호 입력" placeholder="휴대전화번호" required>
             </div>
             <div class="tell_box">
-            <input type="text" name="certification_number" placeholder="인증번호" class="certification_number" required>
-            <input type="button" value="인증번호 확인" name="certification_number" class="certification_check">
+            <input type="text" title="인증번호 입력" name="certification_number" placeholder="인증번호" class="certification_number" required>
+            <input type="button" value="인증번호 확인" title="인증번호 확인" name="certification_number" class="certification_check">
           </div>
             <div class="email_box">
-            <input type="text" placeholder=" 이메일" name="email" class="email_id"> <span class="email_at">@</span>
-            <input type="text" name="email" class="email_add">
+            <input type="text" placeholder=" 이메일" name="email" title="이메일아이디 입력" class="email_id"> <span class="email_at">@</span>
+            <input type="text" name="email" class="email_add" title="이메일주소 입력">
           </div>
             <hr>
             <div class="sms">
-            <input type="checkbox" name="체크박스" class="check_box">정보/이벤트 메일 수신에 동의합니다.
+            <input type="checkbox" name="체크박스" class="check_box" title="정보이벤트 메일 수신 동의">정보/이벤트 메일 수신에 동의합니다.
             </div>
             <div class="sms">
-            <input type="checkbox" name="정보수신이벤트" class="check_box">정보/이벤트 문자 수신에 동의합니다.
+            <input type="checkbox" name="정보수신이벤트" class="check_box" title="정보이벤트 문자 수신 동의">정보/이벤트 문자 수신에 동의합니다.
             </div>
-            <input type="submit" value="회원가입" id="signUp">
+            <input type="submit" value="회원가입" id="signUp" title="회원가입 제출">
         </form>
     </article>
     </main>
@@ -138,7 +138,7 @@
         <div class="f_wrap">
         <div class="subscribe">
             <div class="email_flex">
-            <input type="text" id="sub_email" placeholder=" 이메일을 입력하세요">
+            <input type="text" id="sub_email" placeholder=" 이메일을 입력하세요" title="구독 이메일 입력">
             <label for="sub_email"></label>
             <input type="button" value="구독" class="subs_btn">
             </div>
@@ -149,22 +149,56 @@
         </div>
         <div class="sns">
           <ul>
-          <li><a href="https://twitter.com/LUSHKOREA" title="트위터링크"><img src="./images/common/ico_twitter.png" alt="트위터"></a></li>
-          <li><a href="https://pf.kakao.com/_VEbUM" title="카카오링크"><img src="./images/common/ico_kakao.svg" alt="카카오"></a></li>
-          <li><a href="https://m.post.naver.com/lushkr1" title="네이버링크"><img src="./images/common/ico_naver.svg" alt="네이버"></a></li>
-          <li><a href="https://www.youtube.com/user/LUSHKOREA1" title="유튜브링크"><img src="./images/common/ico_youtube.svg" alt="유튜브"></a></li>
+          <li>
+            <a href="https://twitter.com/LUSHKOREA" title="트위터링크">
+              <img src="./images/common/ico_twitter.png" alt="트위터">
+            </a>
+          </li>
+          <li>
+            <a href="https://pf.kakao.com/_VEbUM" title="카카오링크">
+              <img src="./images/common/ico_kakao.svg" alt="카카오">
+            </a>
+          </li>
+          <li>
+            <a href="https://m.post.naver.com/lushkr1" title="네이버링크">
+              <img src="./images/common/ico_naver.svg" alt="네이버">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/LUSHKOREA1" title="유튜브링크">
+              <img src="./images/common/ico_youtube.svg" alt="유튜브">
+            </a>
+          </li>
           </ul>
       </div>
         <div class="f_lnb">
             <ul>
-                <li><a href="intro.html" title="러쉬소개">러쉬소개</a></li>
-                <li><a href="#none" title="개인정보처리방침">개인정보처리방침</a></li>
-                <li><a href="#none" title="FAQ">FAQ</a></li>
-                <li><a href="#none" title="커뮤니티">커뮤니티</a></li>
-                <li><a href="#none" title="영상정보관리지침">영상정보관리지침</a></li>
-                <li><a href="#none" title="1:1문의">1:1문의</a></li>
-                <li><a href="#none" title="채용안내">채용안내</a></li>
-                <li><a href="#none" title="이용약관">이용약관</a></li>
+                <li>
+                  <a href="intro.html" title="러쉬소개">러쉬소개                  
+                  </a>
+                </li>
+                <li>
+                  <a href="#none" title="개인정보처리방침">개인정보처리방침
+                  </a>
+                </li>
+                <li>
+                  <a href="#none" title="FAQ">FAQ</a>
+                </li>
+                <li>
+                  <a href="#none" title="커뮤니티">커뮤니티</a>
+                </li>
+                <li>
+                  <a href="#none" title="영상정보관리지침">영상정보관리지침</a>
+                </li>
+                <li>
+                  <a href="#none" title="1:1문의">1:1문의</a>
+                </li>
+                <li>
+                  <a href="#none" title="채용안내">채용안내</a>
+                </li>
+                <li>
+                  <a href="#none" title="이용약관">이용약관</a>
+                </li>
             </ul>
         </div>
         <div class="f_lnfo_l">

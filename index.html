@@ -24,6 +24,11 @@
 </head>
 <body>
   <header>
+    <input type="checkbox" id="m_menu">
+    <input type="checkbox" id="m_product">
+    <input type="checkbox" id="m_magazine">
+    <input type="checkbox" id="m_intro">
+    <input type="checkbox" id="p_search" class="hidden">
     <div id="pc_header">
       <div id="header_wrap" class="inside_box ">
         <h1 id="logo">
@@ -71,9 +76,9 @@
           </li>
         </ul>
         <div class="icon_wrap">
-          <a href="#none" title="검색창">
+          <label for="p_search">
             <i class="fa-solid fa-magnifying-glass"></i>
-          </a>
+          </label>
           <a href="shop_list.html" title="장바구니">
             <i class="fas fa-shopping-bag"></i>
           </a>
@@ -85,6 +90,93 @@
           </a>
         </div>
       </div>
+    </div>
+    <div id="search_form">
+      <form action="search.php" method="post" name="search">
+      <div class="s_wrap">
+      <input type="search" class="s_form">
+      <input type="submit" id="s_submit" class="hidden">
+      <label for="s_submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </label>
+      </div>
+      <div class="s_word">
+        <h2>인기 검색어</h2>
+        <h2>최근 검색어</h2>
+      </div>
+      <div class="key_box">
+        <a href="shop_list.html" title="비건캔들">비건 캔들</a>
+        <a href="shop_list.html" title="뉴이어">뉴이어</a>
+        <a href="shop_list.html" title="명절선물">명절선물</a>
+        <a href="shop_list.html" title="발렌타인">발렌타인</a>
+        <a href="shop_list.html" title="겨울호캉스">겨울 호캉스</a>
+        <a href="shop_list.html" title="클래식로즈">클래식 로즈</a>
+        <a href="shop_list.html" title="보습케어">보습 케어</a>
+      </div>
+      </form>
+    </div>
+    <div id="m_header">
+      <label for="m_menu" class="m_menu_wrap">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <h1 id="m_logo">
+        <a href="index.html" title="main 바로가기">
+          <img src="./images/common/m_logo.png" alt="LUSH">
+        </a>
+      </h1>
+      <div class="m_icons">
+        <a href="shop_list.html" title="장바구니">
+          <i class="fas fa-shopping-bag"></i>
+        </a>
+        <a href="login.html" title="마이페이지">
+          <i class="fa-regular fa-face-smile"></i>
+        </a>
+      </div>
+    </div>
+    <div class="m_gnb">
+      <form action="search.php" name="search" method="post">
+        <div class="search_box">
+        <input type="search" id="m_search" title="검색">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <ul class="m_category">
+          <li><label for="m_product">제품</label>
+            <ul class="m_des p_hide">
+              <li><a href="shop_list.html" title="BEST">BEST</a></li>
+              <li><a href="shop_list.html" title="NEW">NEW</a></li>
+              <li><a href="shop_list.html" title="보디">보디</a></li>
+              <li><a href="shop_list.html" title="헤어">헤어</a></li>
+              <li><a href="shop_list.html" title="페이스">페이스</a></li>
+              <li><a href="shop_list.html" title="퍼퓸">퍼퓸</a></li>
+              <li><a href="shop_list.html" title="스파">스파</a></li>
+              <li><a href="shop_list.html" title="기프트">기프트</a></li>
+              <li><a href="shop_list.html" title="가치소비">가치소비</a></li>
+            </ul>
+          </li>
+          <li><a href="intro.html" title="매장안내">매장안내</a></li>
+          <li><label for="m_magazine">매거진</label>
+            <ul class="m_des m_hide">
+              <li><a href="intro.html" title="채러티 팟">채러티 팟</a></li>
+              <li><a href="intro.html" title="커뮤니티">커뮤니티</a></li>
+              <li><a href="intro.html" title="서명 캠페인">서명 캠페인</a></li>
+            </ul>
+          </li>
+          <li><label for="m_intro">러쉬소개</label>
+            <ul class="m_des i_hide">
+              <li><a href="intro.html" title="러쉬소개">러쉬소개</a></li>
+              <li><a href="intro.html" title="러쉬로운">러쉬로운</a></li> 
+            </ul>
+          </li>
+          <li><a href="intro.html" title="이벤트">이벤트</a></li>
+        </ul>
+        <ul class="m_subc">
+          <li><a href="login.html" title="mypage">My Page</a></li>
+          <li><a href="shop_list.html" title="cart">Cart</a></li>
+          <li><a href="login.html" title="customerservice">Customer Service</a></li>
+        </ul> 
+      </form>
     </div>
 </header>
 

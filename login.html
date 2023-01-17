@@ -95,7 +95,7 @@
         <article>
             <h2 class="title">로그인</h2>
             <div class="login_tab">
-                <ul>
+                <ul class="flex">
                     <li>
                         <label for="reg">회원</label>
                     </li>
@@ -104,28 +104,28 @@
                     </li>
                 </ul>
                 <form action="login.php" method="post" name="user_login" id="user_login">
-                <div class="l_tab">
-                    <div class="login_box">
+                <div class="l_tab hidden">
+                    <div class="login_box flex">
                     <input type="text" name="username" title="아이디 입략" placeholder="아이디" id="username">
                     <input type="password" name="l_password" title="아이디 입력" placeholder="비밀번호" id="l_password">
                     </div>
-                    <div class="remember_wrap">
+                    <div class="remember_wrap flex">
                     <input type="checkbox" id="save_id" title="아이디 저장" name="remember_me">
                     <label for="save_id">아이디 저장</label>
                     </div>
                     <input type="submit" class="black_btn" title="로그인 버튼" value="로그인" id="btn">
-                    <ul id="log_txt">
+                    <ul id="log_txt" class="flex">
                       <li><a href="signup.html" title="회원가입">회원가입</a></li>
                       <li><a href="#none" title="아이디찾기">아이디 찾기</a></li>
                       <li><a href="#none" title="비밀번호찾기">비밀번호찾기</a></li>
                   </ul>
-                  <div class="sns_login">
+                  <div class="sns_login flex">
                     <input type="button" value="네이버 아이디로 로그인" title="네이버 아이디 로그인" id="n_login">
                     <input type="button" value="카카오 아이디로 로그인" title="카카오 아이디 로그인" id="k_login">
                   </div>
                 </div>
                 </form>
-                <div class="r_tab">
+                <div class="r_tab hidden">
                     <form action="order.php" method="post" name="unknown_login" id="unknown_login">
                     <div class="unknown">
                     <input type="text" placeholder="주문자명" title="주문자명 입력" id="u_name">

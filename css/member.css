@@ -1,11 +1,22 @@
 @charset "utf-8";
 
-main, input, select, .tel_num2, .certification_number, .certification_check {
+/* width 100% */
+main, input, select, .tel_num2, .certification_number, .certification_check, .login_wrap, .login_tab, input[type=checkbox], #modal, .modal_img, .modal_img img {
     width:100%;
 }
 
-h2 {
+/* flex */
+.flex {
+    display: flex;
+}
+
+/* text-align : center */
+h2, form, #k_login, .forgot, .login_wrap, .login_tab, select, #n_login {
     text-align: center;
+
+}
+
+h2 {
     margin:100px 0px 50px 0px;
     font-size: 32px;
 }
@@ -13,10 +24,6 @@ h2 {
 article {
     width: 345px;
     margin: 0px auto;
-}
-
-form {
-    text-align: center;
 }
 
 input {
@@ -43,7 +50,6 @@ input[name="email"] {
 }
 
 #tell{
-    display:flex;
     justify-content: center;
     align-items:center;
     margin-bottom:15px;
@@ -51,7 +57,6 @@ input[name="email"] {
 select { 
     height: 50px;
     max-width: 90px;
-    text-align: center;
     color: #949494;
 }
 
@@ -65,7 +70,6 @@ select {
     margin-bottom: 3px;
 }
 input[type=checkbox]{
-    width: 100%;
     max-width: 20px;
     height:20px;
 }
@@ -81,12 +85,10 @@ input[type=checkbox]{
 }
 
 .tell_box {
-    display: flex;
     justify-content: space-between;
 }
 
 .email_box {
-    display: flex;
     justify-content: space-between;
     line-height: 50px;
 
@@ -97,7 +99,6 @@ input[type=checkbox]{
     height: 100%;
     line-height: 25px;
     color: #222;
-    display:flex;
     justify-content: center;
     align-items: center;
 }
@@ -132,28 +133,25 @@ select {
 }
 
 /* 로그인 폼 */
-label{
+label {
     font-size:14px;
 }
-.login_wrap{
-    width:100%;
-    text-align: center;
-}
+
 .title{
     font-size:2rem;
 }
-.login_tab{
-    width:100%;
-    margin:0 auto;
-    text-align: center;
+
+.login_tab {
+    margin:0px auto;
 }
+
 .login_tab > ul{
     width:200px;
-    display:flex;
     justify-content:space-around;
     align-items: center;
     margin:50px auto;
 }
+
 .login_tab > ul > li > label{
     cursor:pointer;
 }
@@ -161,12 +159,12 @@ label{
 input[type=radio]{
     display:none;    
 }
-.login_box{
-    display:flex;
+.login_box {
     flex-direction: column;
     justify-content: center;
     align-items:center;
 }
+
 input[type=text]{
     background: #fff;
     color: #222;
@@ -182,10 +180,9 @@ input[type=text]{
     text-indent:10px;
     margin:0px auto;
 }
-.remember_wrap{
+.remember_wrap {
     width:345px;
     margin:0px auto;
-    display:flex;
     justify-content:left;
     align-items:center;
 }
@@ -201,11 +198,11 @@ input[type=submit]{
 }
 #log_txt{
     margin:0px auto;
-    display:flex;
     justify-content: space-evenly;
     align-items: center;
     padding:50px 0px;
 }
+
 #log_txt a{
     color:#222;
     display:block;
@@ -213,31 +210,24 @@ input[type=submit]{
 }
 
 .sns_login{
-    display:flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
 }
+
 #n_login{
     background:#2db400 url(../images/member/naver.png) no-repeat center left 24px;
     letter-spacing: -0.45px;
     color: #fff;
-    text-align: center;
     cursor:pointer;
 }
+
 #k_login{
     height:50px;
     background: #fee500 url(../images/member/kakao.png) no-repeat center left 24px;
     color:#222;
     letter-spacing: -0.45px;
-    text-align: center;
     cursor:pointer;
-}
-.l_tab{
-    display:none;
-}
-.r_tab{
-    display:none;
 }
 
 .r_tab p {
@@ -268,18 +258,18 @@ article .login_tab > ul >li:last-child{
 }
 
 
-.unknown{
-    display:flex;
+.unknown {
     flex-direction: column;
     justify-content: center;
     align-items:center;
 }
+
 .forgot{
     color:#949494;
     margin-top:50px;
-    text-align: center;
     font-size:14px;
 }
+
 #signUp{
     margin-top:20px;
 }
@@ -288,7 +278,6 @@ article .login_tab > ul >li:last-child{
 
 #modal {
     position: fixed;
-    width: 100%;
     height: 100%;
     top: 0px;
     z-index: 100;
@@ -296,7 +285,6 @@ article .login_tab > ul >li:last-child{
 }
 
 .modal_img {
-    width: 100%;
     max-width: 600px;
     position: relative;
     top: 50%;
@@ -306,7 +294,6 @@ article .login_tab > ul >li:last-child{
 }
 
 .modal_img img {
-    width: 100%;
     display: block;
     position: relative;
 }

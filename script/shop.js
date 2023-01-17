@@ -220,9 +220,44 @@ for(let c_i=0;c_i<8;c_i++){
     for(let c_j=0;c_j<8;c_j++){
       c_content[c_j].classList.remove('on');
     }
+    let title = c_content[c_i].title;
     c_content[c_i].classList.add('on');
+    // 클릭시 타이틀 변경
+    document.getElementById('shop_subbanner_h2').innerHTML=title;
     productSet(c_i);
   });
 }
 
+let s_best = document.getElementById('s_best');
+let s_new = document.getElementById('s_new');
+let s_body = document.getElementById('s_body');
+let s_hair = document.getElementById('s_hair');
+let s_face = document.getElementById('s_face');
+let s_perfume = document.getElementById('s_perfume');
+let s_gift = document.getElementById('s_gift');
+let s_ethical = document.getElementById('s_ethical');
 
+s_best.addEventListener('click',function(){
+  document.getElementById('shop_subbanner_p').innerHTML='누구나 좋아하는 인기 제품을 만나보세요!';
+});
+s_new.addEventListener('click',function(){
+  document.getElementById('shop_subbanner_p').innerHTML='따끈 따끈한 신제품을 가장 먼저 만나 보세요!';
+});
+s_body.addEventListener('click',function(){
+  document.getElementById('shop_subbanner_p').innerHTML='늘 당신의 피부를 향긋하고 건강하게 빛내줄 거예요';
+});
+s_hair.addEventListener('click',function(){
+  document.getElementById('shop_subbanner_p').innerHTML='실리콘 성분 없이 건강한 재료만 담아 매일 더 싱그럽게';
+});
+s_face.addEventListener('click',function(){
+  document.getElementById('shop_subbanner_p').innerHTML='신선한 재료로 만들어 믿을 수 있는 제품이에요';
+});
+s_perfume.addEventListener('click',function(){
+  document.getElementById('shop_subbanner_p').innerHTML='자연과 음악, 시가 주는 영감으로 빚어낸 특별한 향기';
+});
+s_gift.addEventListener('click',function(){
+  document.getElementById('shop_subbanner_p').innerHTML='환경을 배려한 선물의 감동은 긴 여운을 남길 거예요';
+});
+s_ethical.addEventListener('click',function(){
+  document.getElementById('shop_subbanner_p').innerHTML='발달장애 아티스트와 함께하는 LUSH 아트 큐레이션!';
+});

@@ -161,7 +161,7 @@ function productSet(num) {
     let product_content = '<div>'+
     '<strong>'+productSortArray[i].name+'</strong>'+
     '<p>'+productSortArray[i].category+'</p>'+
-    '<p>&#xFFE6;'+Number(productSortArray[i].price).toLocaleString('ko-KR')+'</p>'+
+    '<p>&#xFFE6;'+productSortArray[i].price.toLocaleString('ko-KR')+'</p>'+
     '</div>';
     document.getElementsByClassName('product')[temp].setAttribute('title', '상품'+i);
     document.getElementsByClassName('product')[temp].innerHTML = product_img+product_content;

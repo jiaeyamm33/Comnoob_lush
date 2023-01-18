@@ -6,6 +6,23 @@ $(function(){
       stopScroll = 1;
     }
   });
+
+// 스크롤 시 스크롤 안내 사라짐
+
+
+$(window).scroll(function(){
+  if( $(this).scrollTop() > $('#main_video_box').height()-400 ){
+    $('.scrolltxt').fadeOut();
+  }
+  else {
+    $('.scrolltxt').fadeIn();
+  }
+});
+
+
+
+
+
   window.addEventListener('wheel',function(e){
     if(stopScroll == 0 && e.deltaY > 0 && $(this).scrollTop() == 0 && !window.matchMedia("screen and (max-width: 1024px)").matches){
       e.preventDefault();

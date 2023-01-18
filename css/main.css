@@ -23,16 +23,27 @@
   font-family: 'LushKR Handwritten OTF';
 }
 
-/* 비디오 섹션 스크롤 안내 */
-.scrolltxt {
-  color : #fff;
-  display : none;
-}
-
-main{
-  width : 100%;
-}
-
+  /* 비디오 섹션 스크롤 안내 */
+  .scrolltxt {
+    color : #fff;
+    position : absolute;
+    left : 50%;
+    transform : translateX(-50%);
+    bottom : 30px;
+    font-size : 1rem;
+    border-radius : 50%;
+    border : 2px solid #fff;
+    width : 80px;
+    height : 80px;
+    line-height : 40px;
+    text-align : center;
+  }
+  .scrolltxt i {
+    display : block;
+    font-size : 1.4rem;
+    color : #fff;
+    line-height : 40px;
+  }
 
 
 #pc_header {
@@ -76,6 +87,7 @@ main{
   font-family:'Lush';
   color:#fff;
   padding:20px 0px;
+  text-align: center;
 }
 .b_sub{
   font-size:36px;
@@ -146,20 +158,20 @@ main{
   text-align: center;
 }
 .social_icons{
-  width:450px;height:43px;
-  margin-top: 16px;
-  background-image: url(../images/main/social\ icons.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  margin:0px auto;
 }
 .c_zoom{
   border:2px solid #949494;
-  margin-top:20px;
+  margin:20px auto;
 }
 .c_zoom > a{
   display:block;
   color:#222;
   padding:10px 40px;
+}
+.social_icons a img{
+  width:40px;height:40px;
+  margin:10px 10px;
 }
 
 
@@ -865,7 +877,6 @@ main{
         padding-top:50px;
       }
       .c_right{
-        max-width:500px;
         padding:0px;
       }
       .c_left{
@@ -1109,7 +1120,6 @@ main{
         flex-direction:column;
       }
       .c_right{
-        max-width:500px;
         padding:10px;
       }
       .c_left{
@@ -1126,4 +1136,8 @@ main{
 
       
       br{display:none;}
+
+      .c_left a img{
+        width:250px;height:250px;
+      }
 }

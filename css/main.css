@@ -148,9 +148,18 @@ main{
 .social_icons{
   margin:0px auto;
 }
+.c_zoom{
+  border:2px solid #949494;
+  margin:20px auto;
+}
+.c_zoom > a{
+  display:block;
+  color:#222;
+  padding:10px 40px;
+}
 .social_icons a img{
   width:40px;height:40px;
-  margin:0px 10px;
+  margin:10px 10px;
 }
 
 

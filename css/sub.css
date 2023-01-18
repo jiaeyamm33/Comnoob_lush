@@ -142,6 +142,7 @@ article{
     .title{font-size:2em;}
     .title_sub, .sub_title{
         font-size:1.15em;
+        padding:0px 10px;
     }
     
     .article_m_br {

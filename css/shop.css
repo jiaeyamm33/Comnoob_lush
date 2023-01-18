@@ -120,7 +120,7 @@
   max-width: 300px;
   padding-top: 50px;
 }
-@media screen and (max-width:1024px) and (min-width:375px){
+@media screen and (max-width:1200px) and (min-width:375px){
   .shop_itemlist {grid-template-columns: repeat(3, 1fr);}
   .shop_itemlist > .product:nth-of-type(4n+1) {margin: 0 0 150px;}
   .shop_itemlist > .product:nth-of-type(4n+3) {margin: 0 0 150px;}

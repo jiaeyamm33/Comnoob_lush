@@ -7,7 +7,7 @@ $(function(){
     }
   });
   window.addEventListener('wheel',function(e){
-    if(stopScroll == 0 && e.deltaY > 0 && $(this).scrollTop() == 0){
+    if(stopScroll == 0 && e.deltaY > 0 && $(this).scrollTop() == 0 && !window.matchMedia("screen and (max-width: 1024px)").matches){
       e.preventDefault();
       $('html, body').animate({scrollTop: $('#main_video_box').height()-100}, 'slow');
       stopScroll = 1;

@@ -37,24 +37,25 @@
   margin: 0 auto 160px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.shop_menulist > ul {
+.category_wrap > ul {
   display: flex;
   white-space: nowrap;
   overflow: hidden;
 }
-.shop_menulist > ul > li {}
-.shop_menulist > ul > li:not(:last-child) {
+.category_wrap > ul > li {}
+.category_wrap > ul > li:not(:last-child) {
   margin-right: 15px;
 }
-.shop_menulist > ul > li > a {
+.category_wrap > ul > li > a {
   color: #222;
   text-decoration: none;
 }
-.shop_menulist > ul > li > a.on {
+.category_wrap > ul > li > a.on {
   font-weight: bold;
 }
-.shop_menulist > select {
+.category_wrap > select {
   width: 140px;
   height: 50px;
   border: 1px solid #949494;

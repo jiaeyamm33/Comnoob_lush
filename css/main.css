@@ -323,7 +323,8 @@
   position : relative;
   width : 300px;
   height : 400px;
-  margin-right : 50px;
+  padding-right : 50px;
+  box-sizing: content-box;
 }
 .newpro_1:first-child {
   margin-left : 50px;
@@ -348,7 +349,7 @@
 
 /* new 슬라이드 텍스트 박스 */
 .newpro_1 div {
-  width : 100%;
+  width : calc(100% - 50px);
   height : 40%;
   position : absolute;
   left : 0;
@@ -708,7 +709,8 @@
   position : relative;
   width : 300px;
   height : 400px;
-  margin-right : 50px;
+  padding-right : 50px;
+  box-sizing: content-box;
 }
 .newpro_1:first-child {
   margin-left : 50px;
@@ -733,7 +735,7 @@
 
 /* new 슬라이드 텍스트 박스 */
 .newpro_1 div {
-  width : 100%;
+  width : calc(100% - 50px);
   height : 40%;
   position : absolute;
   left : 0;

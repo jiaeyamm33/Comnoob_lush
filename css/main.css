@@ -154,6 +154,7 @@ main{
 
 #new_list > li a > img {
   position : relative;
+  width:300px;
 }
 
 .new_des {

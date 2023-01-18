@@ -57,7 +57,7 @@ input[name="email"] {
 select { 
     height: 50px;
     max-width: 90px;
-    color: #949494;
+    color: #222;
 }
 
 .tel_num2 {

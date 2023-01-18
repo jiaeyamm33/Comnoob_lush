@@ -504,15 +504,14 @@ address {
 }
 
     .f_lnb > ul {
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         width: 100%;
-        padding: 2% 0px 2% 0px;
         margin: 0px;
     }
 
     .f_lnb > ul li {
-        padding: 5px 10px;
+        padding: 8px 20px;
     }
 
     .corp_gift {

@@ -7,7 +7,7 @@
     <title>러쉬코리아</title>
     <link rel="stylesheet" href="./css/reset.css" type="text/css">
     <link rel="stylesheet" href="./css/common.css" type="text/css">
-    <link rel="stylesheet" href="./css/member.css" type="text/css">
+    <link rel="stylesheet" href="./css/member.css" type="text/css" defer>
     <!-- 폰트어썸 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" type="text/css">
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
@@ -244,6 +244,20 @@
           <input type="button" value="오늘 하루 더이상 보지 않기" title="팝업창 오늘 하루 보지 않기 버튼" id="m_n_btn">
         </div>  
         </div>
+        </div>
+
+        <div class="modal" id="m_modal">
+          <div class="modal_d">
+            <form action="naver_login" name="naver_login" method="post" id="naver_form">
+            <h2><img src="./images/member/naverlogo.svg" alt="네이버로고"></h2>
+            <p>네이버 로그인으로 Comnoob_Lush 서비스를 이용하실 수 있습니다.</p>
+            <input type="text" id="naver_id" placeholder="아이디" title="아이디">
+            <input type="password" id="naver_pw" placeholder="비밀번호" title="비밀번호">
+            <input type="submit" id="naver_sub" title="로그인" value="로그인">
+            <a href="signup.html" title="회원가입">회원가입</a>
+            <i class="fa-solid fa-xmark" id="n_close"></i>
+          </div>
+        </form>
         </div>
         
         

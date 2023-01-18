@@ -329,24 +329,3 @@ article .login_tab > ul >li:last-child{
     color: #000;
 }
 
-/* 검색폼 */
-
-.s_form{
-    max-width:600px;
-    width:50%;
-    height:40px;
-    background: none;
-    border:none;
-    border-bottom:3px solid #fff;
-    color:#fff;
-    margin:0px;
-  }
-
-  .s_word h2{
-    color:#fff;
-    margin:0px;
-    font-size:16px;
-  }
-  .key_box{
-    text-align: left;
-  }

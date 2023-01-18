@@ -375,7 +375,6 @@ dt {
     color: #fff;
     outline: none;
     padding: 0px;
-
 }
 
 .subs_btn {
@@ -393,7 +392,7 @@ dt {
 address {
     font-style: normal;
     line-height: 20px;
-    padding-left: 20px;
+    padding: 0px 0px 20px 20px;
     font-size: 15px;
     position: relative;
     left: 40px;
@@ -480,6 +479,10 @@ address {
         width: 100%;
     }
     
+    #sub_email::placeholder {
+      font-size: 1em;
+    }
+
     .subscribe p {
         font-size: 0.9em;
     }
@@ -497,18 +500,19 @@ address {
     .cs_service, .corp_gift {
         float: none;
         font-size: 1em;
-        margin: 40px 0px;
+        padding: 1% 0px 8% 0px;
 }
 
     .f_lnb > ul {
         justify-content: space-between;
         flex-wrap: wrap;
         width: 100%;
-        padding: 4% 0px 2% 0px;
+        padding: 2% 0px 2% 0px;
+        margin: 0px;
     }
 
     .f_lnb > ul li {
-        padding: 5px 15px;
+        padding: 5px 10px;
     }
 
     .corp_gift {
@@ -527,14 +531,95 @@ address {
         font-size: 0.9em;
     }
 
-    .cs_service, .corp_gift {
-        margin: 5% 0px;
-    }
-
     .corp_gift {
         margin-left: 22%;
     }
+
+    .footbar, .br {
+      display: inline-block;
+  }
 }
+
+@media screen and (max-width:480px) {
+  .corp_gift {
+    margin-left: 17%;
+}
+
+.subscribe p {
+  font-size: 0.85em;
+}
+
+.cs_service, .corp_gift {
+  font-size: 0.9em;
+}
+
+.footbar {
+  display: none;
+}
+
+.br {
+  display: block;
+}
+
+address {
+  font-size: 0.85em;
+}
+
+}
+@media screen and (max-width:435px) {
+  .corp_gift {
+    margin-left: 14%;
+}
+  
+.subscribe p {
+  font-size: 0.8em;
+}
+}
+
+@media screen and (max-width:405px) {
+  .corp_gift {
+    margin-left: 12%;
+}
+  
+.subs_br {
+  display: block;
+}
+
+.subscribe p {
+  line-height: 1em;
+}
+
+.cs_service, .corp_gift {
+  font-size: 0.78em;
+}
+
+.sns {
+  padding: 10% 0%;
+}
+
+@media screen and (max-width:380px) {
+  
+  .f_lnb ul {
+    font-size: 0.9em;
+  }
+
+  .subscribe p {
+    font-size: 0.75em;
+  }
+  .corp_gift {
+    margin-left: 8%;
+  }
+}
+
+@media screen and (max-width:340px) {
+  .f_lnb ul li {
+    padding: 7px;
+  }
+}
+
+}
+
+
 /* gnb 태블릿 이하 서식 */
 
 #m_menu,.m_gnb, #m_product, #m_magazine , #m_intro{display: none;}

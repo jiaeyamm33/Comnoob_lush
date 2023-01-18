@@ -293,6 +293,7 @@ article .login_tab > ul >li:last-child{
 .modal_img img {
     display: block;
     position: relative;
+    filter: brightness(0.4);
 }
 
 .modal_img p:first-of-type{
@@ -302,6 +303,7 @@ article .login_tab > ul >li:last-child{
     font-weight:bold;
     letter-spacing:2px;
 }
+
 .modal_img p:last-of-type{
     position:absolute;
     bottom:40%;

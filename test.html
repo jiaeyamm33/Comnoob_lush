@@ -5,21 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>러쉬코리아</title>
+
     <link rel="stylesheet" href="./css/reset.css" type="text/css">
-    <link rel="stylesheet" href="./css/common.css" type="text/css">
-    <link rel="stylesheet" href="./css/member.css" type="text/css">
+    <link rel="stylesheet" href="./css/commonex.css" type="text/css">
+    <link rel="stylesheet" href="./css/sub.css" type="text/css">
     <!-- 폰트어썸 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" type="text/css">
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
-    <!-- sweet alert -->
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/sweetalert.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="./script/sweetalert.min.js"></script>
-    <script src="./script/common.js" defer></script>
-    <script src="./script/signup.js" defer></script>
+    <script src="./script/common.js"></script>
 </head>
 <body>
-  
+    <!-- 헤더 영역 -->
   <header>
     <input type="checkbox" id="m_menu">
     <input type="checkbox" id="m_product">
@@ -175,46 +172,73 @@
         </ul> 
       </form>
     </div>
-  </header>
+</header>
+
+    <!-- 메인 영역 -->
     <main>
-        <article>
-        <h2>회원가입</h2>
-        <form action="login.php" method="post" name="sign_up" class="input_block com_input" id="s_done">
-            <input type="text" title="아이디 입력" placeholder=" 아이디" required>
-            <input type="password" name="password" title="비밀번호 입력" id="password" placeholder=" 비밀번호" class="input_block" required>
-            <input type="password" name="paassword" title="비밀번호 확인" id="password_check" placeholder=" 비밀번호 확인" class="input_block" required>
-            <input type="text" name="name" title="이름 입력" id="name" placeholder=" 이름" class="input_block" required>
-            <input type="text" name="nikname" title="닉네임 입력" id="nik_name" placeholder=" 닉네임" class="input_block" required>
-            <div id="tell" class="flex">
-            <select name="tel" class="tell">
-                <option value="010">010</option>
-                <option value="010">011</option>
-                <option value="010">017</option>
-                <option value="010">018</option>
-                <option value="010">019</option>
-                <option value="010">02</option>
-            </select>
-            <input type="text" name="telnumber" class="tel_num2" title="휴대전화번호 입력" placeholder="휴대전화번호" required>
-            </div>
-            <div class="tell_box flex">
-            <input type="text" title="인증번호 입력" name="certification_number" placeholder="인증번호" class="certification_number" required>
-            <input type="button" value="인증번호 확인" title="인증번호 확인" name="certification_number" class="certification_check">
-          </div>
-            <div class="email_box flex">
-            <input type="text" placeholder=" 이메일" name="email" title="이메일아이디 입력" class="email_id"> <span class="email_at">@</span>
-            <input type="text" name="email" class="email_add" title="이메일주소 입력">
-          </div>
-            <hr>
-            <div class="sms">
-            <input type="checkbox" name="체크박스" class="check_box" title="정보이벤트 메일 수신 동의">정보/이벤트 메일 수신에 동의합니다.
-            </div>
-            <div class="sms">
-            <input type="checkbox" name="정보수신이벤트" class="check_box" title="정보이벤트 문자 수신 동의">정보/이벤트 문자 수신에 동의합니다.
-            </div>
-            <input type="submit" value="회원가입" id="signUp" title="회원가입 제출">
-        </form>
-    </article>
+
+        <article class="banner">
+            <h2 class="title">
+                러쉬소개
+            </h2>
+            <span class="title_sub">프레쉬 핸드메이드 코스메틱
+            </span>
+            
+        </article>
+
+        <section class="section">
+
+        <article class="article_1">
+            <h3 class="sub_title">"러쉬는 자연에서 얻은 신선한 재료와 <br>
+            동물실험을 하지 않는 정직한 재료를 사용하여 <br>
+            모든 제품을 손으로 만듭니다."
+            </h3>
+            <span class="desc">더불어 공정 거래, 인권보호, 최소한의 포장 등 다양한 캠페인 활동을 통해 기업 윤리와 신념을 알리고 있습니다.
+            </span>
+        </article>
+
+        <article class="article_2">
+            <img src="./images/intro/intro_01.jpg" alt="인트로1">
+            <h3 class="sub_title s_top">러쉬는 어떤 이유에서도 제품을 동물실험 하지 않고, <br>
+            동물실험을 거친 원재료조차 사용하지 않습니다.
+            </h3>
+            <span class="desc">직접 구매팀을 운영하며, 엄격한 기준을 바탕으로 윤리적인 공정 여부를 확인합니다. <br>
+            믿을 수 있는 생산자로부터 직거래를 원칙으로 합니다.</span>
+        </article>
+
+        <article class="article_3">
+            <img src="./images/intro/intro_02.jpg" alt="인트로2">
+            <h3 class="sub_title s_top">러쉬는 배쓰 밤, 샤워 젤리, 고체 샴푸와 같은<br>
+            기발하고 혁신적인 제품을 선보입니다.
+            </h3>
+            <span class="desc">특히 불필요한 포장을 없앤 고체 형태의 다양한 '네이키드(Naked)'<br>
+            제품을 개발하며 화장품 산업에서 혁명을 일으켜 왔습니다.
+            </span>
+        </article>
+
+        <article class="article_4">
+            <img src="./images/intro/intro_03.jpg" alt="인트로3">
+            <h3 class="sub_title s_top">신선함은 러쉬 철학의 핵심입니다.
+            </h3>
+            <span class="desc">신선한 과일, 채소, 에센셜 오일, 최소한의 보존제와 안전한 인공 성분을 사용하여 제품을 선보입니다. <br>
+            러쉬의 모든 제품은 베지테리언(Vegetarian)이며, 그 중 약 90%는 식물성 원료로만 만든 비건(Vegan)입니다.
+            </span>
+        </article>
+
+        <article class="article_5">
+            <img src="./images/intro/intro_04.jpg" alt="인트로4">
+            <h3 class="sub_title s_top">이 모든 것은 '고객은 항상 옳다'는<br> 믿음과 러쉬의 핵심 가치인 <br>
+            직원들의 진심이 모여 얻은 결실입니다.
+            </h3>
+            <span class="desc">앞으로도 러쉬는 현시대에 필요한 제품과 서비스를 제공할 것입니다. <br>
+            환경 보호를 위해 고민하고, 동물과 자연 그리고 사람이 조화로운 세상을 만들기 위한 도전과 혁신에 앞장섭니다.
+            </span>
+        </article>
+        <input type="button" value="러쉬의 다양한 이야기 확인하기" id="intro_btn">
+        </section>
     </main>
+    
+
     <!-- 푸터 영역 -->
     <footer>
         <!-- 회색 라벨 자리 -->

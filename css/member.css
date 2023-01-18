@@ -105,6 +105,11 @@ input[type=checkbox]{
     align-items: center;
 }
 
+textarea {
+    border: 1px solid #222;
+    width: 100%;
+}
+
 
 @media screen and (max-width:1024px) {
 

@@ -467,6 +467,10 @@ address {
   .sns {
       padding-left: 10px;
   }
+  
+  .subs_btn {
+    font-size: 0.9em;
+  }
 }
 
 @media screen and (max-width:875px) {

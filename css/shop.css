@@ -55,7 +55,7 @@
 .category_wrap > ul > li > a.on {
   font-weight: bold;
 }
-.category_wrap > select {
+.shop_menulist > select {
   width: 140px;
   height: 50px;
   border: 1px solid #949494;
@@ -150,6 +150,19 @@
   .shop_itemlist > .product:nth-of-type(3n+1) {margin: 0 0 150px;}
   .shop_itemlist > .product:nth-of-type(3n+3) {margin: 0 0 150px;}
   .shop_itemlist > .product:nth-of-type(2n+1) {margin: 50px 0 100px;}
+
+  /* 카테고리 바 슬라이드 */
+  .category_wrap{
+    width:100%;
+  }
+  /* .category_wrap > ul{
+    width:100%;
+  } */
+  .shop_menulist{
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap:20px;
+  }
 }
 
 @media screen and (max-width:425px){

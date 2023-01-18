@@ -15,6 +15,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="./script/common.js" defer></script>
   <script src="./script/shop.js" defer></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
   <!-- 서브 헤더 시작 -->
@@ -185,16 +187,16 @@
     <section class="shop_menulist_wrap">
       <article class="shop_menulist">
         <h2 class="hidden">메뉴 옵션</h2>
-        <div class="category_wrap">
-        <ul id="s_category">
-          <li><a href="#none" title="베스트" class="on" id="s_best">베스트</a></li>
-          <li><a href="#none" title="NEW" id="s_new">NEW</a></li>
-          <li><a href="#none" title="보디" id="s_body">보디</a></li>
-          <li><a href="#none" title="헤어" id="s_hair">헤어</a></li>
-          <li><a href="#none" title="페이스" id="s_face">페이스</a></li>
-          <li><a href="#none" title="퍼퓸" id="s_perfume">퍼퓸</a></li>
-          <li><a href="#none" title="기프트" id="s_gift">기프트</a></li>
-          <li><a href="#none" title="가치소비" id="s_ethical">가치소비</a></li>
+        <div class="category_wrap mySwiper">
+        <ul id="s_category" class="swiper-wrapper">
+          <li class="swiper-slide"><a href="#none" title="베스트" class="on" id="s_best">베스트</a></li>
+          <li class="swiper-slide"><a href="#none" title="NEW" id="s_new">NEW</a></li>
+          <li class="swiper-slide"><a href="#none" title="보디" id="s_body">보디</a></li>
+          <li class="swiper-slide"><a href="#none" title="헤어" id="s_hair">헤어</a></li>
+          <li class="swiper-slide"><a href="#none" title="페이스" id="s_face">페이스</a></li>
+          <li class="swiper-slide"><a href="#none" title="퍼퓸" id="s_perfume">퍼퓸</a></li>
+          <li class="swiper-slide"><a href="#none" title="기프트" id="s_gift">기프트</a></li>
+          <li class="swiper-slide"><a href="#none" title="가치소비" id="s_ethical">가치소비</a></li>
         </ul>
         </div>
         <select name="sort" id="sort" >

@@ -146,20 +146,11 @@ main{
   text-align: center;
 }
 .social_icons{
-  width:450px;height:43px;
-  margin-top: 16px;
-  background-image: url(../images/main/social\ icons.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  margin:0px auto;
 }
-.c_zoom{
-  border:2px solid #949494;
-  margin-top:20px;
-}
-.c_zoom > a{
-  display:block;
-  color:#222;
-  padding:10px 40px;
+.social_icons a img{
+  width:40px;height:40px;
+  margin:0px 10px;
 }
 
 

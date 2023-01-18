@@ -66,16 +66,16 @@ article{
     cursor:pointer;
 }
 
-@media screen and (max-width:1024px) and (min-width:767px){
+@media screen and (max-width:1024px) {
     article{width:100%;}
     .title_sub, .sub_title{
-        font-size:32px;
+        font-size:2em;
     }
     .desc{
-        font-size:1rem;
+        font-size:1em;
     }
 }
-@media screen and (max-width:766px) and (min-width:376px){
+@media screen and (max-width:767px) and (min-width:376px){
     article{width:100%;}
     .title{font-size:64px;}
     .title_sub, .sub_title{

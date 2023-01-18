@@ -420,7 +420,14 @@ address {
 
 /* 푸터 태블릿 서식*/
 @media screen and (max-width:1024px) {
+<<<<<<< Updated upstream
   #pc_header {display: none;}
+=======
+
+  .ethical {
+    display: none;
+  }
+>>>>>>> Stashed changes
   .footbar {
       display: none;
   }

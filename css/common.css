@@ -395,7 +395,7 @@ dt {
 address {
   font-style: normal;
   line-height: 20px;
-  padding: 0px 0px 20px 20px;
+  padding: 0px 0px 20px 30px;
   font-size: 15px;
   position: relative;
   left: 40px;
@@ -577,7 +577,7 @@ font-size: 0.85em;
 }
 @media screen and (max-width:435px) {
 .corp_gift {
-  margin-left: 14%;
+  margin-left: 17%;
 }
 
 .subscribe p {
@@ -587,7 +587,7 @@ font-size: 0.8em;
 
 @media screen and (max-width:405px) {
 .corp_gift {
-  margin-left: 12%;
+  margin-left: 20%;
 }
 
 .subs_br {
@@ -599,7 +599,7 @@ line-height: 1em;
 }
 
 .cs_service, .corp_gift {
-font-size: 0.78em;
+font-size: 0.8em;
 }
 
 .sns {
@@ -616,13 +616,16 @@ padding: 10% 0%;
   font-size: 0.75em;
 }
 .corp_gift {
-  margin-left: 8%;
+  margin-left: 15%;
 }
 }
 
 @media screen and (max-width:340px) {
 .f_lnb ul li {
   padding: 7px;
+}
+.corp_gift {
+  margin-left: 8%;
 }
 }
 
@@ -879,5 +882,20 @@ padding: 10% 0%;
     cursor:pointer;
     color:#fff;
     font-size:25px;
+  }
+}
+
+
+@media screen and (max-width:475px) {
+  #m_header > #m_logo {
+    width: 100px;
+  }
+  
+}
+
+
+@media screen and (max-width:375px) {
+  #m_header > #m_logo {
+    width: 90px;
   }
 }

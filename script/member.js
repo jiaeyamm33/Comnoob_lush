@@ -17,10 +17,10 @@ logbtn.addEventListener('submit', function(e) {
                 location.href = 'index.html';
             }, 2000);
         } else {
-            swal('패스워드 오류', '비밀번호를 확인해주세요.', 'error');
+            swal('비밀번호 오류', '비밀번호를 확인해주세요.', 'error');
         } 
     } else if((id == '') || (pw == '')) {
-        swal('입력 오류', '아이디나 패스워드를 입력해주세요.', 'error');
+        swal('입력 오류', '아이디나 비밀번호를 입력해주세요.', 'error');
     } else {
         swal('아이디 오류', '아이디를 확인해주세요.', 'error');
     }
@@ -96,5 +96,54 @@ m_c_btn.addEventListener('click', function() {
             $("#modal").hide();
         }
     });
+
+    // 모달윈도우
+    
+    let n_login = document.getElementById('n_login');
+    let n_close = document.getElementById('n_close');
+
+
+    n_login.addEventListener('click', function(){
+
+        document.getElementById('m_modal').style.display='block';
+    });
+
+    n_close.addEventListener('click', function(){
+
+        document.getElementById('m_modal').style.display='none';
+    });
+
+    //네이버 로그인
+
+    let naver_form = document.getElementById('naver_form');
+    let naver_id = document.getElementById('naver_id');
+    let naver_pw = document.getElementById('naver_pw');
+    
+    naver_form.addEventListener('submit', function(e) {
+    naver_id = document.getElementById('naver_id').value;
+    naver_pw = document.getElementById('naver_pw').value;
+    
+        e.preventDefault();
+    
+        if(naver_id == 'test') {
+            if(naver_pw == '1234') {
+                swal('로그인 성공', '로그인 되었습니다.', 'success');
+                setTimeout(function() {
+                    location.href = 'index.html';
+                }, 2000);
+            } else {
+                swal('비밀번호 오류', '비밀번호를 확인해주세요.', 'error');
+            } 
+        } else if((naver_id == '') || (naver_pw == '')) {
+            swal('입력 오류', '아이디나 비밀번호를 입력해주세요.', 'error');
+        } else {
+            swal('아이디 오류', '아이디를 확인해주세요.', 'error');
+        }
+    });
+
+
+
+
+
 
 

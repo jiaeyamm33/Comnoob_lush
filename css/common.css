@@ -257,6 +257,10 @@ footer{
   width: 100%;
 }
 
+input {
+  border-radius: 0px;
+}
+
 footer a {
   text-decoration: none;
   color: #fff;

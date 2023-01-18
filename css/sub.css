@@ -67,29 +67,69 @@ article{
 }
 
 @media screen and (max-width:1024px) {
-    article{width:100%;}
+
+    .banner {
+        height: 300px;
+    }
+    article{width:100%;
+    padding: 0px 10px;}
     .title_sub, .sub_title{
         font-size:2em;
     }
     .desc{
         font-size:1em;
+        line-height: 1.4em;
     }
 }
-@media screen and (max-width:767px) and (min-width:376px){
+@media screen and (max-width:767px) {
     article{width:100%;}
+    .banner {
+        height: 250px;
+    }
     .title{font-size:4em;}
     .title_sub, .sub_title{
         font-size:1.5em;
+        line-height: 1.5em;
     }
     .desc{
-        font-size:0.75em;
+        font-size:1em;
     }
     .article_2 .sub_title{
         letter-spacing: -1.1px;
     }
-    
 }
-@media screen and (max-width:451px) and (min-width:376px){
+
+@media screen and (max-width: 730px) {
+    .p_br {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .p_br2 {
+        display: block;
+    }
+
+    .article_2 br{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 542px)  {
+    .article_2_br_2 {
+        display: block;
+    }
+    .article_p_br {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width:451px) {
+    .title_sub, .sub_title{
+        font-size:1.4em;
+        line-height: 1.5em;
+    }
     .article_1 br{
         display:none;
     }
@@ -101,11 +141,14 @@ article{
     article{width:100%;}
     .title{font-size:2em;}
     .title_sub, .sub_title{
-        font-size:1.125em;
+        font-size:1.15em;
     }
-    .desc{
-        font-size:0.75em;
+    
+    .desc {
+        font-size: 0.9em;
     }
+    
+
     .article_2 .desc{
         letter-spacing:-0.9px;
     }

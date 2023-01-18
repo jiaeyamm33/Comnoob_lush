@@ -23,16 +23,27 @@
   font-family: 'LushKR Handwritten OTF';
 }
 
-/* 비디오 섹션 스크롤 안내 */
-.scrolltxt {
-  color : #fff;
-  display : none;
-}
-
-main{
-  width : 100%;
-}
-
+  /* 비디오 섹션 스크롤 안내 */
+  .scrolltxt {
+    color : #fff;
+    position : absolute;
+    left : 50%;
+    transform : translateX(-50%);
+    bottom : 30px;
+    font-size : 1rem;
+    border-radius : 50%;
+    border : 2px solid #fff;
+    width : 80px;
+    height : 80px;
+    line-height : 40px;
+    text-align : center;
+  }
+  .scrolltxt i {
+    display : block;
+    font-size : 1.4rem;
+    color : #fff;
+    line-height : 40px;
+  }
 
 
 #pc_header {

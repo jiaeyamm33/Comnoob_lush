@@ -40,7 +40,6 @@
 .category_wrap > ul {
   display: flex;
   white-space: nowrap;
-  overflow: hidden;
 }
 .category_wrap > ul > li {}
 .category_wrap > ul > li:not(:last-child) {

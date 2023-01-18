@@ -249,9 +249,17 @@ dl dt, dl dd {
   display:block;
 }
 
-input, textarea {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
+input, textarea, button {
+  appearance: none; 
+  border-radius: 0;
+  -moz-appearance: none; 
+  -webkit-appearance: none; 
+  -webkit-border-radius: 0; 
+  -moz-border-radius: 0;
+}
+
+input[type=radio], input[type=checkbox]{
+appearance: auto;
 }
 
 /* 푸터 영역 서식 */

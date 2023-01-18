@@ -344,14 +344,19 @@ main{
 
 /* new 슬라이드 텍스트 중 h3 */
 .newpro_1 div h3 {
-  margin-bottom : 15px;
-  font-size : 20px;
+  font-size: 22px;
+  line-height: 32px;
+  padding-bottom:10px;
 }
 
 /* new 슬라이드 텍스트 중 p */
-.newpro_1 div p {
-  margin-top : 15px;
-  font-size : 16px;
+.newpro_1 div p:first-of-type {
+  font-size: 18px;
+  line-height: 24px;
+}
+.newpro_1 div p:last-of-type {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 
@@ -485,15 +490,20 @@ main{
 
 /* BEST li의 h3  */
 .best_small h3 {
-  margin-bottom : 15px;
-  font-weight : bold;
-  font-size : 20px;
+  font-size: 22px;
+  line-height: 32px;
+  padding-bottom:10px;
+  display:block;
 }
 
 /* BEST li의 p들 */
-.best_small p {
-  font-size : 16px;
-  margin-top : 15px;
+.best_small p:first-of-type {
+  font-size: 18px;
+  line-height: 24px;
+}
+.best_small p:last-of-type {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 /* BEST 영역 끝 */
@@ -717,14 +727,19 @@ main{
 
 /* new 슬라이드 텍스트 중 h3 */
 .newpro_1 div h3 {
-  margin-bottom : 15px;
-  font-size : 20px;
+  font-size: 22px;
+  line-height: 32px;
+  padding-bottom:10px;
 }
 
 /* new 슬라이드 텍스트 중 p */
-.newpro_1 div p {
-  margin-top : 15px;
-  font-size : 16px;
+.newpro_1 div p:first-of-type {
+  font-size: 18px;
+  line-height: 24px;
+}
+.newpro_1 div p:last-of-type {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 

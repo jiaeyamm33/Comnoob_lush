@@ -269,6 +269,7 @@ footer a {
   display:flex;
   justify-content: center;
 }
+
 .ethical > ul {
   width:1260px;
   margin:0px auto;
@@ -293,8 +294,10 @@ footer a {
   display:none;
   color: #fff;
 }
+
+
 .f_wrap{
-  padding:50px 0px;
+  padding:50px 10px;
   display:grid;
   grid-template-areas:
   "subscribe sns"
@@ -319,11 +322,12 @@ footer a {
 }
 
 .corp_gift {
-  margin-left: 150px;
+  margin-left: 100px;
 }
 
 .cs_service, .corp_gift {
   float: left;
+  font-size: 15px;
 }
 
 
@@ -374,7 +378,6 @@ dt {
   color: #fff;
   outline: none;
   padding: 0px;
-
 }
 
 .subs_btn {
@@ -392,7 +395,7 @@ dt {
 address {
   font-style: normal;
   line-height: 20px;
-  padding-left: 20px;
+  padding: 0px 0px 20px 20px;
   font-size: 15px;
   position: relative;
   left: 40px;
@@ -415,502 +418,210 @@ address {
   height: 40px;
 }
 
-@media screen and (max-width:1280px) and (min-width:1114px) {
-    footer {
-      height: auto;
-    }
-    .corp_gift {
-      margin-left: 70px;
-    }
-
-    .subscribe {
-      width: 100%;
-    }
-
-    .f_info_l {
-      width: 40%;
-
-}
-
-  address {
-    font-size: 0.9em;
-  }
-
-  .f_lnb > ul {
-    justify-content: space-evenly;
-
-}
-}
-/* 미디어 스크린 PC > 태블릿 전 */
-@media screen and (max-width:1159px) and (min-width:1114px) {
-  footer {
-    height: auto;
-  }
-  .corp_gift {
-    margin-left: 100px;
-  }
-
-  .sns {
-    width: 500px;
-    padding-left: 50px;
-  }
-
-  .sns ul {
-    justify-content: center;
-
-  }
-  address {
-    margin-left: 0px;
-    font-size: 0.9em;
-  }
-
-
-}
-
-@media screen and (max-width:1113px) and (min-width:1025px) {
-  footer {
-    height: auto;
-  }
-  .corp_gift {
-    margin-left: 50px;
-  }
-
-  .sns {
-
-    width: 500px;
-  }
-
-  .sns ul {
-    justify-content: center;
-
-  }
-  address {
-    margin-left: 0px;
-    font-size: 0.9em;
-  }
-
-  .f_lnb > ul {
-    justify-content: space-evenly;
-
-}
-}
-
-/* 미디어 스크린 태블릿 */
-
-@media screen and (max-width:1024px) and (min-width:768px) {
-  
-  /* 헤더 교체 */
+/* 푸터 태블릿 서식*/
+@media screen and (max-width:1024px) {
   #pc_header {display: none;}
-  #m_header {display: block;}
-
-  /* 푸터 회색 띠 */
-  
-  .ethical {
-    display: none;
-  }
-
-  footer{
-    background:#000;
-    margin-top:160px;
-    color:#fff;
-    width: 100%;
-    height: auto;
-    font-size: 1em;
-  }
-  
-  footer a {
-    text-decoration: none;
-    color: #fff;
-  }
-  .ethical{
-    display: none;
-  }
-  
-
-  .f_wrap{
-    padding:50px 0px 50px 10px;
-    display:grid;
-    grid-template-areas:
-    "subscribe sns"
-    "lnb lnb"
-    "infol infor";
-    width: 100%;
-  }
-  
-  
-  .subscribe{
-    grid-area: subscribe;
-    position: relative;
-  }
-  
-
-  .cs_service, .corp_gift {
-    float: left;
-  }
-  
-  .cs_service::after, .corp_gift::after {
-    clear: both;
-  }
-
-  .corp_gift {
-    margin-left: 50px;
-  }
-  
-  dt {
-    font-weight: bold;
-  }
-  
-  .f_info_l{
-    grid-area: infol;
-    display: flex;
-    width: 50%;
-    font-size: 0.9em;
-  }
-  
-  
-  .f_lnb{
-    margin: 25px 0px;
-    grid-area: lnb;
-  }
-  
-  
-  .f_info_r{
-    grid-area: infor;
-    width: 50%;
-  }
-  
-  
-  
-  .f_lnb > ul {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  #sub_email {
-    width: 350px;
-    height: 30px;
-    margin-bottom: 10px;
-    background-color: #333;
-    border: none;
-  }
-  
-  
-  address {
-    font-style: normal;
-    margin: 0px auto;
-    font-size: 0.9em;
-    left:0px;
-  }
-  
-  .sns{
-    grid-area: sns;
-  }
-
-  .sns ul li {
-    margin: 0px 20px;
-  }
-  
-  .sns ul li:first-child img {
-    width: 40px;
-    height: 40px;
-  }
-
-
-
-.subs_btn {
-  color: #fff;
-  background-color: #333;
-  width: 40px;
-  text-indent: 0px;
-  font-size: 0.8em;
-  height: 30px;
-  border: none;
-}
-
-.f_lnb > ul {
-  justify-content: space-evenly;
-
-}
-}
-
-@media screen and (max-width:920px) and (min-width:789px) {
-
   .footbar {
-    display: none;
-  }
-
-.br {
-  display: block;
-}
-
-.sns {
-  height: 50px;
-}
-
-  #sub_email {
-    width: 345px;
-    height: 30px;
-    margin-bottom: 10px;
-    background-color: #333;
-    border: none;
-}
-
-  .f_info_l {
-    font-size: 0.9em;
-  }
-
-  .subscribe p {
-    font-size: 0.8em;
-  }
-
-  .corp_gift {
-    margin-left: 30px;
-  }
-
-}
-
-
-@media screen and (max-width:788px) and (min-width:769px) {
-
-  .footbar {
-    display: none;
-  }
-
-  .sns {
-    height: 50px;
+      display: none;
   }
 
   .br {
-    display: block;
-  }
-
-  .subscribe p {
-    font-size: 0.75em;
-  }
-
-  #sub_email {
-    width: 320px;
-    height: 30px;
-    margin-bottom: 10px;
-    background-color: #333;
-    border: none;
-}
-
-.subs_btn {
-  line-height: 30px;
-  left: 320px;
-  padding: 0px;
-}
-
-.cs_service, .corp_gift {
-  font-size: 0.9em;
-}
-
-.cs_service::after, .corp_gift::after {
-  clear: both;
-}
-
-.corp_gift {
-  margin-left: 15px;
-}
-
-}
-
-/* 미디어 스크린 모바일 */
-@media screen and (max-width:768px) and (min-width:1px) {
-
-  /* 헤더 교체 */
-  #pc_header {display: none;}
-  #m_header {display: block;}
-
-  /* 푸터 회색 띠 */
-  .ethical{
-    display:none;
-  }
-  footer{
-    background:#000;
-    margin-top:160px;
-    color:#fff;
-    width: 100%;
-    height: auto;
-  }
-
-  .ethical{
-    display: none;
-  }  
-  
-  .t_btn{
-    background:#222 url(../images/common/ico_footer_top.svg) no-repeat center center;
-    background-repeat:no-repeat;
-    width:56px;height:56px;
-    box-shadow:0px 4px 4px rgba(0,0,0,.3);
-    position:fixed;
-    right:10px;
-    bottom:50px;
-    font-size:0px;
-    text-indent: -9999px;
-    border-radius:50%;
-    display:none;
-    color: #fff;
-  }
-
-  .f_wrap{
-    width: 100%;
-    display: block;
-  }
-  
-  
-  .subscribe{
-    width: 100%;
-    height: 90px;
-    position: relative;
-    padding-left: 10px;
-  }
-  
-  .subscribe p {
-    font-size: 0.85em;
-  }
-  
-  
-  .cs_service {
-    padding-left: 10px;
-  }
-
-  .corp_gift {
-    margin-left: 0px;
-  }
-
-  .corp_gift, .cs_service {
-    width: 50%;
-    margin-bottom: 30px;
-    font-size: 0.85em;
-  }
-
-  .f_info_l {
-    clear: both;
-  }
-  
-  dt {
-    font-weight: bold;
-  }
-  
-  .f_lnb{
-    margin: 25px 0px;
-    padding-left: 10px;
-  }
-  
-  
-  .f_info_r{
-    height: 70px;
-    padding-left: 10px;
-  }
-  
-  .f_info_l {
-    padding-left: 10px;
-
+      display: block;
   }
 
   .f_lnb > ul {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
+      font-size: 1em;
   }
-
-  .f_lnb > ul li {
-    margin-right: 40px;
-    padding: 10px 0px;
-  }
-
-  .f_lnb > ul li {
-
-  }
-
-  
-  #sub_email {
-    width: 90%;
-    height: 30px;
-    margin-bottom: 10px;
-    background-color: #333;
-    border: none;
-  }
-
-  .subs_btn {
-    font-size: 0.9em;
-  }
-  
-  address {
-    font-style: normal;
-    line-height: 20px;
-    width: 100%;
-    font-size: 0.9em;
-    left: 0px;
-    margin: 0px;
-    padding: 80px 0px 0px 10px;
-    margin-top: 20px;
-  }
-  
-  .sns{
-    margin: 20px 0px;
-    width: 100%;
-    text-align: center;
-    height: 50px;
-  }
-  
-  .sns ul li {
-    margin: 0px 20px;
-
-  }
-  
-  @media screen and (max-width:470px) and (min-width:420px) {
-    #sub_email {
-      width: 80%;
-    }
-
-    .subscribe p {
-      font-size: 0.8em;
-    }
-    
-    .footbar {
-      display: none;
-    }
-
-    .br {
-      display: block;
-    }
-  }
-
-  
-  @media screen and (max-width:419px) and (min-width:376px) {
-
-    #sub_email {
-      width: 80%;    }
-
-    .subscribe p {
-      padding: 0px;
-      line-height: 0.9em;
-      font-size: 0.8em;
-    }
-    .subs_br {
-      display: inline-block;
-    }
-
-    .cs_service, .corp_gift {
-      font-size: 0.8em;
-    }
-
-    .footbar {
-      display: none;
-    }
-
-    .br {
-      display: block;
-    }
-  }
-
-  
-  
-  
 }
+
+@media screen and (max-width:875px) {
+  .cs_service, .corp_gift, address {
+      font-size: 0.9em;
+  }
+
+  .subscribe p {
+      font-size: 0.75em;
+  }
+
+  address {
+      left:10px;
+  }
+
+  #sub_email {
+      width: 80%;
+  }
+  .corp_gift {
+      margin-left: 15%;
+  }
+
+  .sns {
+      padding-left: 10px;
+  }
+}
+
+@media screen and (max-width:875px) {
+  .cs_service, .corp_gift, address {
+      font-size: 0.85em;
+  }
+}
+
+@media screen and (max-width:850px){
+  .sub, .subscribe p  {
+      width: 82%;
+  }
+  
+  .subscribe p {
+      white-space: nowrap;
+  }
+}
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+  .f_wrap {
+      display: block;
+      padding: 50px 10px 0px 10px;
+      width: 100%;
+  }
+  
+  #sub_email::placeholder {
+    font-size: 1em;
+  }
+
+  .subscribe p {
+      font-size: 0.9em;
+  }
+
+  .sns {
+      padding-top: 15px;
+      height: 50px;
+  }
+
+  address {
+      left: 0px;
+      font-size: 0.9em;
+  }
+  
+  .cs_service, .corp_gift {
+      float: none;
+      font-size: 1em;
+      padding: 1% 0px 8% 0px;
+}
+
+  .f_lnb > ul {
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0px;
+  }
+
+  .f_lnb > ul li {
+      padding: 8px 20px;
+  }
+
+  .corp_gift {
+      margin-left: 24%;
+  }
+
+  .f_lnfo_l {
+      display: flex;
+      height: auto;
+      
+      
+  }
+
+  address {
+      padding-left: 0px;
+      font-size: 0.9em;
+  }
+
+  .corp_gift {
+      margin-left: 22%;
+  }
+
+  .footbar, .br {
+    display: inline-block;
+}
+}
+
+@media screen and (max-width:480px) {
+.corp_gift {
+  margin-left: 17%;
+}
+
+.subscribe p {
+font-size: 0.85em;
+}
+
+.cs_service, .corp_gift {
+font-size: 0.9em;
+}
+
+.footbar {
+display: none;
+}
+
+.br {
+display: block;
+}
+
+address {
+font-size: 0.85em;
+}
+
+}
+@media screen and (max-width:435px) {
+.corp_gift {
+  margin-left: 14%;
+}
+
+.subscribe p {
+font-size: 0.8em;
+}
+}
+
+@media screen and (max-width:405px) {
+.corp_gift {
+  margin-left: 12%;
+}
+
+.subs_br {
+display: block;
+}
+
+.subscribe p {
+line-height: 1em;
+}
+
+.cs_service, .corp_gift {
+font-size: 0.78em;
+}
+
+.sns {
+padding: 10% 0%;
+}
+
+@media screen and (max-width:380px) {
+
+.f_lnb ul {
+  font-size: 0.9em;
+}
+
+.subscribe p {
+  font-size: 0.75em;
+}
+.corp_gift {
+  margin-left: 8%;
+}
+}
+
+@media screen and (max-width:340px) {
+.f_lnb ul li {
+  padding: 7px;
+}
+}
+
+}
+
 /* gnb 태블릿 이하 서식 */
 
 #m_menu,.m_gnb, #m_product, #m_magazine , #m_intro{display: none;}

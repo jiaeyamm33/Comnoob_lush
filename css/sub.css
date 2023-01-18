@@ -144,6 +144,9 @@ article{
         font-size:1.15em;
     }
     
+    .article_m_br {
+        display: block;
+    }
     .desc {
         font-size: 0.9em;
     }
@@ -160,5 +163,17 @@ article{
     }
     .article_4 .desc{
         letter-spacing:0.8px;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+
+    .title_sub, .sub_title{
+        font-size:1.1em;
+    }
+    
+    .desc {
+        font-size: 0.8em;
     }
 }

@@ -243,53 +243,53 @@ let s_ethical = document.getElementById('s_ethical');
 
 s_best.addEventListener('click',function(){
   document.getElementById('shop_subbanner_p').innerHTML='누구나 좋아하는 인기 제품을 만나보세요!';
-  document.getElementById('shop_subbanner_main').style.backgroundImage='url(../images/shop/banner_shop1.png)';
+  document.getElementById('shop_subbanner_main').style.backgroundImage='url(./images/shop/banner_shop1.png)';
 });
 s_new.addEventListener('click',function(){
   document.getElementById('shop_subbanner_p').innerHTML='따끈 따끈한 신제품을 가장 먼저 만나 보세요!';
-  document.getElementById('shop_subbanner_main').style.backgroundImage='url(../images/shop/banner_shop2.jpg)';
+  document.getElementById('shop_subbanner_main').style.backgroundImage='url(./images/shop/banner_shop2.jpg)';
   document.getElementById('shop_subbanner_main').style.backgroundRepeat='no-repeat';
   document.getElementById('shop_subbanner_main').style.backgroundSize='cover';
   document.getElementById('shop_subbanner_main').style.backgroundPosition='center';
 });
 s_body.addEventListener('click',function(){
   document.getElementById('shop_subbanner_p').innerHTML='늘 당신의 피부를 향긋하고 건강하게 빛내줄 거예요';
-  document.getElementById('shop_subbanner_main').style.backgroundImage='url(../images/shop/banner_shop3.jpg)';
+  document.getElementById('shop_subbanner_main').style.backgroundImage='url(./images/shop/banner_shop3.jpg)';
   document.getElementById('shop_subbanner_main').style.backgroundRepeat='no-repeat';
   document.getElementById('shop_subbanner_main').style.backgroundSize='cover';
   document.getElementById('shop_subbanner_main').style.backgroundPosition='center';
 });
 s_hair.addEventListener('click',function(){
   document.getElementById('shop_subbanner_p').innerHTML='실리콘 성분 없이 건강한 재료만 담아 매일 더 싱그럽게';
-  document.getElementById('shop_subbanner_main').style.backgroundImage='url(../images/shop/banner_shop4.jpg)';
+  document.getElementById('shop_subbanner_main').style.backgroundImage='url(./images/shop/banner_shop4.jpg)';
   document.getElementById('shop_subbanner_main').style.backgroundRepeat='no-repeat';
   document.getElementById('shop_subbanner_main').style.backgroundSize='cover';
   document.getElementById('shop_subbanner_main').style.backgroundPosition='center';
 });
 s_face.addEventListener('click',function(){
   document.getElementById('shop_subbanner_p').innerHTML='신선한 재료로 만들어 믿을 수 있는 제품이에요';
-  document.getElementById('shop_subbanner_main').style.backgroundImage='url(../images/shop/banner_shop5.jpg)';
+  document.getElementById('shop_subbanner_main').style.backgroundImage='url(./images/shop/banner_shop5.jpg)';
   document.getElementById('shop_subbanner_main').style.backgroundRepeat='no-repeat';
   document.getElementById('shop_subbanner_main').style.backgroundSize='cover';
   document.getElementById('shop_subbanner_main').style.backgroundPosition='center';
 });
 s_perfume.addEventListener('click',function(){
   document.getElementById('shop_subbanner_p').innerHTML='자연과 음악, 시가 주는 영감으로 빚어낸 특별한 향기';
-  document.getElementById('shop_subbanner_main').style.backgroundImage='url(../images/shop/banner_shop6.jpg)';
+  document.getElementById('shop_subbanner_main').style.backgroundImage='url(./images/shop/banner_shop6.jpg)';
   document.getElementById('shop_subbanner_main').style.backgroundRepeat='no-repeat';
   document.getElementById('shop_subbanner_main').style.backgroundSize='cover';
   document.getElementById('shop_subbanner_main').style.backgroundPosition='center';
 });
 s_gift.addEventListener('click',function(){
   document.getElementById('shop_subbanner_p').innerHTML='환경을 배려한 선물의 감동은 긴 여운을 남길 거예요';
-  document.getElementById('shop_subbanner_main').style.backgroundImage='url(../images/shop/banner_shop7.jpg)';
+  document.getElementById('shop_subbanner_main').style.backgroundImage='url(./images/shop/banner_shop7.jpg)';
   document.getElementById('shop_subbanner_main').style.backgroundRepeat='no-repeat';
   document.getElementById('shop_subbanner_main').style.backgroundSize='cover';
   document.getElementById('shop_subbanner_main').style.backgroundPosition='center';
 });
 s_ethical.addEventListener('click',function(){
   document.getElementById('shop_subbanner_p').innerHTML='발달장애 아티스트와 함께하는 LUSH 아트 큐레이션!';
-  document.getElementById('shop_subbanner_main').style.backgroundImage='url(../images/shop/banner_shop8.jpg)';
+  document.getElementById('shop_subbanner_main').style.backgroundImage='url(./images/shop/banner_shop8.jpg)';
   document.getElementById('shop_subbanner_main').style.backgroundRepeat='no-repeat';
   document.getElementById('shop_subbanner_main').style.backgroundSize='cover';
   document.getElementById('shop_subbanner_main').style.backgroundPosition='center';

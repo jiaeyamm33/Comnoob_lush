@@ -69,36 +69,51 @@ article{
 @media screen and (max-width:1024px) and (min-width:767px){
     article{width:100%;}
     .title_sub, .sub_title{
-        font-size:32px;
+        font-size:2em;
     }
     .desc{
-        font-size:1rem;
+        font-size:1em;
     }
 }
-@media screen and (max-width:766px) and (min-width:376px){
+@media screen and (max-width:766px) and (min-width:452px){
     article{width:100%;}
-    .title{font-size:64px;}
+    .title{font-size:4em;}
     .title_sub, .sub_title{
-        font-size:24px;
+        font-size:1.5em;
     }
     .desc{
-        font-size:12px;
+        font-size:0.75em;
     }
     .article_2 .sub_title{
         letter-spacing: -1.1px;
     }
+    
+}
+@media screen and (max-width:451px) and (min-width:376px){
+    .article_1 br{
+        display:none;
+    }
+    .article_2 br{
+        display:none;
+    }
 }
 @media screen and (max-width:375px){
     article{width:100%;}
-    .title{font-size:32px;}
+    .title{font-size:2em;}
     .title_sub, .sub_title{
-        font-size:18px;
+        font-size:1.125em;
     }
     .desc{
-        font-size:12px;
+        font-size:0.75em;
     }
     .article_2 .desc{
         letter-spacing:-0.9px;
+    }
+    .article_2 .s_top{
+        letter-spacing:-0.9px;
+    }
+    .article_2 br{
+        display:none;
     }
     .article_4 .desc{
         letter-spacing:0.8px;

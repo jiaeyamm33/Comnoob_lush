@@ -420,12 +420,15 @@ address {
 
 /* 푸터 태블릿 서식*/
 @media screen and (max-width:1024px) {
+<<<<<<< HEAD
 
   .ethical {
     display: none;
   }
   #pc_header {display: none;}
 
+=======
+>>>>>>> ed93769e0548a194a57b939a9e12356b3986c2db
   .footbar {
       display: none;
   }
@@ -632,6 +635,7 @@ padding: 10% 0%;
 #m_menu,.m_gnb, #m_product, #m_magazine , #m_intro{display: none;}
 /* 미디어 스크린 모바일 */
 @media screen and (max-width:1024px) {
+  #pc_header {display: none;}
   #m_header {
     width: 100%; height: 64px;
     padding: 0 15px;

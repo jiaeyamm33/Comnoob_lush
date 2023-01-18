@@ -420,15 +420,12 @@ address {
 
 /* 푸터 태블릿 서식*/
 @media screen and (max-width:1024px) {
-<<<<<<< HEAD
 
   .ethical {
     display: none;
   }
   #pc_header {display: none;}
 
-=======
->>>>>>> ed93769e0548a194a57b939a9e12356b3986c2db
   .footbar {
       display: none;
   }

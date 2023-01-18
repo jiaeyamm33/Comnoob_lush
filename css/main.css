@@ -1,9 +1,45 @@
 @charset "utf-8";
 
 
+
+
+
+
+
+
+/* 필수영역 ㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜ */
+
+
+#main_video_box div {
+  width : 100%;
+  max-width : 800px;
+  position : absolute;
+  left : 50%;
+  top : 50%;
+  transform : translate(-50%, -50%);
+  font-size : 3rem;
+  text-align : center;
+}
+
+#main_video_box div p {
+  margin-bottom : 20px;
+  color : #fff;
+  font-family: 'LushKR Handwritten OTF';
+}
+
+/* 비디오 스크롤 안내 */
+.scrolltxt {
+  color : #fff;
+  display : none;
+}
+
 main{
   width : 100%;
 }
+
+
+
+/* ----------------------------------------------------------- */
 
 #pc_header {
   position: fixed;
@@ -24,162 +60,9 @@ main{
   z-index: -1;
 }
 
-.main_box {
-  height : 950px;
-  width : 100%;
-}
-
-/* 메인 안쪽 상자 가로 길이 고정 중앙정렬 */
-.main_content_box {
-  height : 950px;
-  /* width : 1260px; */
-  width : 100%;
-  margin : 0 auto;
-}
-
-#new_bg {
-  background-image : url('../images/main_new_bg.jpg');
-  background-repeat : no-repeat;
-  background-position : center;
-  position : relative;
-  overflow: hidden;
-}
-
-
-/* new 영역 왼쪽 텍스트 */
-#product_new {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding-bottom: 200px;
-}
-
-
-/* 모바일과 서식 안겹치게 하려고 */
-@media screen and (min-width:767px){
-
-#new_left{
-  height: 120px;
-  position: relative;
-  color: #fff;
-  bottom: 55px;
-  left: 50px;
-}
-}
 
 
 
-#new_left > h2,
-#new_left > p {
-  position : absolute;
-}
-
-#new_left > a{
-  display: block;
-}
-#new_left > a > h2{
-  left : 0;
-  top : 0;
-  font-size : 50px;
-  color:#fff;
-  display: inline-block;
-}
-
-#new_left > p{
-  width : 170px;
-  height : 40px;
-  border : 1px solid #fff;
-  font-size : 16px;
-  text-align : center;
-  left : 0;
-  bottom : 0;
-}
-#new_left > p > a {
-  color : #fff;
-  line-height : 40px;
-  display : block;
-}
-
-
-#new_right {
-}
-
-
-/* 모바일 new 상품 display : none; */
-#mobile_new_right {
-  display :none;
-}
-
-
-#new_slide_wrap {
-  background-color : rgba(242, 242, 242, .6);
-  width: 60vw;
-  padding-bottom: 50px;
-  display : flex;
-  align-items : center;
-  overflow : hidden;
-}
-
-
-
-
-
-
-/* new ul 슬라이드 필요 */
-#new_list {
-  display : flex;
-  /* width : 1500px; */
-  /* justify-content : space-between; */
-}
-
-
-
-
-/* new ul 슬라이드 필요 */
-#new_list {
-  display : flex;
-  /* width : 2500px; */
-}
-
-
-#new_list > li{
-  position : relative;
-  width : 300px;
-  height : 400px;
-  margin-right : 50px;
-}
-#new_list > li:first-child {
-  margin-left : 50px;
-}
-
-#new_list > li a > img {
-  position : relative;
-  width:300px;
-}
-
-.new_des {
-  width : 300px;
-  height : 250px;
-  position : absolute;
-  top : 150px;
-  left : 0;
-  background-color : #eee;
-}
-
-.new_des  > h3{
-  padding-bottom : 10px;
-  font-size : 1.375em;
-  line-height : 24px;
-  margin : 140px 0 10px 30px;   
-}
-.new_des >  p:first-of-type {
-  margin : 0 0 10px 30px;
-  font-size:1.125em;
-}
-.new_des >  p:last-of-type {
-  margin : 0 0 10px 30px;
-  font-size:1em;
-}
 
 
 /* WE BELIEVE LUSH 서식 */
@@ -220,6 +103,10 @@ main{
   padding:20px;
   color: #fff;
 }
+
+
+
+
 
 /* 캠페인 영역 서식 */
 .charity{
@@ -284,140 +171,383 @@ main{
 
 
 
-/* ------------------------------------------------------------------------- */
-
-/* 베스트 영역 서식 시작  */
-
-#product_best {
-  max-width: 1260px;
-}
+/*  메인 공통 서식 끝   */
 
 
-#best_left{
-  height : 90px;
+
+
+@media screen and (min-width:1025px){
+
+  /* main vid 영역 텍스트 박스 */
+  #main_video_box div {
+    width : 100%;
+    max-width : 800px;
+    position : absolute;
+    left : 50%;
+    top : 50%;
+    transform : translate(-50%, -50%);
+    font-size : 3rem;
+    text-align : center;
+  }
+  
+  #main_video_box div p {
+    margin-bottom : 20px;
+    color : #fff;
+    font-family: 'LushKR Handwritten OTF';
+  }
+
+  /* 스크롤 안내 */
+  .scrolltxt {
+    color : #fff;
+  }
+
+
+  .main--pro_box {
+    width : 100%;
+  }
+
+  
+/* NEW 영역 시작 */
+
+
+
+/* 상품 중 new article */
+.sec2--newpro_wrap {
+  width : 100%;
+  height : 950px;
+
+  background-image : url('../images/main_new_bg.jpg');
+  background-repeat : no-repeat;
+  background-position : center;
   position : relative;
-  color : #000;
-  top : 100px;
+  overflow: hidden;
+  padding-top : 300px;
+
+
+  /* display: flex;
+  justify-content : space-between;
+  padding-bottom : 200px;
+  align-items : flex-end; */
 }
 
-#best_left > h2,
-#best_left > p {
+
+/* new 전체를 감싸는 박스 */
+.arti1--new_box1{
+  width : 100%;
+  display: flex;
+  justify-content : space-between;
+  padding-bottom : 200px;
+  align-items : flex-end;
+}
+
+/* new 텍스트 박스 */
+.new_box1--newtxt {
+  height: 120px;
+  position: relative;
+  bottom: 55px;
+  left: 50px;
+  width : 320px;
+}
+
+
+/* new 텍스트 박스의 h3와 p absolute */
+.new_box1--newtxt h3,
+.new_box1--newtxt p {
   position : absolute;
 }
 
-#best_left > a > h2{
+/* new 텍스트 박스의 a */
+.new_box1--newtxt a{
+  display : block;
+  line-height : 40px;
+  color : #fff;
+}
+
+/* new 텍스트 박스의 h3 */
+.new_box1--newtxt h3 {
   left : 0;
   top : 0;
   font-size : 50px;
+  width : 320px;
+  color:#fff;
+  display: inline-block;
 }
 
-#best_left > p{
+/* new 텍스트 박스의 p */
+.new_box1--newtxt p {
+  width : 170px;
+  height : 40px;
+  border : 1px solid #fff;
   font-size : 16px;
+  text-align : center;
   left : 0;
   bottom : 0;
 }
-#best_left > p > a {
-  color : #555;
-}
 
-
-
-#best_wrap_box {
-  display : flex;
-  justify-content : space-around;
+/* new 슬라이드를 감싸는 박스 우측 absolute */
+.new_box1--ul_wrap {
+  background-color : rgba(242, 242, 242, .6);
+  /* position : absolute;
+  left : 500px;
+  bottom : 200px; */
+  overflow : hidden;
+  width : 60vw;
+  padding-bottom : 50px;
   align-items : center;
-  transform : translateY(100px);
+}
+
+/* new 슬라이드 ul */
+.ul_wrap--newpro1 {
+  display : flex;
+  /* width : 2500px; */
+}
+
+/* new 슬라이드 li들 */
+.newpro_1{
+  position : relative;
+  width : 300px;
+  height : 400px;
+  margin-right : 50px;
+}
+.newpro_1:first-child {
+  margin-left : 50px;
+}
+
+/* new 슬라이드 li 내부 패딩 */
+.newpro_1::after {
+  content : "";
+  display : block;
+  padding-bottom : 100%;
+}
+
+/* new ul 슬라이드 이미지들 */
+.newpro_1 img {
+  /* width : 100%;
+  position : absolute;
+  top : 0;
+  left : 0; */
+
+  position : relative;
+}
+
+/* new 슬라이드 텍스트 박스 */
+.newpro_1 div {
+  width : 100%;
+  height : 40%;
+  position : absolute;
+  left : 0;
+  bottom : 0;
+  padding : 50px;
+  background-color : #eee;
+  z-index : -1;
+}
+
+/* new 슬라이드 텍스트 중 h3 */
+.newpro_1 div h3 {
+  margin-bottom : 15px;
+  font-size : 20px;
+}
+
+/* new 슬라이드 텍스트 중 p */
+.newpro_1 div p {
+  margin-top : 15px;
+  font-size : 16px;
 }
 
 
-#best_wrap_box > .best_product_box:first-child {
+/* 모바일 NEW 상품 배열 4개 */
+.new_box1--newpro2 {
+  display : none;
+}
+
+
+/* new 영역 끝 */
+
+
+/* ------------------------------------------------------- */
+
+
+/* BEST 영역 시작 */
+
+/* BEST 감싸는 article */
+.sec2--bestpro_wrap {
+  width : 100%;
+  max-width: 1260px;
+  height : 950px;
+  position : relative;
+  margin: 0 auto;
+  padding : 50px 15px;
+  display : flex;
+  justify-content : space-between;
+}
+
+
+
+/* BEST 텍스트 박스 */
+.art2--besttxt{
+  position : absolute;
+  top : 100px;
+  left : 0;
+}
+
+.art2--besttxt h3,
+.art2--besttxt p {}
+
+/* BEST 텍스트박스 h3 */
+.art2--besttxt h3{
+  font-size : 50px;
+  padding-bottom : 25px;
+  font-weight : bold;
+}
+
+/* BEST 텍스트박스 p */
+.art2--besttxt p{
+  font-size : 16px;
+  color : #949494;
+
+}
+
+/* BEST 상품 상자들 */
+.bestpro1 {
+  position : relative;
+}
+
+/* BEST 상품 상자들 중 img와 div absolute */
+.bestpro1 img,
+.bestpro1 div{
+  position : absolute;
+}
+
+/* BEST 상품 상자들 중 img */
+.bestpro1 img {
+  top : 0;
+  left : 50%;
+  transform : translateX(-50%);
+
+}
+
+/* BEST 상품 상자들 중 div 테두리상자 */
+.bestpro1 div {
+  width : 100%;
+  height : 200px;
+  z-index : -1;
+  border : 1px solid #333;
+  left : 0;
+  bottom : 0;
+  padding : 90px 25px 25px 25px;
+}
+
+
+/* BEST 왼쪽 큰 이미지 박스 */
+
+.best_big {
+  margin-top : 200px;
   width : 500px;
   height : 500px;
-  position : relative;
   overflow : hidden;
 }
 
-#best_wrap_box > .best_product_box:first-child #best_big_tray {
+/* BEST 왼쪽 큰 이미지 박스 이미지 */
+.best_big img {
   width : 500px;
-  height : 300px;
-  border : 1px solid #000;
-  position : absolute;
-  bottom : 0;
-  z-index : -1;
-}
-
-#best_wrap_box > .best_product_box:last-child {
-  width : 520px;
   height : 500px;
 }
 
-#best_wrap_box > .best_product_box:last-child > div {
+
+/* BEST 우측 ul */
+.art2--bestprowrap{
+  margin-top : 200px;
+  display : flex;
+  flex-wrap : wrap;
+  width : 520px;
+  min-width : 520px;
+  height : 500px;
+  justify-content: space-around;
+  align-content : space-around;
+}
+
+
+/* BEST li들 */
+.best_small {
   width : 210px;
   height : 250px;
   position : relative;
+
 }
 
-#best_wrap_box > .best_product_box:last-child > div .best_des_box {
+.best_small img {
+  width : 160px;
   position : absolute;
-  left : 0; bottom : 0;
-  width : 210px;
-  height : 150px;
-  border : 1px solid #000;
-  box-sizing : border-box;
-  z-index : -1;
+  left : 50%;
+  top : -10%;
+  transform : translateX(-50%);
 }
 
-#best_wrap_box > .best_product_box:last-child > div .best_des{
-  /* height : 50px; */
-  height : 70px;
-  position : absolute;
-  left : 10px;
-  bottom : 10px;
+/* BEST li의 h3  */
+.best_small h3 {
+  margin-bottom : 15px;
+  font-weight : bold;
+  font-size : 20px;
 }
 
-
-#best_wrap_box > .best_product_box:last-child > div .best_des > h3 {
-  padding-bottom : 10px;
-  font-size:1.125em;
+/* BEST li의 p들 */
+.best_small p {
+  font-size : 16px;
+  margin-top : 15px;
 }
 
-#best_wrap_box > .best_product_box:last-child > div .best_des > p:first-of-type {
-  padding-bottom : 5px;
-  font-size:1em;
+/* BEST 영역 끝 */
+
+
+
+
+/* WE BELIEVE LUSH 서식 */
+.b_wrap{
+  width:100%;height:950px;
+  background:url(../images/main/webelievelush.jpg)no-repeat center;
+  background-size: cover;
 }
-#best_wrap_box > .best_product_box:last-child > div .best_des > p:last-of-type {
-  padding-bottom : 5px;
-  font-size:0.875em;
-}
-
-
-
-
-
-
-#best_wrap_box > .best_product_box:first-child {
-  display : flex;
+.believe{
+  width:100%;height:950px;
+  display:flex;
+  flex-direction: column;
   justify-content: center;
-  align-items : center;
+  align-items:center;
+}
+.b_sub, .b_title, .b_btn{
+  font-family:'Lush';
+  color:#fff;
+  padding:20px 0px;
+}
+.b_sub{
+  font-size:36px;
+}
+.b_title{
+  font-size:94px;
+}
+.b_btn{
+  padding:0px;
+  margin-top:300px;
+  font-size:16px;
+  border:2px solid #fff;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+.b_btn > a{
+  display:block;
+  padding:20px;
+  color: #fff;
 }
 
-#best_wrap_box > .best_product_box:first-child img {
-  width : 600px;
-  height : 600px;
-}
 
-#best_wrap_box > .best_product_box:last-child img {
-  width : 210px; height : 200px;
-  position : absolute;
-  left : 0; top : 0;
-}
+} /* PC 미디어 쿼리 끝 */
 
-#best_wrap_box > .best_product_box:last-child {
-  display : flex;
-  flex-wrap : wrap;
-  justify-content : space-between;
-  align-content : space-between;
-}
+
+
+
+
+
 
 
 
@@ -437,276 +567,265 @@ main{
 @media screen and (max-width:1024px) and (min-width:767px){
 
 
-  
-  #main_video_box {
-    width: 100%;
-    height : 100vh;
-    background-color : #ccc;
-    position: relative;
-    overflow: hidden;
-    z-index: -1;
-  }
+/* tablet product section(2) 시작 {new, best} */
 
-
-
-
-
-/* 메인 안쪽 상자 가로 길이 고정 중앙정렬 */
-#product_best.main_content_box {
-  height : 950px;
+/* production section */
+.main--pro_box {
   width : 100%;
-  max-width : 625px;
-  margin : 0 auto;
 }
 
-#product_new {
-  max-width: 100%;
-  gap: 60px;
-}
 
-#new_bg {
+
+
+/* tablet NEW 영역 시작 */
+
+
+
+
+/* 상품 중 new article */
+.sec2--newpro_wrap {
+  width : 100%;
+  height : 950px;
+
   background-image : url('../images/main_new_bg.jpg');
   background-repeat : no-repeat;
+  background-position : center;
   position : relative;
   overflow: hidden;
+  padding-top : 300px;
+
+
+  /* display: flex;
+  justify-content : space-between;
+  padding-bottom : 200px;
+  align-items : flex-end; */
 }
 
-/* new 영역 왼쪽 텍스트 */
-#new_left{
-  position : relative;
+
+/* new 전체를 감싸는 박스 */
+.arti1--new_box1{
+  width : 100%;
+  display: flex;
+  justify-content : space-between;
+  padding-bottom : 200px;
+  align-items : flex-end;
+
+}
+
+/* new 텍스트 박스 */
+.new_box1--newtxt {
+  height: 120px;
+  position: relative;
+  bottom: 80px;
+  left: 15px;
+}
+
+
+/* new 텍스트 박스의 h3와 p absolute */
+.new_box1--newtxt h3,
+.new_box1--newtxt p {
+}
+
+/* new 텍스트 박스의 a */
+.new_box1--newtxt a{
+  display : block;
+  line-height : 40px;
   color : #fff;
-  bottom : 130px;
-
 }
 
-#new_left > h2,
-#new_left > p {
-  /* position : absolute; */
+/* new 텍스트 박스의 h3 */
+.new_box1--newtxt h3 {
+  margin-bottom : 40px;
+  font-size : 50px;
+  color:#fff;
+  display: inline-block;
+  margin-right : 30px;
 }
 
-#new_left > h2{
-  left : 0;
-  top : 0;
-  font-size : 2.5em;
+.new_box1--newtxt h3 a {
+  line-height : 60px;
 }
 
-
-#new_left > p{
+/* new 텍스트 박스의 p */
+.new_box1--newtxt p {
+  width : 170px;
   height : 40px;
   border : 1px solid #fff;
-  font-size : 1em;
+  font-size : 16px;
   text-align : center;
-  position: relative;
-  margin-top: 32px;
-  /* left : 0;
-  bottom : 0; */
+
 }
 
-#new_left > p > a {
-  color : #fff;
-  line-height : 40px;
-  display : block;
-}
-
-#new_right {
-  /* position : absolute; */
-  /* height : 400px; */
-}
-
-#mobile_new_right {
-  display : none;
-}
-
-#new_slide_wrap {
+/* new 슬라이드를 감싸는 박스 우측 absolute */
+.new_box1--ul_wrap {
   background-color : rgba(242, 242, 242, .6);
-  height : 500px;
-  display : flex;
-  align-items : center;
+  /* position : absolute;
+  left : 500px;
+  bottom : 200px; */
   overflow : hidden;
+  width : 60vw;
+  padding-bottom : 50px;
+  align-items : center;
 }
 
-/* new ul 슬라이드 필요 */
-#new_list {
-  display : flex;
-  width : 1500px;
-  justify-content : space-between;
-}
-
-
-
-
-/* new ul 슬라이드 필요 */
-#new_list {
+/* new 슬라이드 ul */
+.ul_wrap--newpro1 {
   display : flex;
   /* width : 2500px; */
 }
 
-
-#new_list > li{
+/* new 슬라이드 li들 */
+.newpro_1{
   position : relative;
   width : 300px;
   height : 400px;
-  margin-right : 0;
-  padding-right: 50px;
-  box-sizing: content-box;
+  margin-right : 50px;
 }
-
-#new_list > li:first-child {
+.newpro_1:first-child {
   margin-left : 50px;
 }
 
-#new_list > li a > img {
-  position : relative;
+/* new 슬라이드 li 내부 패딩 */
+.newpro_1::after {
+  content : "";
+  display : block;
+  padding-bottom : 100%;
 }
 
-.new_des {
-  width : 300px;
-  height : 250px;
+/* new ul 슬라이드 이미지들 */
+.newpro_1 img {
+  /* width : 100%;
   position : absolute;
-  top : 150px;
-  left : 0;
-  background-color : #eee;
-}
-
-.new_des  > h3{
-  padding-bottom : 10px;
-  font-size : 1.25em;
-  line-height : 24px;
-  margin : 140px 0 10px 30px;   
-}
-.new_des >  p {
-  margin : 0 0 10px 30px;
-}
-
-
-
-
-
-
-
-
-
-/* 베스트 영역 서식 시작  */
-#product_best {
-}
-
-
-#best_left{
-  height : 90px;
-  position : relative;
-  color : #000;
-  top : 100px;
-  left : -30px;
-}
-
-#best_left > h2,
-#best_left > p {
-  position : absolute;
-}
-
-#best_left > h2{
-  left : 0;
   top : 0;
-  font-size : 3.1em;
+  left : 0; */
+
+  position : relative;
 }
 
-#best_left > p{
-  display : none;
-  font-size : 1em;
+/* new 슬라이드 텍스트 박스 */
+.newpro_1 div {
+  width : 100%;
+  height : 40%;
+  position : absolute;
   left : 0;
   bottom : 0;
-}
-#best_left > p > a {
-  color : #555;
-}
-
-
-
-#best_wrap_box {
-  display : flex;
-  justify-content : space-around;
-  align-items : center;
-  transform : translateY(100px);
+  padding : 50px;
+  background-color : #eee;
+  z-index : -1;
 }
 
-/* display : none */
-#best_wrap_box > .best_product_box:first-child {
+
+/* new 슬라이드 텍스트 중 h3 */
+.newpro_1 div h3 {
+  margin-bottom : 15px;
+  font-size : 20px;
+}
+
+/* new 슬라이드 텍스트 중 p */
+.newpro_1 div p {
+  margin-top : 15px;
+  font-size : 16px;
+}
+
+
+/* 모바일 NEW 상품 배열 4개 */
+.new_box1--newpro2 {
   display : none;
-  width : 500px;
-  height : 500px;
-  position : relative;
-  overflow : hidden;
-}
-
-/* display : none */
-#best_wrap_box > .best_product_box:first-child #best_big_tray {
-  width : 500px;
-  height : 300px;
-  border : 1px solid #000;
-  position : absolute;
-  bottom : 0;
-  z-index : -1;
-}
-
-
-#best_wrap_box > .best_product_box:last-child {
-  width : 100%;
-  height : 500px;
-}
-
-#best_wrap_box > .best_product_box:last-child > div {
-  width : 48%;
-  height : 70%;
-  position : relative;
-}
-
-#best_wrap_box > .best_product_box:last-child > div .best_des_box {
-  position : absolute;
-  left : 0; bottom : 0;
-  width : 100%;
-  height : 60%;
-  border : 1px solid #000;
-  box-sizing : border-box;
-  z-index : -1;
-}
-
-#best_wrap_box > .best_product_box:last-child > div .best_des{
-  /* height : 50px; */
-  height : 70px;
-  position : absolute;
-  left : 10px;
-  bottom : 10px;
-}
-
-
-#best_wrap_box > .best_product_box:last-child > div .best_des > h3 {
-  padding-bottom : 10px;
-}
-
-#best_wrap_box > .best_product_box:last-child > div .best_des > p {
-  padding-bottom : 5px;
 }
 
 
 
 
-#best_wrap_box > .best_product_box:first-child img {
-  width : 600px;
-  height : 600px;
+
+/* tablet NEW 영역 끝 */
+
+/* tablet BEST 영역 시작 */
+
+/* BEST product article */
+.sec2--bestpro_wrap {
+  padding : 50px 15px;
 }
 
-#best_wrap_box > .best_product_box:last-child img {
-  width : 100%; height : 80%;
-  position : absolute;
-  left : 0; top : 0;
+/* BEST 텍스트 박스 */
+.art2--besttxt {
+
 }
 
-#best_wrap_box > .best_product_box:last-child {
+/* BEST 텍스트 박스 h3 */
+.art2--besttxt h3 {
+  font-size : 50px;
+  margin-bottom : 15px;
+}
+
+/* BEST 텍스트 박스 p */
+.art2--besttxt p {
+  font-size : 16px;
+  color : #949494;
+}
+
+/* BEST 큰 사진 박스 display : none; */
+.best_big {
+  display : none;
+}
+
+/* BEST 영역 상품 ul */
+.art2--bestprowrap {
+  width : 90%;
   display : flex;
   flex-wrap : wrap;
   justify-content : space-between;
-  align-content : space-between;
+  margin : 15% auto;
 }
+
+/* BEST li들 */
+.best_small {
+  border: 1px solid #333;
+  width: 48%;
+  position: relative;
+  margin : 10% 0;
+}
+
+.best_small::after {
+  content : "";
+  display : block;
+  padding-bottom : 80%;
+}
+
+.best_small img {
+  width : 80%;
+  position : absolute;
+  top : -40%;
+  left : 50%;
+  transform : translateX(-50%);
+}
+
+.best_small div {
+  position : absolute;
+  width : 100%;
+  left: 30px;
+  bottom : 30px;
+  overflow : hidden;
+}
+
+.best_small div h3 {
+  font-size : 22px ;
+  margin-bottom : 15px;
+  font-weight : bold;
+  width : calc(100% - 30px);
+}
+
+
+.best_small div p {
+  font-size : 1rem;
+  margin-top : 10px;
+  width : calc(100% - 30px);
+  
+}
+
+.best_small div a {
+  display : block;
+}
+
 
 
   /* WE BELIEVE LUSH 서식 */
@@ -730,6 +849,7 @@ main{
       .c_left{
         padding:10px;
       }
+
 }
 
 
@@ -746,200 +866,196 @@ main{
 @media screen and (max-width:766px) and (min-width:1px) {
 
 
-  /* mobile new 영역 서식 */
-
-  #product_new {
-    display : block;
-    width : 100%;
+  
+  .sec2--newpro_wrap {
+    background-image : url('../images/main_new_bg.jpg');
+    background-repeat : no-repeat;
+    background-position : center;
     max-height : 950px;
-    padding : 0;
+    padding : 50px 15px;
   }
 
-  #product_new a {
-    color : #000;
+  .new_box1--newtxt {
   }
 
-
-
-  .mobile_new_left{
-    height: 15%;
-    position: relative;
-    color: #fff;
-    top: 50px !important;
-    left : 13%;
-    display : block;
-    margin-bottom : 100px;
-  }
-  
-  .mobile_new_left > h2,
-  .mobile_new_left > p {
-    position : absolute;
-  }
-  
-  .mobile_new_left > a{
-    display: block;
-  }
-  .mobile_new_left > a > h2{
-    left : 0;
-    top : 0;
-    font-size : 40px;
-    color:#fff;
-    display: inline-block;
-  }
-  
-  .mobile_new_left > p{
-    width : 170px;
-    height : 40px;
-    border : 1px solid #fff;
-    font-size : 16px;
-    text-align : center;
-    left : 0;
-    bottom : 0;
-    margin-top : 15px;
-  }
-  .mobile_new_left > p > a {
+  .new_box1--newtxt h3 {
+    margin-bottom : 15px;
     color : #fff;
+  }
+
+  .new_box1--newtxt h3 a {
+    font-size : 1.5rem;
+  }
+
+  .new_box1--newtxt p {
+    border : 1px solid #fff;
+    width : 32%;
+    min-width : 120px;
+    text-align : center;
+    height : 40px;
+  }
+
+  .new_box1--newtxt a {
+    display : block;
+    font-size : .8rem;
     line-height : 40px;
-    display : block;
+    color : #fff;
   }
 
-
-
-  /* pc, tablet 상품 슬라이드 배너 */
-  #new_right {
-    display : none !important;
+  .new_box1--ul_wrap {
+    display : none;
   }
 
-  /* 모바일 new 상품 시작 */
-  #mobile_new_right {
-    width : 90%;
-    min-height : 550px;
-    display : block;
-    margin : 0 auto;
-  }
-
-  .mobile_new_list {
-    width : 100%;
-    height : 100%;
-    min-height : 550px;
+  .new_box1--newpro2 {
     display : flex;
     flex-wrap : wrap;
+    width : 95%;
+    margin : 15% auto;
     justify-content : space-between;
-    align-content : space-between ;
   }
 
-  .mobile_new_list > li {
-    width : 40%;
-    height : 275px;
+  /* li들 */
+  .newpro_2 {
+    width : 48%;
+    background-color : #fff;
     position : relative;
-    text-align: center;
-    
+    margin : 10% 0px;
   }
 
-  .mobile_new_list > li a > img {
-    width : 75%;
-    min-width : 165px;
-    position : relative;
+  .newpro_2::after {
+    content : "";
+    display : block;
+    padding-bottom : 80%;
   }
-  
-  .mobile_new_des {
-    width : 100%;
-    height : 60%;
+
+
+  .newpro_2 img {
+    width : 65%;
     position : absolute;
-    bottom : 0;
-    left : 0;
-    background-color : #eee;
-    text-align : left;
-    text-indent : 15px;
-  }
-  
-  
-  .mobile_new_des  > h3{
-    padding-bottom : 10px;
-    font-size : 1.25rem;
-    line-height : 24px;
-    color : #000;
-    margin-top : 60px;
+    top : -40%;
+    left : 50%;
+    transform : translateX(-50%);
+
   }
 
-  .mobile_new_des >  p {
-    color : #000;
-    margin-top :5px;
+  .newpro_2 div {
+    position : absolute;
+    width : 100%;
+    left: 8%;
+    bottom : 8%;
+    overflow : hidden;
   }
+
+  .newpro_2 div h3 {
+    font-size : 1rem ;
+    margin-bottom : 10px;
+    font-weight : bold;
+    width : calc(100% - 30px);
+  }
+
+  .newpro_2 div p {
+    font-size : .8rem;
+    margin-top : 8px;
+    width : calc(100% - 30px);
+  }
+
+  .newpro_2 div a{
+    display : block;
+  }
+
+
+
+
 
 
   /* 모바일 best 서식 시작 */
 
-  /* display : none; */
-  #best_wrap_box > .best_product_box:first-child {
-    display : none;
-    width : 500px;
-    height : 500px;
-    position : relative;
-    overflow : hidden;
-  }
+/* BEST product article */
+.sec2--bestpro_wrap {
+  padding : 50px 15px;
+}
 
-  #product_best{
-    display : block;
-    width : 100%;
-    max-height : 950px;
-    padding : 0;
-  }
+/* BEST 텍스트 박스 */
+.art2--besttxt {
+
+}
+
+/* BEST 텍스트 박스 h3 */
+.art2--besttxt h3 {
+  font-size : 1.5rem;
+  margin-bottom : 10px;
+}
+
+/* BEST 텍스트 박스 p */
+.art2--besttxt p {
+  font-size : .8rem;
+  color : #949494;
+}
+
+
+
+/* BEST 큰 사진 박스 display : none; */
+.best_big {
+  display : none;
+}
+
+/* BEST 영역 상품 ul */
+.art2--bestprowrap {
+  width : 95%;
+  display : flex;
+  flex-wrap : wrap;
+  justify-content : space-between;
+  margin : 15% auto;
+}
+
+/* BEST li들 */
+.best_small {
+  border: 1px solid #333;
+  width: 48%;
+  position: relative;
+  margin : 10% 0;
+}
+
+.best_small::after {
+  content : "";
+  display : block;
+  padding-bottom : 80%;
+}
+
+.best_small img {
+  width : 65%;
+  position : absolute;
+  top : -40%;
+  left : 50%;
+  transform : translateX(-50%);
+}
+
+.best_small div {
+  position : absolute;
+  width : 100%;
+  left: 8%;
+  bottom : 8%;
+  overflow : hidden;
+}
+
+.best_small div h3 {
+  font-size : 1rem ;
+  margin-bottom : 10px;
+  font-weight : bold;
+  width : calc(100% - 30px);
+}
+
+
+.best_small div p {
+  font-size : .8rem;
+  margin-top : 8px;
+  width : calc(100% - 30px);
   
-  #best_wrap_box {
-    width : 90%;
-    margin : 0 auto;
-  }
+}
 
-  #best_wrap_box > .best_product_box:last-child {
-    width : 100%;
-    height : 100%;
-    min-height : 500px;
-    flex-wrap : wrap;
-    justify-content : space-between;
-    align-content : space-between;
-  }
-  #best_wrap_box > .best_product_box:last-child > div {
-    width : 40%;
-    height : 275px;
-    position : relative;
-    text-align : center;
-  }
-
-  #best_wrap_box > .best_product_box:last-child > div .best_des_box {
-    position : absolute;
-    left : 0; bottom : 0;
-    width : 100%;
-    height : 60%;
-    border : 1px solid #000;
-    box-sizing : border-box;
-    z-index : -1;
-  }
-
-  #best_wrap_box > .best_product_box:last-child > div .best_des{
-    /* height : 50px; */
-    height : 40%;
-    position : absolute;
-    left : 10px;
-    bottom : 10px;
-    text-align : left;
-  }
-
-  #best_wrap_box > .best_product_box:last-child > div img {
-    width : 75%;
-    min-width : 165px;
-    position : relative;
-  }
-
-
-
-  #best_left{
-    height : 10%;
-    position : relative;
-    color : #000;
-    top : 50px;
-    left : 13%;
-  }
+.best_small div a {
+  display : block;
+}
 /* ----------------------------------- */
 
 
@@ -950,6 +1066,11 @@ main{
 
 
 /* ----------------------------------- */
+
+
+
+
+
 
 
   /* WE BELIEVE LUSH 서식 */
@@ -973,5 +1094,12 @@ main{
       .c_right h3{
         padding-top:50px;
       }
+
+
+
+
+
+
+      
       br{display:none;}
 }

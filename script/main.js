@@ -23,10 +23,10 @@ $(function(){
 
   // 베스트 상품 오버시 상품 확대
   let b_img = $('#b_img');
-  let s_img01 = $('#s_img01');
-  let s_img02 = $('#s_img02');
-  let s_img03 = $('#s_img03');
-  let s_img04 = $('#s_img04');
+  let s_img01 = $('.s_img01');
+  let s_img02 = $('.s_img02');
+  let s_img03 = $('.s_img03');
+  let s_img04 = $('.s_img04');
 
   $(s_img01).mouseenter(function(){
     if('./images/main/best_01.png'.split('_')[1] != document.getElementById('b_img').src.split('_')[1]){

@@ -1135,7 +1135,7 @@
 
 
       
-      br{display:none;}
+      br:not(br.appear){display:none;}
 
       .c_left a img{
         width:250px;height:250px;

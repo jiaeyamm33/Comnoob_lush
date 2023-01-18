@@ -20,11 +20,9 @@
 .shop_subbanner > .shop_subbanner_text > h2 {
   font-family: 'LushKR Handwritten OTF';
   font-size: 96px;
-  font-weight: bold;
 }
 .shop_subbanner > .shop_subbanner_text > p {
   font-size: 32px;
-  font-weight: bold;
   text-align: center;
 }
 .shop_menulist_wrap {
@@ -122,6 +120,12 @@
   padding-top: 50px;
 }
 @media screen and (max-width:1200px) and (min-width:375px){
+  .shop_subbanner{
+    height:300px;
+  }
+  #shop_subbanner_p{
+    font-size:2em;
+  }
   .shop_itemlist {grid-template-columns: repeat(3, 1fr);}
   .shop_itemlist > .product:nth-of-type(4n+1) {margin: 0 0 150px;}
   .shop_itemlist > .product:nth-of-type(4n+3) {margin: 0 0 150px;}
@@ -144,6 +148,16 @@
   }
 }
 @media screen and (max-width:766px) {
+  .shop_subbanner{
+    height:250px;
+  }
+  #shop_subbanner_h2{
+    font-size:4em;
+  }
+  #shop_subbanner_p{
+    font-size:18px;
+    line-height:18px;
+  }
   .shop_itemlist {grid-template-columns: repeat(2, 1fr);}
   .shop_itemlist > .product:nth-of-type(4n+1) {margin: 0 0 150px;}
   .shop_itemlist > .product:nth-of-type(4n+3) {margin: 0 0 150px;}
@@ -167,6 +181,17 @@
 
 @media screen and (max-width:425px){
   .shop_itemlist > .product > img {
-    top: -100%;
+    top: -110%;
+  }
+  #shop_subbanner_h2{
+    font-size:48px;
+  }
+}
+@media screen and (max-width:320px){
+  .shop_itemlist > .product::after{
+    padding-top:calc(130% - 50px);
+  }
+  .shop_itemlist > .product > img {
+    top: -85%;
   }
 }

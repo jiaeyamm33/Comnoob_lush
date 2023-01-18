@@ -773,6 +773,7 @@ padding: 10% 0%;
   .m_subc > li > a{
     font-size:20px;
     font-weight:bold;
+    display:block;
   }
   .m_subc > li{
     line-height: 50px;
@@ -854,7 +855,7 @@ padding: 10% 0%;
     cursor:pointer;
   }
 
-  .m_subc li:first-child::after{
+  .m_subc li:first-child a::after{
     content:'\f118';
     font-family:'Font Awesome 5 Free';
     position:absolute;
@@ -863,7 +864,7 @@ padding: 10% 0%;
     color:#fff;
     font-size:25px;
   }
-  .m_subc li:nth-child(2)::after{
+  .m_subc li:nth-child(2) a::after{
     content:'\f290';
     font-family:'Font Awesome 5 Free';
     position:absolute;
@@ -873,7 +874,7 @@ padding: 10% 0%;
     font-size:25px;
     font-weight:bold;
   }
-  .m_subc li:last-child::after{
+  .m_subc li:last-child a::after{
     content:'\f075';
     font-family:'Font Awesome 5 Free';
     position:absolute;

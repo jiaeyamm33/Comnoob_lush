@@ -294,3 +294,14 @@ s_ethical.addEventListener('click',function(){
   document.getElementById('shop_subbanner_main').style.backgroundSize='cover';
   document.getElementById('shop_subbanner_main').style.backgroundPosition='center';
 });
+
+  //New slide
+  let swiper = new Swiper(".mySwiper", {
+    slidesPerView: 'auto',
+    // spaceBetween: 50,
+    
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });

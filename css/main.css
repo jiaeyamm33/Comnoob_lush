@@ -168,12 +168,17 @@ main{
 
 .new_des  > h3{
   padding-bottom : 10px;
-  font-size : 1.25rem;
+  font-size : 1.375em;
   line-height : 24px;
   margin : 140px 0 10px 30px;   
 }
-.new_des >  p {
+.new_des >  p:first-of-type {
   margin : 0 0 10px 30px;
+  font-size:1.125em;
+}
+.new_des >  p:last-of-type {
+  margin : 0 0 10px 30px;
+  font-size:1em;
 }
 
 
@@ -373,10 +378,16 @@ main{
 
 #best_wrap_box > .best_product_box:last-child > div .best_des > h3 {
   padding-bottom : 10px;
+  font-size:1.125em;
 }
 
-#best_wrap_box > .best_product_box:last-child > div .best_des > p {
+#best_wrap_box > .best_product_box:last-child > div .best_des > p:first-of-type {
   padding-bottom : 5px;
+  font-size:1em;
+}
+#best_wrap_box > .best_product_box:last-child > div .best_des > p:last-of-type {
+  padding-bottom : 5px;
+  font-size:0.875em;
 }
 
 

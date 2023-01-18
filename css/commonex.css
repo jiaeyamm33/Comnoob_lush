@@ -483,6 +483,10 @@ address {
       font-size: 1em;
     }
 
+    .subs_btn {
+      font-size: 0.9em;
+    }
+
     .subscribe p {
         font-size: 0.9em;
     }

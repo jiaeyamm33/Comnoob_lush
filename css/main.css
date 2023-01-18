@@ -87,6 +87,7 @@
   font-family:'Lush';
   color:#fff;
   padding:20px 0px;
+  text-align: center;
 }
 .b_sub{
   font-size:36px;
@@ -876,7 +877,6 @@
         padding-top:50px;
       }
       .c_right{
-        max-width:500px;
         padding:0px;
       }
       .c_left{
@@ -1120,7 +1120,6 @@
         flex-direction:column;
       }
       .c_right{
-        max-width:500px;
         padding:10px;
       }
       .c_left{
@@ -1137,4 +1136,8 @@
 
       
       br{display:none;}
+
+      .c_left a img{
+        width:250px;height:250px;
+      }
 }

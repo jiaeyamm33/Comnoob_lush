@@ -249,16 +249,18 @@ dl dt, dl dd {
   display:block;
 }
 
+input, textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+
 /* 푸터 영역 서식 */
 footer{
   background:#000;
   margin-top:160px;
   color:#fff;
   width: 100%;
-}
-
-footer input {
-  border-radius: 0px;
 }
 
 footer a {

@@ -4,11 +4,7 @@
 
 
 
-
-
-
-/* 필수영역 ㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜ */
-
+/* 메인 공통 서식 시작 */
 
 #main_video_box div {
   width : 100%;
@@ -27,7 +23,7 @@
   font-family: 'LushKR Handwritten OTF';
 }
 
-/* 비디오 스크롤 안내 */
+/* 비디오 섹션 스크롤 안내 */
 .scrolltxt {
   color : #fff;
   display : none;
@@ -38,8 +34,6 @@ main{
 }
 
 
-
-/* ----------------------------------------------------------- */
 
 #pc_header {
   position: fixed;
@@ -176,7 +170,17 @@ main{
 
 
 
+
+
+
+
+
+/* PC 미디어 쿼리 시작 */
 @media screen and (min-width:1025px){
+
+  .main--pro_box img {
+    width : 300px;
+  }
 
   /* main vid 영역 텍스트 박스 */
   #main_video_box div {
@@ -576,6 +580,9 @@ main{
 /* 태블릿 */
 @media screen and (max-width:1024px) and (min-width:767px){
 
+  .main--pro_box img {
+    width : 300px;
+  }
 
 /* tablet product section(2) 시작 {new, best} */
 

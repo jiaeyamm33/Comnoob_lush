@@ -19,7 +19,7 @@ let products = [
   {'name' : '해피 페이스', 'category' : '배쓰 밤', 'price' : 15000, 'like' : 84, 'view' : 87, 'src' : './images/shop/product13.png'},
   {'name' : '러브', 'category' : '샤워 젤', 'price' : 19000, 'like' : 149, 'view' : 168, 'src' : './images/shop/product113.png'},
   {'name' : '러브 버그', 'category' : '배쓰 밤', 'price' : 17000, 'like' : 14, 'view' : 29, 'src' : './images/shop/product114.png'},
-  {'name' : '스트로베리 크럼블 버블룬', 'category' : '버블 바', 'price' : 19000, 'like' : 79, 'view' : 140, 'src' : './images/shop/product115.png'},
+  {'name' : '스트로베리', 'category' : '버블 바', 'price' : 19000, 'like' : 79, 'view' : 140, 'src' : './images/shop/product115.png'},
   {'name' : '캔들라이트', 'category' : '낫랩', 'price' : 11000, 'like' : 7, 'view' : 16, 'src' : './images/shop/product116.png'},
   {'name' : '본파이어', 'category' : '배쓰 밤', 'price' : 20000, 'like' : 2, 'view' : 3, 'src' : './images/shop/product117.png'},
   {'name' : '슬리피 캔들', 'category' : '캔들', 'price' : 35000, 'like' : 27, 'view' : 34, 'src' : './images/shop/product118.png'},

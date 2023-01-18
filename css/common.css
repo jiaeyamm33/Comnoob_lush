@@ -482,6 +482,7 @@ address {
 
 /* 모바일 */
 @media screen and (max-width:767px) {
+
   .f_wrap {
       display: block;
       padding: 50px 10px 0px 10px;
@@ -738,22 +739,20 @@ padding: 10% 0%;
     outline: none;
   }
   .fa-magnifying-glass{
-    font-size:24px;
+    font-size:20px;
     color:#fff;
     cursor:pointer;
   }
   .m_category{
     padding-left:50px;
   }
-  .m_category > li{
+  .m_category > li {
+    font-size:20px;
+    font-weight:bold;
     line-height:50px;
   }
-  .m_category > li {
-    font-size:28px;
-    font-weight:bold;
-  }
   .m_category > li label{
-    font-size:28px;
+    font-size:20px;
     font-weight:bold;
     display:block;
     color:#fff;
@@ -763,13 +762,13 @@ padding: 10% 0%;
     line-height:50px;
   }
   .m_des > li > a{
-    font-size:24px;
+    font-size:16px;
   }
   .m_subc{
     padding:50px 0px 100px 50px;
   }
   .m_subc > li > a{
-    font-size:28px;
+    font-size:20px;
     font-weight:bold;
   }
   .m_subc > li{

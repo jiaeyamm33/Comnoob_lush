@@ -7,20 +7,19 @@ $(function(){
     }
   });
 
-// 스크롤 시 스크롤 안내 사라짐
-
-
-$(window).scroll(function(){
-  if( $(this).scrollTop() > $('#main_video_box').height()-400 ){
-    $('.scrolltxt').fadeOut();
-  }
-  else {
-    $('.scrolltxt').fadeIn();
-  }
-});
 
 
 
+  // 비디오 박스 스크롤 시 스크롤 안내 사라짐
+
+  $(window).scroll(function(){
+    if( $(this).scrollTop() > $('#main_video_box').height()-400 ){
+      $('.scrolltxt').fadeOut();
+    }
+    else {
+      $('.scrolltxt').fadeIn();
+    }
+  });
 
 
   window.addEventListener('wheel',function(e){

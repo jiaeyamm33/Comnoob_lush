@@ -209,12 +209,14 @@ dl dt, dl dd {
   align-items: center;
 }
 #search_form .s_wrap .s_form{
+  max-width:600px;
   width:50%;
   height:40px;
   background: none;
   border:none;
   border-bottom:3px solid #fff;
   color:#fff;
+  margin:0px;
 }
 #search_form .s_word{
   max-width:1200px;
@@ -226,6 +228,8 @@ dl dt, dl dd {
 }
 #search_form .s_word h2{
   color:#fff;
+  font-size:16px;
+  margin:0px;
 }
 #search_form .s_wrod h2:first-child{
   position:relative;
@@ -235,6 +239,7 @@ dl dt, dl dd {
   margin:0 auto;
   max-height:150px;
   overflow:hidden;
+  text-align: left;
 }
 #search_form .key_box a{
   display:inline-block;

@@ -480,12 +480,3 @@ article .login_tab > ul >li:last-child{
     right:10px;
     font-size:32px;
 }
-
-#search_form .s_wrap .s_form{
-    width:50%;
-    height:40px;
-    background: none;
-    border:none;
-    border-bottom:3px solid #fff;
-    color:#fff;
-}

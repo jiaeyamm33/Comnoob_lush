@@ -72,12 +72,12 @@ body.stop-scrolling {
     overflow: hidden;
     padding: 0 10px;
     max-height: 0;
-    webkit-transition: padding 0.15s, max-height 0.15s;
+    /* webkit-transition: padding 0.15s, max-height 0.15s; */
     transition: padding 0.15s, max-height 0.15s; }
     .sweet-alert .sa-error-container.show {
       padding: 10px 0;
       max-height: 100px;
-      webkit-transition: padding 0.2s, max-height 0.2s;
+      /* webkit-transition: padding 0.2s, max-height 0.2s; */
       transition: padding 0.25s, max-height 0.25s; }
     .sweet-alert .sa-error-container .icon {
       display: inline-block;
@@ -740,7 +740,8 @@ body.stop-scrolling {
 
 /* Success icon */
 .sweet-alert .sa-icon.sa-success {
-  border-color: transparent\9; }
+  /* border-color: transparent \9; */
+}
 
 .sweet-alert .sa-icon.sa-success .sa-line.sa-tip {
   -ms-transform: rotate(45deg) \9; }

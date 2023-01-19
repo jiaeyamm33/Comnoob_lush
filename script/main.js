@@ -80,8 +80,8 @@ $(function(){
     // spaceBetween: 50,
     
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+      // el: ".swiper-pagination",
+      clickable: true
     },
   });
 });

@@ -258,6 +258,9 @@ dl dt, dl dd {
 #p_search:checked ~ #search_form{
   display:block;
 }
+#p_search:checked ~ #pc_header{
+  background-color: #000;
+}
 
 input, textarea, button {
   appearance: none; 

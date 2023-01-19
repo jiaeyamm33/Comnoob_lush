@@ -1147,6 +1147,10 @@
     .b_title {
       font-size : 10vw;
     }
+
+    #main_video_box div p {
+      font-size : 10vw;
+    }
   }
 
       /* 캠페인 영역 서식 */

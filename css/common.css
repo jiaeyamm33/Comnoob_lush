@@ -415,7 +415,7 @@ dt {
   height: 30px;
   border: none;
   text-indent: 0px;
-  vertical-align: none;
+  /* vertical-align: none; */
   padding:0px 5px;
 }
 

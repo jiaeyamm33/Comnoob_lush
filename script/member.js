@@ -57,6 +57,7 @@ let modalBtn = document.getElementById('m_c_btn');
 
 m_c_btn.addEventListener('click', function() {
     document.getElementById('modal').style.display = 'none';
+    document.querySelector('body').style.overflow = '';
 })
 
 /*
@@ -85,6 +86,7 @@ m_c_btn.addEventListener('click', function() {
     $('#m_n_btn').click(function() {
         setCookie("close", "y", 1);
     $('#modal').hide();
+    document.querySelector('body').style.overflow = '';
     });
 
     
@@ -94,17 +96,11 @@ m_c_btn.addEventListener('click', function() {
             $("#modal").show();
 
             //스크롤 막기
-
-            let modal = document.getElementById('modal');
-
-            if(modal.style.display=='block'){
-                document.querySelector('body').style.overflow = 'hidden';
-            } else {
-                document.querySelector('body').style.overflow = '';
-            }
+            document.querySelector('body').style.overflow = 'hidden';
 
         }else{
             $("#modal").hide();
+            document.querySelector('body').style.overflow = '';
         }
     });
 
@@ -120,21 +116,13 @@ m_c_btn.addEventListener('click', function() {
     n_login.addEventListener('click', function(){
 
         document.getElementById('m_modal').style.display='block';
-        //스크롤 막기
-
-            let m_modal = document.getElementById('m_modal');
-
-            if(m_modal.style.display=='block'){
-                document.querySelector('body').style.overflow = 'hidden';
-            } else {
-                document.querySelector('body').style.overflow = '';
-                console.log(getComputedStyle(m_modal).display);
-            }
-            });
+        document.querySelector('body').style.overflow = 'hidden';
+    });
 
     n_close.addEventListener('click', function(){
 
         document.getElementById('m_modal').style.display='none';
+        document.querySelector('body').style.overflow = '';
     });
 
 
@@ -176,20 +164,13 @@ m_c_btn.addEventListener('click', function() {
         k_login.addEventListener('click', function(){
     
             document.getElementById('k_modal').style.display='block';
-            //스크롤 막기
-
-            let k_modal = document.getElementById('k_modal');
-
-            if(k_modal.style.display=='block'){
-                document.querySelector('body').style.overflow = 'hidden';
-            } else {
-                document.querySelector('body').style.overflow = '';
-            }
+            document.querySelector('body').style.overflow = 'hidden';
         });
     
         k_close.addEventListener('click', function(){
     
             document.getElementById('k_modal').style.display='none';
+            document.querySelector('body').style.overflow = '';
         });
 
 

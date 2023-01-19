@@ -58,7 +58,9 @@
 
 #main_video_box {
   width: 100%;
-  height : 100vh;
+  /* height : 100vh; */
+  /* 100vh IOS 넘침현상 수정 */
+  height: var(--vh, 100vh);
   background-color : #ccc;
   position: relative;
   overflow: hidden;

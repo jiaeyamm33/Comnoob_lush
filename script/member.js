@@ -97,10 +97,21 @@ m_c_btn.addEventListener('click', function() {
         }
     });
 
+    //스크롤 막기
+
+    let modal = document.getElementById('modal');
+
+    if(modal.style.display=='block'){
+        document.querySelector('body').style.overflow = 'hidden';
+    } else {
+        document.querySelector('body').style.overflow = '';
+    }
+
     // 모달윈도우
     
     let n_login = document.getElementById('n_login');
     let n_close = document.getElementById('n_close');
+
 
 
     n_login.addEventListener('click', function(){
@@ -112,6 +123,16 @@ m_c_btn.addEventListener('click', function() {
 
         document.getElementById('m_modal').style.display='none';
     });
+
+    //스크롤 막기
+
+    let m_modal = document.getElementById('m_modal');
+
+    if(m_modal.style.display=='block'){
+        document.querySelector('body').style.overflow = 'hidden';
+    } else {
+        document.querySelector('body').style.overflow = '';
+    }
 
     //네이버 로그인
 
@@ -156,6 +177,16 @@ m_c_btn.addEventListener('click', function() {
     
             document.getElementById('k_modal').style.display='none';
         });
+
+        //스크롤 막기
+
+    let k_modal = document.getElementById('k_modal');
+
+    if(k_modal.style.display=='block'){
+        document.querySelector('body').style.overflow = 'hidden';
+    } else {
+        document.querySelector('body').style.overflow = '';
+    }
 
     //카카오 로그인
 

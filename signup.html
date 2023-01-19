@@ -20,6 +20,7 @@
 </head>
 <body>
   
+  <!-- 서브 헤더 시작 -->
   <header>
     <input type="checkbox" id="m_menu">
     <input type="checkbox" id="m_product">
@@ -91,7 +92,7 @@
     <div id="search_form">
       <form action="shop_list.html" method="get" name="search">
       <div class="s_wrap">
-      <input type="search" class="s_form">
+      <input type="search" class="s_form" id="search_items" name="name">
       <input type="submit" id="s_submit" class="hidden">
       <label for="s_submit">
         <i class="fa-solid fa-magnifying-glass"></i>
@@ -133,10 +134,11 @@
       </div>
     </div>
     <div class="m_gnb">
-      <form action="shop_list.html" name="search" method="post">
+      <form action="shop_list.html" name="search" method="get">
         <div class="search_box">
-        <input type="search" id="m_search" title="검색">
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" id="m_search" title="검색" name="name">
+        <input type="submit" value="&nbsp;" title="검색" id="m_search_items">
+        <label for="m_search_items"></label>
         </div>
         <ul class="m_category">
           <li><label for="m_product">제품</label>
@@ -175,7 +177,7 @@
         </ul> 
       </form>
     </div>
-  </header>
+</header>
     <main>
         <article class="use_book">
             <h2>이용약관</h2>

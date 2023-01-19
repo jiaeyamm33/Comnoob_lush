@@ -1,5 +1,5 @@
 let products = [
-  {'name' : '인터갈릭틱', 'category' : '배쓰 밤', 'price' : 17000, 'like' : 201, 'view' : 350, 'src' : './images/shop/product01.png'},
+  {name : '인터갈릭틱', 'category' : '배쓰 밤', 'price' : 17000, 'like' : 201, 'view' : 350, 'src' : './images/shop/product01.png'},
   {'name' : '럭스', 'category' : '배쓰 밤', 'price' : 20000, 'like' : 153, 'view' : 174, 'src' : './images/shop/product05.png'},
   {'name' : '슬리피', 'category' : '샤워 젤', 'price' : 19000, 'like' : 194, 'view' : 210, 'src' : './images/shop/product09.png'},
   {'name' : '해피 페이스', 'category' : '배쓰 밤', 'price' : 15000, 'like' : 84, 'view' : 87, 'src' : './images/shop/product13.png'},
@@ -147,6 +147,8 @@ selecTap.addEventListener('change', function(){
   productSet(cateNum);
 });
 
+
+
 function productSet(num) {
   // 카테고리에 맞게 배열 교체
   productSortArray = productSort(products.slice(num*16, (num+1)*16));
@@ -164,6 +166,15 @@ function productSet(num) {
     temp++;
   }
 }
+
+let searchItem = document.getElementById('search_items').value;
+
+const searchParams = new URLSearchParams(location.search);
+const locationSearchs = "http://127.0.0.1:5501/shop_list.html?";
+const urlParams = new URL(location.href).searchParams;
+const name = urlParams.get('name');
+
+console.log(name);
 
 //배열 정렬 함수
 function productSort(sortArray) { 

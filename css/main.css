@@ -196,6 +196,17 @@
     width : 300px;
   }
 
+  /* 메인 상품 strong 태그 서식 */
+  .main--pro_box strong{
+    font-size : 22px;
+    margin-bottom : 12px;
+    display : inline-block;
+  }
+
+  .main--pro_box li p {
+
+  }
+
   /* main vid 영역 텍스트 박스 */
   #main_video_box div {
     width : 100%;
@@ -222,6 +233,7 @@
 
   .main--pro_box {
     width : 100%;
+
   }
 
   
@@ -268,8 +280,8 @@
 }
 
 
-/* new 텍스트 박스의 h3와 p absolute */
-.new_box1--newtxt h3,
+/* new 텍스트 박스의 h2와 p absolute */
+.new_box1--newtxt h2,
 .new_box1--newtxt p {
   position : absolute;
 }
@@ -281,8 +293,8 @@
   color : #fff;
 }
 
-/* new 텍스트 박스의 h3 */
-.new_box1--newtxt h3 {
+/* new 텍스트 박스의 h2 */
+.new_box1--newtxt h2 {
   left : 0;
   top : 0;
   font-size : 50px;
@@ -414,11 +426,11 @@
   left : 0;
 }
 
-.art2--besttxt h3,
+.art2--besttxt h2,
 .art2--besttxt p {}
 
-/* BEST 텍스트박스 h3 */
-.art2--besttxt h3{
+/* BEST 텍스트박스 h2 */
+.art2--besttxt h2{
   font-size : 50px;
   padding-bottom : 25px;
   font-weight : bold;
@@ -599,6 +611,13 @@
     width : 300px;
   }
 
+  /* 상품 영역 strong 태그 서식 : li 제품 제목 */
+  .main--pro_box strong{
+    font-size : 22px;
+    margin-bottom : 12px;
+    display : inline-block;
+  }
+
 /* tablet product section(2) 시작 {new, best} */
 
 /* production section */
@@ -654,7 +673,7 @@
 
 
 /* new 텍스트 박스의 h3와 p absolute */
-.new_box1--newtxt h3,
+.new_box1--newtxt h2,
 .new_box1--newtxt p {
 }
 
@@ -665,8 +684,8 @@
   color : #fff;
 }
 
-/* new 텍스트 박스의 h3 */
-.new_box1--newtxt h3 {
+/* new 텍스트 박스의 h2 */
+.new_box1--newtxt h2 {
   margin-bottom : 40px;
   font-size : 50px;
   color:#fff;
@@ -674,7 +693,7 @@
   margin-right : 30px;
 }
 
-.new_box1--newtxt h3 a {
+.new_box1--newtxt h2 a {
   line-height : 60px;
 }
 
@@ -789,8 +808,8 @@
 
 }
 
-/* BEST 텍스트 박스 h3 */
-.art2--besttxt h3 {
+/* BEST 텍스트 박스 h2 */
+.art2--besttxt h2 {
   font-size : 50px;
   margin-bottom : 15px;
 }
@@ -915,12 +934,12 @@
   .new_box1--newtxt {
   }
 
-  .new_box1--newtxt h3 {
+  .new_box1--newtxt h2 {
     margin-bottom : 15px;
     color : #fff;
   }
 
-  .new_box1--newtxt h3 a {
+  .new_box1--newtxt h2 a {
     font-size : 1.5rem;
   }
 
@@ -1018,8 +1037,8 @@
 
 }
 
-/* BEST 텍스트 박스 h3 */
-.art2--besttxt h3 {
+/* BEST 텍스트 박스 h2 */
+.art2--besttxt h2 {
   font-size : 1.5rem;
   margin-bottom : 10px;
 }

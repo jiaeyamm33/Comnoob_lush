@@ -1119,6 +1119,17 @@
   .b_sub{
     font-size:24px;
   }
+
+
+  @media screen and (max-width : 500px ){
+    .b_sub {
+      font-size : 6vw;
+    }
+    .b_title {
+      font-size : 10vw;
+    }
+  }
+
       /* 캠페인 영역 서식 */
       .charity{
         flex-direction:column;
@@ -1134,11 +1145,6 @@
       }
 
 
-
-
-
-
-      
       br:not(br.appear){display:none;}
 
       .c_left a img{

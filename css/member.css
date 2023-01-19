@@ -107,10 +107,14 @@ input[type=checkbox]{
 
 .tell_box {
     justify-content: space-between;
+    max-width: 345px;
+    margin: 0 auto;
 }
 
 .email_box {
     justify-content: space-between;
+    max-width: 345px;
+    margin: 0 auto;
     line-height: 50px;
 
 }

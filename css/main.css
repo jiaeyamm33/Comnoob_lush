@@ -511,7 +511,11 @@ header::before{
   width : 210px;
   height : 250px;
   position : relative;
-
+}
+.best_small > a::after{
+  content: '';
+  display: block;
+  padding-bottom: calc(100% + 40px);
 }
 
 .best_small img {

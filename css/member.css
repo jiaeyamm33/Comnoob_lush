@@ -380,6 +380,7 @@ article .login_tab > ul >li:last-child{
 }
 .modal_d{
     max-width: 450px;
+    min-height:568px;
     height:70%;
     background-color:#f2f2f2;
     position: relative;
@@ -433,6 +434,7 @@ article .login_tab > ul >li:last-child{
 }
 .modal_k{
     max-width: 580px;
+    min-height:568px;
     height:70%;
     background-color:#fff;
     position: relative;
@@ -480,3 +482,11 @@ article .login_tab > ul >li:last-child{
     font-size:32px;
 }
 
+#search_form .s_wrap .s_form{
+    width:50%;
+    height:40px;
+    background: none;
+    border:none;
+    border-bottom:3px solid #fff;
+    color:#fff;
+}

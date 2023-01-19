@@ -72,7 +72,8 @@ input[name="email"] {
 #tell{
     justify-content: center;
     align-items:center;
-    margin-bottom:15px;
+    max-width: 345px;
+    margin: 0 auto 15px auto;
 
 }
 select { 
@@ -107,10 +108,14 @@ input[type=checkbox]{
 
 .tell_box {
     justify-content: space-between;
+    max-width: 345px;
+    margin: 0 auto;
 }
 
 .email_box {
     justify-content: space-between;
+    max-width: 345px;
+    margin: 0 auto;
     line-height: 50px;
 
 }

@@ -179,7 +179,7 @@
     <main>
         <article class="use_book">
             <h2>이용약관</h2>
-            <textarea name="이용약관" id="agree" cols="45" rows="20" readonly>제1조(목적)
+            <textarea name="이용약관" id="agree" cols="45" rows="20" readonly title="이용약관">제1조(목적)
 
 표준약관 제10023호
 
@@ -398,8 +398,9 @@
 1. 이 약관은 2018년 09월 10일부터 적용됩니다.</textarea>
             <div class="private_info flex">
               <input type="checkbox" name="체크박스" class="check_box" title="정보이벤트 메일 수신 동의" id="check_info">
+              <label for="agree" class="hidden">이용약관 동의</label>
               <label for="check_info">
-              <p>러쉬코리아의 개인정보 수집 및 이용약관에<br>동의합니다.</p>
+                러쉬코리아 개인정보 수집 및 이용약관에 동의합니다.
             </label>
             </div>
         </article>
@@ -432,10 +433,12 @@
           </div>
             <hr>
             <div class="sms flex">
-            <input type="checkbox" name="체크박스" class="check_box" title="정보이벤트 메일 수신 동의">정보/이벤트 메일 수신에 동의합니다.
+            <input type="checkbox" name="체크박스" class="check_box" title="정보이벤트 메일 수신 동의" id="eventmail_agree">
+            <label for="eventmail_agree">정보/이벤트 메일 수신에 동의합니다.</label>
             </div>
             <div class="sms flex">
-            <input type="checkbox" name="정보수신이벤트" class="check_box" title="정보이벤트 문자 수신 동의">정보/이벤트 문자 수신에 동의합니다.
+            <input type="checkbox" name="정보수신이벤트" class="check_box" title="정보이벤트 문자 수신 동의" id="eventsns_agree">
+            <label for="eventsms_agree">정보/이벤트 문자 수신에 동의합니다.</label>
             </div>
             <input type="submit" value="회원가입" id="signUp" title="회원가입 제출">
         </form>

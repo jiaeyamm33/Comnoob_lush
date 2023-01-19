@@ -734,6 +734,19 @@ padding: 10% 0%;
   
   /* 펼쳐지는 m_gnb 서식 */
 
+  #m_search_items {
+    display: none;
+  }
+
+  .search_box label::after {
+    content: '\f002';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+
   #m_menu:checked ~ .m_gnb{left: 0;}
   #m_menu:checked ~ .m_header .m_menu_wrap {justify-content: right;}
   /* #m_menu:checked ~ #m_header{display:none;} */

@@ -174,7 +174,7 @@ const locationSearchs = "http://127.0.0.1:5501/shop_list.html?";
 const urlParams = new URL(location.href).searchParams;
 const name = urlParams.get('name');
 
-console.log(name);
+let found = products.find
 
 //배열 정렬 함수
 function productSort(sortArray) { 

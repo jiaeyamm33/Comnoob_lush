@@ -30,12 +30,17 @@ body {overflow-x: hidden;}
 
 #m_header {display: none;}
 #pc_header {
-  position : relative;
+  position : fixed;
   left : 0;
   top : 0;
   width : 100%;
   z-index: 1;
   background-color: #000;
+}
+header::before{
+  display:block;
+  content:'';
+  padding-top:100px;
 }
 
 /* 헤더 안쪽 상자 */
@@ -194,7 +199,7 @@ dl dt, dl dd {
   color:#fff;
   cursor:pointer;
 }
-.s_wrap{
+#search_form .s_wrap{
   max-width:1200px;
   margin:0px auto;
   width:100%;
@@ -203,15 +208,17 @@ dl dt, dl dd {
   justify-content: center;
   align-items: center;
 }
-.s_form{
+#search_form .s_wrap .s_form{
+  max-width:600px;
   width:50%;
   height:40px;
   background: none;
   border:none;
   border-bottom:3px solid #fff;
   color:#fff;
+  margin:0px;
 }
-.s_word{
+#search_form .s_word{
   max-width:1200px;
   margin:0px auto;
   width:100%;
@@ -219,19 +226,22 @@ dl dt, dl dd {
   display:flex;
   justify-content:space-around;
 }
-.s_word h2{
+#search_form .s_word h2{
   color:#fff;
+  font-size:16px;
+  margin:0px;
 }
-.s_wrod h2:first-child{
+#search_form .s_wrod h2:first-child{
   position:relative;
 }
-.key_box{
+#search_form .key_box{
   width:500px;
   margin:0 auto;
   max-height:150px;
   overflow:hidden;
+  text-align: left;
 }
-.key_box a{
+#search_form .key_box a{
   display:inline-block;
   padding:6px 10px;
   border-radius:20px;
@@ -247,6 +257,9 @@ dl dt, dl dd {
 }
 #p_search:checked ~ #search_form{
   display:block;
+}
+#p_search:checked ~ #pc_header{
+  background-color: #000;
 }
 
 input, textarea, button {
@@ -433,7 +446,12 @@ address {
 
 /* 푸터 태블릿 서식*/
 @media screen and (max-width:1024px) {
-
+  header::before{
+  padding-top:0px;
+}
+#p_search:checked ~ #search_form{
+  display:none;
+}
   .ethical {
     display: none;
   }
@@ -718,7 +736,7 @@ padding: 10% 0%;
   .m_gnb{
     display: block;
     width:100%;
-    height: 100%;
+    height: var(--vh, 100vh);
     overflow: auto;
     background:rgba(0, 0, 0, 0.7);
     position:absolute;

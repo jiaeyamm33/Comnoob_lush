@@ -1,8 +1,5 @@
 $(function(){
 
-  //ios 넘침현상 제거
-  document.documentElement.style.setProperty('--vh', `${window.innerHeight}px`);
-
   //메인 휠 이벤트
   let stopScroll = 0;
   $(window).on('load', function(e){

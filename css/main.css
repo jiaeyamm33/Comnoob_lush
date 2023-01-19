@@ -50,6 +50,9 @@
   position: fixed;
   background-color: transparent;
 }
+header::before{
+  padding-top:0px;
+}
 
 #pc_header:hover {
   background-color: #000;

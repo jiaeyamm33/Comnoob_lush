@@ -1,5 +1,7 @@
 // 상단 바로가기 버튼 스크롤 이벤트
 $(document).ready(function(){
+    //ios 넘침현상 제거
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight}px`);
 
     $(window).scroll(function(){
         let upScroll = $(this).scrollTop(); //세로스크롤 변수 담기

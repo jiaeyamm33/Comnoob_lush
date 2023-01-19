@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+body{
+    overflow-x:hidden;
+}
 /* width 100% */
 main, input, select, .tel_num2, .certification_number, .certification_check, .login_wrap, .login_tab, input[type=checkbox], #modal, .modal_img, .modal_img img {
     width:100%;
@@ -316,6 +319,8 @@ article .login_tab > ul >li:last-child{
     top: 0px;
     z-index: 100;
     background-color: rgba(0,0,0,.9);
+    -webkit-overflow-scrolling: auto;
+    display:none;
 }
 
 .modal_img {
@@ -325,6 +330,7 @@ article .login_tab > ul >li:last-child{
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
+    -webkit-overflow-scrolling: auto;
 }
 
 .modal_img img {
@@ -376,6 +382,7 @@ article .login_tab > ul >li:last-child{
     z-index: 600;
     background-color: rgba(0,0,0,.5);
     display:none;
+    -webkit-overflow-scrolling: auto;
 }
 .modal_d{
     max-width: 450px;
@@ -387,6 +394,7 @@ article .login_tab > ul >li:last-child{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius:10px;
+    -webkit-overflow-scrolling: auto;
 }
 #naver_form{
     display: flex;
@@ -430,6 +438,7 @@ article .login_tab > ul >li:last-child{
     z-index: 600;
     background-color: rgba(0,0,0,.5);
     display:none;
+    -webkit-overflow-scrolling: auto;
 }
 .modal_k{
     max-width: 580px;
@@ -440,6 +449,7 @@ article .login_tab > ul >li:last-child{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-overflow-scrolling: auto;
 }
 #kakao_form{
     display:flex;

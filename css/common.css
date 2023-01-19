@@ -186,7 +186,7 @@ dl dt, dl dd {
 /* 검색폼 서식 */
 #search_form{
   width:100%;
-  height:300px;
+  height:200px;
   background: #000;
   padding:50px 0px;
   overflow:hidden;
@@ -415,7 +415,7 @@ dt {
   height: 30px;
   border: none;
   text-indent: 0px;
-  vertical-align: none;
+  /* vertical-align: none; */
   padding:0px 5px;
 }
 
@@ -733,6 +733,19 @@ padding: 10% 0%;
   }
   
   /* 펼쳐지는 m_gnb 서식 */
+
+  #m_search_items {
+    display: none;
+  }
+
+  .search_box label::after {
+    content: '\f002';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
 
   #m_menu:checked ~ .m_gnb{
     left: 0;

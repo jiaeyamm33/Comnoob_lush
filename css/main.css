@@ -347,7 +347,7 @@ header::before{
   margin-left : 50px;
 }
 
-/* new 슬라이드 li 내부 패딩 */
+/* new 슬라이드 li 내부 a 패딩 */
 .newpro_1 a::after {
   content : "";
   display : block;
@@ -740,11 +740,11 @@ header::before{
   margin-left : 50px;
 }
 
-/* new 슬라이드 li 내부 패딩 */
-.newpro_1::after {
+/* new 슬라이드 li 내부 a 패딩 */
+.newpro_1 a::after {
   content : "";
   display : block;
-  padding-bottom : 100%;
+  padding-bottom : 100px;
 }
 
 /* new ul 슬라이드 이미지들 */

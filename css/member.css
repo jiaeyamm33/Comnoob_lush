@@ -330,7 +330,6 @@ article .login_tab > ul >li:last-child{
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
-    -webkit-overflow-scrolling: auto;
 }
 
 .modal_img img {
@@ -394,7 +393,6 @@ article .login_tab > ul >li:last-child{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius:10px;
-    -webkit-overflow-scrolling: auto;
 }
 #naver_form{
     display: flex;
@@ -449,7 +447,6 @@ article .login_tab > ul >li:last-child{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -webkit-overflow-scrolling: auto;
 }
 #kakao_form{
     display:flex;

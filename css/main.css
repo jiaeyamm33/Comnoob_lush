@@ -182,6 +182,10 @@ header::before{
 
 
 
+
+
+
+
 /*  메인 공통 서식 끝   */
 
 
@@ -511,6 +515,7 @@ header::before{
   width : 210px;
   height : 250px;
   position : relative;
+  overflow : hidden;
 }
 .best_small > a::after{
   content: '';

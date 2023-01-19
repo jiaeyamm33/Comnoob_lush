@@ -429,7 +429,7 @@ article .login_tab > ul >li:last-child{
     top: 0px;
     z-index: 600;
     background-color: rgba(0,0,0,.5);
-    /* display:none; */
+    display:none;
 }
 .modal_k{
     max-width: 580px;
@@ -450,7 +450,7 @@ article .login_tab > ul >li:last-child{
     width:88px;
     height:27px;
     margin:100px auto 50px auto;
-    background: #fff url(/images/member/logo_kakao.png) no-repeat 0 0;
+    background: #fff url(../images/member/logo_kakao.png) no-repeat 0 0;
     background-size: 100px 80px;
     font-size:19px;
     line-height:27px;

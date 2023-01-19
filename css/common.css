@@ -417,6 +417,7 @@ dt {
   text-indent: 0px;
   /* vertical-align: none; */
   padding:0px 5px;
+  cursor: pointer;
 }
 
 address {

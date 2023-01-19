@@ -317,7 +317,7 @@ article .login_tab > ul >li:last-child{
     position: fixed;
     height: 100%;
     top: 0px;
-    z-index: 100;
+    z-index: 550;
     background-color: rgba(0,0,0,.9);
     -webkit-overflow-scrolling: auto;
     display:none;

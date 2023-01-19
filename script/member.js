@@ -92,20 +92,23 @@ m_c_btn.addEventListener('click', function() {
         let cookiedata = document.cookie;
         if(cookiedata.indexOf("close=y")<0){
             $("#modal").show();
+
+            //스크롤 막기
+
+            let modal = document.getElementById('modal');
+
+            if(modal.style.display=='block'){
+                document.querySelector('body').style.overflow = 'hidden';
+            } else {
+                document.querySelector('body').style.overflow = '';
+            }
+
         }else{
             $("#modal").hide();
         }
     });
 
-    //스크롤 막기
 
-    let modal = document.getElementById('modal');
-
-    if(modal.style.display=='block'){
-        document.querySelector('body').style.overflow = 'hidden';
-    } else {
-        document.querySelector('body').style.overflow = '';
-    }
 
     // 모달윈도우
     
@@ -117,22 +120,24 @@ m_c_btn.addEventListener('click', function() {
     n_login.addEventListener('click', function(){
 
         document.getElementById('m_modal').style.display='block';
-    });
+        //스크롤 막기
+
+            let m_modal = document.getElementById('m_modal');
+
+            if(m_modal.style.display=='block'){
+                document.querySelector('body').style.overflow = 'hidden';
+            } else {
+                document.querySelector('body').style.overflow = '';
+                console.log(getComputedStyle(m_modal).display);
+            }
+            });
 
     n_close.addEventListener('click', function(){
 
         document.getElementById('m_modal').style.display='none';
     });
 
-    //스크롤 막기
 
-    let m_modal = document.getElementById('m_modal');
-
-    if(m_modal.style.display=='block'){
-        document.querySelector('body').style.overflow = 'hidden';
-    } else {
-        document.querySelector('body').style.overflow = '';
-    }
 
     //네이버 로그인
 
@@ -171,6 +176,15 @@ m_c_btn.addEventListener('click', function() {
         k_login.addEventListener('click', function(){
     
             document.getElementById('k_modal').style.display='block';
+            //스크롤 막기
+
+            let k_modal = document.getElementById('k_modal');
+
+            if(k_modal.style.display=='block'){
+                document.querySelector('body').style.overflow = 'hidden';
+            } else {
+                document.querySelector('body').style.overflow = '';
+            }
         });
     
         k_close.addEventListener('click', function(){
@@ -178,15 +192,7 @@ m_c_btn.addEventListener('click', function() {
             document.getElementById('k_modal').style.display='none';
         });
 
-        //스크롤 막기
 
-    let k_modal = document.getElementById('k_modal');
-
-    if(k_modal.style.display=='block'){
-        document.querySelector('body').style.overflow = 'hidden';
-    } else {
-        document.querySelector('body').style.overflow = '';
-    }
 
     //카카오 로그인
 

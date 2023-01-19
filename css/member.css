@@ -59,11 +59,10 @@ input[name="email"] {
     margin: 0px auto;
     width: 100%;
     max-width: 345px;
-    justify-content:space-evenly;
+    justify-content: space-between;
 }
 
 .private_info label  {
-    font-size: 16px;
     line-height: 20px;
 }
 

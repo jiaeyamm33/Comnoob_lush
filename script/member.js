@@ -141,6 +141,50 @@ m_c_btn.addEventListener('click', function() {
         }
     });
 
+        // k 모달윈도우
+    
+        let k_login = document.getElementById('k_login');
+        let k_close = document.getElementById('k_close');
+    
+    
+        k_login.addEventListener('click', function(){
+    
+            document.getElementById('k_modal').style.display='block';
+        });
+    
+        k_close.addEventListener('click', function(){
+    
+            document.getElementById('k_modal').style.display='none';
+        });
+
+    //카카오 로그인
+
+    let kakao_form = document.getElementById('kakao_form');
+    let kakao_id = document.getElementById('kakao_id');
+    let kakao_pw = document.getElementById('kakao_pw');
+    
+    kakao_form.addEventListener('submit', function(e) {
+    kakao_id = document.getElementById('kakao_id').value;
+    kakao_pw = document.getElementById('kakao_pw').value;
+    
+        e.preventDefault();
+    
+        if(kakao_id == 'test') {
+            if(kakao_pw == '1234') {
+                swal('로그인 성공', '로그인 되었습니다.', 'success');
+                setTimeout(function() {
+                    location.href = 'index.html';
+                }, 2000);
+            } else {
+                swal('비밀번호 오류', '비밀번호를 확인해주세요.', 'error');
+            } 
+        } else if((kakao_id == '') || (kakao_pw == '')) {
+            swal('입력 오류', '아이디나 비밀번호를 입력해주세요.', 'error');
+        } else {
+            swal('아이디 오류', '아이디를 확인해주세요.', 'error');
+        }
+    });
+
 
 
 

@@ -178,7 +178,7 @@ function productSet(num) {
 
 function filterByName(value) {
   if (!value) {
-      alert("네임 입력해");
+ //     alert("네임 입력해");
       return products;
   }
   

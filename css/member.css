@@ -104,6 +104,7 @@ input[type=checkbox]{
     max-width: 130px;
     background-color: #fff;
     text-indent: 0px;
+    cursor: pointer;
 }
 
 .tell_box {

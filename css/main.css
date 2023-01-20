@@ -651,7 +651,7 @@ header::before{
   width : 100%;
   height : 950px;
 
-  background-image : url('../images/main_new_bg.jpg');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('../images/main_new_bg.jpg');
   background-repeat : no-repeat;
   background-position : center;
   position : relative;
@@ -937,7 +937,7 @@ header::before{
 
   
   .sec2--newpro_wrap {
-    background-image : url('../images/main_new_bg.jpg');
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('../images/main_new_bg.jpg');
     background-repeat : no-repeat;
     background-position : center;
     max-height : 950px;

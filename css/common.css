@@ -217,6 +217,7 @@ dl dt, dl dd {
   border-bottom:3px solid #fff;
   color:#fff;
   margin:0px;
+  outline: none;
 }
 #search_form .s_word{
   max-width:1200px;

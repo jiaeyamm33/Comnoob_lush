@@ -190,7 +190,7 @@ function filterByName(value) { // 검색함수
       return (name.includes(value) || category.includes(value) ? true : false);
     });
     
-    document.querySelector('.category_wrap').innerHTML = '검색어 : "'+value+'", 검색결과 ('+searchResult.length+'건)';
+    document.querySelector('.category_wrap').innerHTML = '검색어 : "'+value+'", 검색결과 ('+(searchResult.length > 16 ? 16 : searchResult.length)+'건)';
     document.querySelector('.shop_subbanner').remove();
 
     return searchResult;

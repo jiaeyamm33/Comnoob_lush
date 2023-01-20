@@ -127,7 +127,7 @@
     height:300px;
   }
   #shop_subbanner_p{
-    font-size:2em;
+    font-size:1.5em;
   }
   .shop_itemlist {grid-template-columns: repeat(3, 1fr);}
   .shop_itemlist > .product:nth-of-type(4n+1) {margin: 0 0 150px;}

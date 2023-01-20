@@ -82,6 +82,7 @@ header::before{
   background-size: cover;
 }
 .believe{
+  background-color: rgba(0, 0, 0, 0.5);
   width:100%;height:950px;
   display:flex;
   flex-direction: column;
@@ -252,13 +253,13 @@ header::before{
 .sec2--newpro_wrap {
   width : 100%;
   height : 950px;
-
-  background-image : url('../images/main_new_bg.jpg');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('../images/main_new_bg.jpg');
   background-repeat : no-repeat;
   background-position : center;
   position : relative;
   overflow: hidden;
   padding-top : 300px;
+  
 
 
   /* display: flex;
